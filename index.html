@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Influencer Marketing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(1200px 600px at 70% 40%, #5b6cff33, transparent),
+                  radial-gradient(800px 400px at 30% 60%, #ff5bd133, transparent),
+                  #0b0b12;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero {
+      max-width: 1200px;
+      padding: 80px 24px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: clamp(36px, 5vw, 64px);
+      line-height: 1.1;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, #7cf7ff, #ff7adf, #ffb86c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 18px;
+      color: #cfd3ff;
+      max-width: 520px;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #7c7cff, #ff5bd1);
+      padding: 14px 28px;
+      border-radius: 14px;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 0 40px #7c7cff55;
+    }
+
+    .btn-secondary {
+      padding: 14px 28px;
+      border-radius: 14px;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid #ffffff33;
+    }
+
+    .visual {
+      height: 420px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, #5b6cff, #ff5bd1);
+      box-shadow: 0 0 120px #5b6cff66;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <div>
+      <h1>
+        Make influencer marketing<br />
+        <span>your unfair advantage</span>
+      </h1>
+
+      <p>
+        Discover creators, launch campaigns, and track ROI —
+        all in one AI-powered platform.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="btn-primary">Start free trial</a>
+        <a href="#" class="btn-secondary">See how it works</a>
+      </div>
+    </div>
+
+    <div class="visual"></div>
+  </section>
+</body>
+</html>
