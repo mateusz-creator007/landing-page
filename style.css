@@ -1,139 +1,104 @@
-/* RESET */
+:root {
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --accent-blue: #2563eb;
+  --accent-pink: #ec4899;
+  --bg-light: #f8fafc;
+}
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-/* ROOT COLORS */
-:root {
-  --bg-dark: #0b0b12;
-  --bg-glow-1: #7c3aed;
-  --bg-glow-2: #ec4899;
-  --text-main: #ffffff;
-  --text-muted: #b3b3c6;
-  --accent-blue: #38bdf8;
-  --accent-pink: #f472b6;
-  --accent-orange: #fb923c;
-}
-
-/* BODY */
 body {
-  min-height: 100vh;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
-    sans-serif;
-  color: var(--text-main);
-  background:
-    radial-gradient(1200px 600px at 70% 40%, rgba(124, 58, 237, 0.25), transparent),
-    radial-gradient(800px 400px at 30% 60%, rgba(236, 72, 153, 0.25), transparent),
-    var(--bg-dark);
-  overflow-x: hidden;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+/* NAVBAR */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-pink));
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* HERO */
 .hero {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 120px 24px;
+  margin: 60px auto;
+  padding: 0 24px;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 64px;
+  grid-template-columns: 1.1fr 1fr;
   align-items: center;
+  gap: 40px;
 }
 
-/* TEXT */
-.hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
+.hero-text h1 {
+  font-size: 48px;
   line-height: 1.1;
-  margin-bottom: 24px;
+  font-weight: 800;
 }
 
-.hero h1 span.blue {
-  color: var(--accent-blue);
-  text-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+.hero-text h1 span {
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.hero h1 span.orange {
-  color: var(--accent-orange);
-  text-shadow: 0 0 20px rgba(251, 146, 60, 0.6);
-}
-
-.hero p {
-  max-width: 520px;
-  font-size: 1.1rem;
-  line-height: 1.6;
+.hero-text p {
+  margin-top: 20px;
   color: var(--text-muted);
-  margin-bottom: 40px;
+  font-size: 18px;
+  max-width: 520px;
 }
 
-/* BUTTONS */
-.actions {
+.hero-actions {
+  margin-top: 30px;
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
 }
 
-.btn-primary {
-  padding: 14px 28px;
-  border-radius: 14px;
-  font-weight: 600;
-  color: #fff;
-  background: linear-gradient(135deg, #7c3aed, #ec4899);
-  box-shadow:
-    0 0 30px rgba(236, 72, 153, 0.5),
-    inset 0 0 0 rgba(255,255,255,0);
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    0 0 45px rgba(236, 72, 153, 0.8),
-    inset 0 0 10px rgba(255,255,255,0.15);
-}
-
-.btn-secondary {
-  padding: 14px 28px;
-  border-radius: 14px;
-  font-weight: 500;
-  color: var(--text-main);
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.15);
-  cursor: pointer;
-  transition: background 0.2s ease, border 0.2s ease;
-}
-
-.btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255,255,255,0.3);
-}
-
-/* VISUAL / GRAPHIC */
-.visual {
-  position: relative;
+/* IMAGE */
+.hero-image img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-}
-
-.visual img {
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(0 0 40px rgba(124, 58, 237, 0.6));
-}
-
-/* FLOATING GLOW */
-.visual::before {
-  content: "";
-  position: absolute;
-  inset: -20%;
-  background:
-    radial-gradient(circle at center, rgba(124,58,237,0.25), transparent 60%);
-  filter: blur(80px);
-  z-index: -1;
+  max-width: 520px;
 }
 
 /* RESPONSIVE */
@@ -143,12 +108,7 @@ body {
     text-align: center;
   }
 
-  .hero p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .actions {
+  .hero-actions {
     justify-content: center;
   }
 }
