@@ -244,3 +244,46 @@ body {
   font-size: 13px;
   color: #555;
 }
+
+/* =========================
+   MICRO ANIMATIONS
+   ========================= */
+
+/* Subtle floating motion */
+@keyframes floatSoft {
+  0%   { transform: translateY(0) rotate(var(--rot)); }
+  50%  { transform: translateY(-8px) rotate(var(--rot)); }
+  100% { transform: translateY(0) rotate(var(--rot)); }
+}
+
+/* Assign individual rotation + timing */
+.card-1 {
+  --rot: -6deg;
+  animation: floatSoft 8s ease-in-out infinite;
+}
+
+.card-2 {
+  --rot: 2deg;
+  animation: floatSoft 10s ease-in-out infinite;
+}
+
+.card-3 {
+  --rot: -4deg;
+  animation: floatSoft 9s ease-in-out infinite;
+}
+
+/* Hover interaction */
+.card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-12px) rotate(0deg);
+  box-shadow:
+    0 60px 120px rgba(0,0,0,0.55),
+    0 20px 40px rgba(0,0,0,0.35);
+  z-index: 5;
+}
+
