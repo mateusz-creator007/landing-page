@@ -1,41 +1,68 @@
 :root {
   --bg-dark: #0b0b12;
-  --bg-glow-1: #7c3aed;
-  --bg-glow-2: #ec4899;
+  --bg-deeper: #08080f;
+
+  --glow-purple: 124, 58, 237;
+  --glow-pink: 236, 72, 153;
+
   --text-main: #ffffff;
   --text-muted: #b3b3c6;
-  --card-bg: #f6f6fb;
+
+  --card-bg: rgba(246, 246, 251, 0.96);
 }
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
   font-family: Inter, system-ui, sans-serif;
-  background: radial-gradient(900px 500px at 70% 40%, rgba(124,58,237,0.35), transparent),
-              radial-gradient(700px 400px at 30% 60%, rgba(236,72,153,0.25), transparent),
-              var(--bg-dark);
   color: var(--text-main);
+  background: var(--bg-dark);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
-/* HERO */
+/* HERO BASE */
 .hero {
   position: relative;
   min-height: 100vh;
   padding: 120px 80px;
   display: flex;
   align-items: center;
+  background:
+    radial-gradient(
+      900px 600px at 20% 30%,
+      rgba(var(--glow-purple), 0.12),
+      transparent 70%
+    ),
+    radial-gradient(
+      800px 500px at 80% 60%,
+      rgba(var(--glow-pink), 0.10),
+      transparent 70%
+    ),
+    linear-gradient(180deg, var(--bg-dark), var(--bg-deeper));
   overflow: hidden;
+}
+
+/* HERO INNER (LAYOUT CONTROL) */
+.hero-inner {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 /* TEXT */
 .hero-content {
   max-width: 560px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .hero h1 {
@@ -61,6 +88,7 @@ body {
   gap: 16px;
 }
 
+/* BUTTONS */
 .btn {
   padding: 14px 24px;
   border-radius: 12px;
@@ -70,36 +98,68 @@ body {
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  background: linear-gradient(
+    135deg,
+    rgba(var(--glow-purple), 1),
+    rgba(var(--glow-pink), 1)
+  );
   color: #fff;
+  box-shadow:
+    0 10px 30px rgba(var(--glow-purple), 0.35);
 }
 
 .btn.ghost {
   border: 1px solid rgba(255,255,255,0.2);
   color: #fff;
+  background: rgba(255,255,255,0.02);
 }
 
-/* VISUAL LAYERS */
+/* VISUAL ZONE */
 .hero-visual {
   position: absolute;
   right: -120px;
   top: 50%;
   transform: translateY(-50%);
-  width: 600px;
-  height: 420px;
+  width: 620px;
+  height: 440px;
+  z-index: 2;
 }
 
+/* AMBIENT GLOW BEHIND CARDS */
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  inset: -120px;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(var(--glow-purple), 0.35),
+      transparent 65%
+    );
+  filter: blur(80px);
+  z-index: -1;
+}
+
+/* CARDS BASE */
 .card {
   position: absolute;
+  padding: 24px;
   background: var(--card-bg);
   border-radius: 24px;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.35);
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 40px 80px rgba(0,0,0,0.45),
+    0 8px 20px rgba(0,0,0,0.25);
+
+  border: 1px solid rgba(255,255,255,0.4);
 }
 
+/* CARD POSITIONS */
 .card-1 {
   width: 420px;
   height: 260px;
-  top: 60px;
+  top: 70px;
   left: 40px;
   transform: rotate(-6deg);
 }
@@ -107,8 +167,8 @@ body {
 .card-2 {
   width: 460px;
   height: 300px;
-  top: 20px;
-  left: 120px;
+  top: 10px;
+  left: 140px;
   transform: rotate(2deg);
 }
 
@@ -120,13 +180,7 @@ body {
   transform: rotate(-4deg);
 }
 
-.card {
-  padding: 24px;
-  background: rgba(255,255,255,0.9);
-  backdrop-filter: blur(12px);
-}
-
-/* Card 1 – chart */
+/* CARD 1 – CHART */
 .card-1 .card-header {
   font-size: 14px;
   font-weight: 600;
@@ -143,8 +197,12 @@ body {
 
 .chart-bars span {
   width: 20px;
-  background: linear-gradient(180deg, #7c3aed, #ec4899);
   border-radius: 6px;
+  background: linear-gradient(
+    180deg,
+    rgba(var(--glow-purple), 1),
+    rgba(var(--glow-pink), 1)
+  );
 }
 
 .chart-bars span:nth-child(1) { height: 40%; }
@@ -152,14 +210,14 @@ body {
 .chart-bars span:nth-child(3) { height: 55%; }
 .chart-bars span:nth-child(4) { height: 85%; }
 
-/* Card 2 – stats */
+/* CARD 2 – STATS */
 .card-2 {
   display: flex;
   gap: 24px;
 }
 
 .stat strong {
-  font-size: 24px;
+  font-size: 26px;
   display: block;
   color: #111;
 }
@@ -169,7 +227,7 @@ body {
   color: #666;
 }
 
-/* Card 3 – ROI */
+/* CARD 3 – ROI */
 .card-3 {
   display: flex;
   flex-direction: column;
@@ -179,7 +237,7 @@ body {
 
 .card-3 strong {
   font-size: 32px;
-  color: #7c3aed;
+  color: rgb(var(--glow-purple));
 }
 
 .card-3 span {
