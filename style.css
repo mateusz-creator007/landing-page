@@ -287,3 +287,23 @@ body {
   z-index: 5;
 }
 
+.hero-graphic {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(1200px 600px at 30% 40%, rgba(124,58,237,0.35), transparent),
+    radial-gradient(1000px 600px at 70% 60%, rgba(236,72,153,0.35), transparent),
+    #0b0b12;
+  overflow: hidden;
+}
+
+.hero-graphic img {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 40px 80px rgba(0,0,0,0.45));
+}
