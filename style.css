@@ -236,10 +236,10 @@ h1 span {
 
 .founder-tag {
   position: absolute;
-  right: 305px;
-  bottom: 160px;
+  right: 430px;
+  bottom: 155px;
 
-  width: 240px;
+  width: 260px;
   text-align: center;
 
   z-index: 5;
@@ -248,21 +248,21 @@ h1 span {
 
 .founder-tag span {
   display: block;
-  font-size: 10px;
-  letter-spacing: 3px;
+  font-size: 9px;
+  letter-spacing: 3.5px;
   text-transform: uppercase;
-  font-weight: 600;
-  color: rgba(255,255,255,.34);
+  font-weight: 700;
+  color: rgba(255,255,255,.30);
   margin-bottom: 6px;
-  text-shadow: 0 3px 12px rgba(0,0,0,.7);
+  text-shadow: 0 3px 14px rgba(0,0,0,.85);
 }
 
 .founder-tag strong {
   display: block;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1;
   font-weight: 700;
-  letter-spacing: -.5px;
-  color: rgba(255,255,255,.9);
-  text-shadow: 0 4px 18px rgba(0,0,0,.75);
+  letter-spacing: -.4px;
+  color: rgba(255,255,255,.86);
+  text-shadow: 0 4px 18px rgba(0,0,0,.85);
 }
