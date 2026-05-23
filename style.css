@@ -25,12 +25,12 @@ body {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 22%, rgba(20, 92, 255, .18), transparent 28%),
+    radial-gradient(circle at 18% 36%, rgba(0, 88, 255, .16), transparent 30%),
     linear-gradient(
       90deg,
       rgba(0,0,0,.94) 0%,
-      rgba(0,0,0,.76) 30%,
-      rgba(0,0,0,.25) 56%,
+      rgba(0,0,0,.78) 30%,
+      rgba(0,0,0,.28) 58%,
       rgba(0,0,0,.02) 100%
     );
   z-index: 1;
@@ -39,7 +39,7 @@ body {
 .nav {
   position: relative;
   z-index: 2;
-  padding: 42px 52px 0 72px;
+  padding: 54px 0 0 72px;
 }
 
 .brand {
@@ -52,111 +52,92 @@ body {
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 31px;
+  line-height: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 64px 52px 42px 72px;
+  padding: 88px 0 0 72px;
 }
 
 .left {
-  max-width: 720px;
+  max-width: 690px;
 }
 
 .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 8px 14px;
-  border: 1px solid rgba(255,255,255,.14);
+  width: fit-content;
+  padding: 8px 15px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(64, 132, 255, .45);
   border-radius: 999px;
-  background: rgba(255,255,255,.045);
-  color: rgba(255,255,255,.72);
-  font-size: 12px;
+  background: rgba(7, 92, 255, .08);
+  color: rgba(255,255,255,.78);
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  box-shadow: 0 0 30px rgba(7,92,255,.16);
+  letter-spacing: 4px;
+  box-shadow: 0 0 30px rgba(7, 92, 255, .18);
 }
 
 h1 {
-  font-size: clamp(50px, 4.65vw, 78px);
-  line-height: .96;
-  letter-spacing: -3.4px;
+  font-size: clamp(58px, 5vw, 88px);
+  line-height: .94;
+  letter-spacing: -4px;
   font-weight: 850;
-  margin-bottom: 30px;
-  max-width: 740px;
-  text-shadow: 0 10px 35px rgba(0,0,0,.35);
+  margin-bottom: 34px;
+  text-shadow: 0 10px 35px rgba(0,0,0,.32);
 }
 
 h1 span {
-  display: block;
-}
-
-.headline-small {
-  display: inline-block !important;
-  font-size: .27em;
-  line-height: 1;
-  letter-spacing: .42em;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: rgba(255,255,255,.62);
-  margin: 12px 0 14px 5px;
-  text-shadow: none;
-}
-
-.headline-gradient {
-  width: fit-content;
-  padding-right: 8px;
-  background: linear-gradient(90deg, #ffffff 0%, #dbe8ff 32%, #7eadff 68%, #1767ff 100%);
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #d7e7ff 18%,
+    #8ab8ff 48%,
+    #156bff 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 20px rgba(42,117,255,.18));
+  filter: drop-shadow(0 0 18px rgba(0, 96, 255, .18));
 }
 
 .subtext {
-  font-size: clamp(21px, 1.55vw, 28px);
+  font-size: clamp(22px, 1.55vw, 28px);
   line-height: 1.4;
-  color: rgba(255,255,255,.86);
-  margin-bottom: 38px;
-  max-width: 600px;
+  color: rgba(255,255,255,.84);
+  margin-bottom: 42px;
 }
 
 .buttons {
   display: flex;
   gap: 24px;
-  margin-bottom: 52px;
+  margin-bottom: 76px;
 }
 
 .btn {
-  height: 60px;
-  min-width: 210px;
+  height: 62px;
+  min-width: 215px;
   padding: 0 32px;
-  border-radius: 9px;
+  border-radius: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 650;
   transition: all .25s ease;
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #075cff 0%, #1971ff 55%, #3b8cff 100%);
+  background: linear-gradient(135deg, #075cff 0%, #1674ff 100%);
   color: #ffffff;
-  box-shadow:
-    0 16px 45px rgba(0,80,255,.34),
-    inset 0 1px 0 rgba(255,255,255,.22);
+  box-shadow: 0 18px 50px rgba(0,80,255,.34);
 }
 
 .btn.primary:hover {
   transform: translateY(-2px);
-  box-shadow:
-    0 20px 55px rgba(0,80,255,.42),
-    inset 0 1px 0 rgba(255,255,255,.26);
 }
 
 .btn.primary span {
@@ -166,25 +147,20 @@ h1 span {
 
 .btn.secondary {
   color: rgba(255,255,255,.92);
-  border: 1px solid rgba(255,255,255,.24);
-  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.25);
+  background: rgba(255,255,255,.025);
   backdrop-filter: blur(8px);
 }
 
 .btn.secondary:hover {
   background: rgba(255,255,255,.07);
-  border-color: rgba(255,255,255,.34);
-}
-
-.brands {
-  margin-bottom: 42px;
 }
 
 .brands p {
   font-size: 13px;
   letter-spacing: 5px;
-  color: rgba(255,255,255,.56);
-  margin-bottom: 22px;
+  color: rgba(255,255,255,.55);
+  margin-bottom: 28px;
 }
 
 .brand-logos {
@@ -193,77 +169,20 @@ h1 span {
   gap: 38px;
   font-size: 25px;
   font-weight: 850;
-  text-shadow: 0 0 18px rgba(255,255,255,.08);
-}
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 650px;
-}
-
-.features > div {
-  padding-right: 28px;
-  border-right: 1px solid rgba(255,255,255,.11);
-}
-
-.features > div:last-child {
-  border-right: none;
-}
-
-.icon {
-  font-size: 28px;
-  margin-bottom: 13px;
-  opacity: .92;
-}
-
-.features h3 {
-  font-size: 20px;
-  line-height: 1.1;
-  margin-bottom: 11px;
-}
-
-.features p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: rgba(255,255,255,.60);
-}
-
-.laptop-signature {
-  display: none;
 }
 
 @media (max-width: 1400px) {
   .hero {
     background-size: 86% auto;
-    background-position: right top;
   }
 
-  .nav {
-    padding-left: 52px;
-  }
-
+  .nav,
   .hero-content {
     padding-left: 52px;
   }
 
-  .left {
-    max-width: 650px;
-  }
-
   h1 {
-    font-size: clamp(46px, 4.15vw, 66px);
-  }
-}
-
-@media (max-width: 1100px) {
-  .hero {
-    background-size: cover;
-    background-position: center top;
-  }
-
-  h1 {
-    font-size: 56px;
+    font-size: clamp(50px, 4.6vw, 74px);
   }
 }
 
@@ -290,22 +209,9 @@ h1 span {
     padding: 52px 24px 36px;
   }
 
-  .left {
-    max-width: 100%;
-  }
-
-  .eyebrow {
-    font-size: 10px;
-    letter-spacing: 2px;
-  }
-
   h1 {
-    font-size: 43px;
-    letter-spacing: -2px;
-  }
-
-  .headline-small {
-    font-size: .32em;
+    font-size: 46px;
+    letter-spacing: -2.2px;
   }
 
   .subtext {
@@ -315,6 +221,7 @@ h1 span {
   .buttons {
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 48px;
   }
 
   .btn {
@@ -324,14 +231,5 @@ h1 span {
   .brand-logos {
     flex-wrap: wrap;
     gap: 24px;
-  }
-
-  .features {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .features > div {
-    border-right: none;
   }
 }
