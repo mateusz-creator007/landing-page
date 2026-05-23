@@ -7,7 +7,7 @@
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   background: #050505;
-  color: #ffffff;
+  color: #fff;
 }
 
 .hero {
@@ -16,129 +16,126 @@ body {
   overflow: hidden;
   background-image: url("hero-graphic.png");
   background-size: cover;
-  background-position: center right;
+  background-position: center 12%;
+  background-repeat: no-repeat;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.72) 38%, rgba(0,0,0,0.18) 72%, rgba(0,0,0,0.04) 100%),
-    linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.58));
+    linear-gradient(90deg, rgba(0,0,0,.88) 0%, rgba(0,0,0,.72) 34%, rgba(0,0,0,.18) 68%, rgba(0,0,0,.04) 100%);
   z-index: 1;
 }
 
 .nav {
   position: relative;
   z-index: 2;
-  padding: 42px 54px;
+  padding: 42px 52px 0;
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: 18px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 7px;
 }
 
 .logo {
-  font-size: 32px;
-  line-height: 1;
+  font-size: 30px;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  min-height: calc(100vh - 120px);
-  padding: 52px 54px 44px;
+  padding: 82px 52px 42px;
 }
 
 .left {
-  max-width: 760px;
+  max-width: 650px;
 }
 
 h1 {
-  font-size: clamp(54px, 5.3vw, 92px);
-  line-height: 0.99;
-  letter-spacing: -4px;
+  font-size: clamp(48px, 4.4vw, 72px);
+  line-height: 1.08;
+  letter-spacing: -2.6px;
   font-weight: 850;
   margin-bottom: 32px;
 }
 
 .subtext {
-  font-size: clamp(24px, 2vw, 34px);
-  line-height: 1.35;
-  color: rgba(255,255,255,0.86);
-  font-weight: 400;
-  margin-bottom: 44px;
+  font-size: clamp(20px, 1.55vw, 27px);
+  line-height: 1.42;
+  color: rgba(255,255,255,.82);
+  margin-bottom: 46px;
+  max-width: 560px;
 }
 
 .buttons {
   display: flex;
-  gap: 28px;
-  margin-bottom: 74px;
+  gap: 30px;
+  margin-bottom: 72px;
 }
 
 .btn {
-  height: 68px;
+  height: 60px;
   min-width: 220px;
-  padding: 0 34px;
-  border-radius: 8px;
+  padding: 0 32px;
+  border-radius: 7px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 .btn.primary {
   background: #075cff;
-  color: white;
-  box-shadow: 0 16px 45px rgba(0, 80, 255, 0.35);
+  color: #fff;
 }
 
 .btn.primary span {
   margin-left: 16px;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .btn.secondary {
-  color: rgba(255,255,255,0.88);
-  border: 1px solid rgba(255,255,255,0.35);
-  background: rgba(255,255,255,0.03);
+  color: rgba(255,255,255,.88);
+  border: 1px solid rgba(255,255,255,.32);
+  background: rgba(255,255,255,.02);
 }
 
 .brands {
-  margin-bottom: 52px;
+  margin-bottom: 60px;
 }
 
 .brands p {
-  font-size: 15px;
-  letter-spacing: 6px;
-  color: rgba(255,255,255,0.62);
-  margin-bottom: 28px;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: rgba(255,255,255,.58);
+  margin-bottom: 26px;
 }
 
 .brand-logos {
   display: flex;
   align-items: center;
-  gap: 44px;
-  font-size: 28px;
+  gap: 42px;
+  font-size: 27px;
   font-weight: 800;
 }
 
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 660px;
+  max-width: 620px;
 }
 
 .features > div {
-  padding-right: 32px;
-  border-right: 1px solid rgba(255,255,255,0.18);
+  padding-right: 30px;
+  border-right: 1px solid rgba(255,255,255,.14);
 }
 
 .features > div:last-child {
@@ -146,71 +143,50 @@ h1 {
 }
 
 .icon {
-  font-size: 34px;
-  margin-bottom: 18px;
-  color: rgba(255,255,255,0.9);
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
 .features h3 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.1;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .features p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.55;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,.62);
 }
 
 .laptop-signature {
-  position: absolute;
-  right: 18.8%;
-  bottom: 23.5%;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 0 0 18px rgba(0,0,0,0.75);
-}
-
-.laptop-signature span {
-  display: block;
-  font-size: 19px;
-  font-weight: 500;
-  color: rgba(255,255,255,0.82);
-  margin-bottom: 10px;
-}
-
-.laptop-signature strong {
-  display: block;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: -0.5px;
+  display: none;
 }
 
 @media (max-width: 900px) {
   .hero {
-    background-position: center;
+    background-position: center top;
   }
 
   .overlay {
-    background: rgba(0,0,0,0.78);
+    background: rgba(0,0,0,.82);
   }
 
   .nav {
-    padding: 28px 24px;
+    padding: 28px 24px 0;
   }
 
   .hero-content {
-    padding: 38px 24px;
+    padding: 52px 24px 36px;
   }
 
   h1 {
-    font-size: 48px;
+    font-size: 44px;
     letter-spacing: -2px;
   }
 
   .subtext {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .buttons {
@@ -234,9 +210,5 @@ h1 {
 
   .features > div {
     border-right: none;
-  }
-
-  .laptop-signature {
-    display: none;
   }
 }
