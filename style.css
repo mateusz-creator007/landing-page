@@ -17,11 +17,11 @@ body {
 
   background-image: url("hero-graphic.png");
 
-  /* MNIEJSZA POSTAĆ */
-  background-size: 70% auto;
+  /* WIĘKSZY OBRAZ ŻEBY DOTYKAŁ PRAWEJ KRAWĘDZI */
+  background-size: 74% auto;
 
-  /* PRZESUNIĘCIE */
-  background-position: 92% top;
+  /* MAKSYMALNIE DO PRAWEJ */
+  background-position: right top;
 
   background-repeat: no-repeat;
   background-color: #050505;
@@ -31,7 +31,6 @@ body {
   position: absolute;
   inset: 0;
 
-  /* LEPSZE ŚWIATŁO NA TWARZY */
   background:
     linear-gradient(
       90deg,
@@ -47,7 +46,6 @@ body {
 .nav {
   position: relative;
   z-index: 2;
-
   padding: 42px 52px 0;
 }
 
@@ -76,7 +74,6 @@ body {
   max-width: 620px;
 }
 
-/* MNIEJSZY PREMIUM HEADLINE */
 h1 {
   font-size: clamp(42px, 3.7vw, 62px);
 
@@ -223,7 +220,8 @@ h1 {
 /* LAPTOPY */
 @media (max-width: 1400px) {
   .hero {
-    background-size: 82% auto;
+    background-size: 86% auto;
+    background-position: right top;
   }
 }
 
