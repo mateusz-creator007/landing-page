@@ -308,21 +308,21 @@ h1 span {
   letter-spacing: 4px;
   text-transform: uppercase;
 
-  color: rgba(255,255,255,.38);
+  color: rgba(255,255,255,.26);
 
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .laptop-signature strong {
   font-size: 22px;
   font-weight: 700;
-  letter-spacing: -.5px;
+  letter-spacing: -.6px;
 
-  color: rgba(255,255,255,.92);
+  color: rgba(230,235,245,.78);
 
   text-shadow:
-    0 0 12px rgba(255,255,255,.18),
-    0 0 24px rgba(0,80,255,.12);
+    0 0 10px rgba(255,255,255,.06),
+    0 0 18px rgba(0,80,255,.08);
 }
 
 /* RESPONSIVE */
