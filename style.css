@@ -326,7 +326,9 @@ h1 span {
   letter-spacing: -.5px;
 
   color: rgba(225,232,242,.52);
-
+ 
+  filter: blur(.15px);
+  
   text-shadow:
     0 0 8px rgba(255,255,255,.035),
     0 0 16px rgba(0,80,255,.05);
