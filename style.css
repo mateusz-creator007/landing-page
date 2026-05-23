@@ -14,6 +14,7 @@ body {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+
   background-image: url("hero-graphic.png");
   background-size: 74% auto;
   background-position: right top;
@@ -21,18 +22,33 @@ body {
   background-color: #050505;
 }
 
+/* PREMIUM LIGHTING */
 .overlay {
   position: absolute;
   inset: 0;
+
   background:
-    radial-gradient(circle at 18% 36%, rgba(0, 88, 255, .16), transparent 30%),
+    radial-gradient(
+      circle at 73% 76%,
+      rgba(255,255,255,.16) 0%,
+      rgba(255,255,255,.05) 16%,
+      transparent 34%
+    ),
+
+    radial-gradient(
+      circle at 18% 30%,
+      rgba(0,88,255,.15),
+      transparent 28%
+    ),
+
     linear-gradient(
       90deg,
-      rgba(0,0,0,.94) 0%,
-      rgba(0,0,0,.78) 30%,
-      rgba(0,0,0,.28) 58%,
+      rgba(0,0,0,.93) 0%,
+      rgba(0,0,0,.74) 30%,
+      rgba(0,0,0,.22) 58%,
       rgba(0,0,0,.02) 100%
     );
+
   z-index: 1;
 }
 
@@ -46,6 +62,7 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
+
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 7px;
@@ -63,77 +80,127 @@ body {
 }
 
 .left {
-  max-width: 690px;
+  max-width: 720px;
 }
 
+/* SMALL TOP BADGE */
 .eyebrow {
   width: fit-content;
-  padding: 8px 15px;
-  margin-bottom: 30px;
-  border: 1px solid rgba(64, 132, 255, .45);
+
+  padding: 8px 16px;
+
+  margin-bottom: 34px;
+
   border-radius: 999px;
-  background: rgba(7, 92, 255, .08);
+
+  border: 1px solid rgba(64,132,255,.32);
+
+  background: rgba(7,92,255,.06);
+
   color: rgba(255,255,255,.78);
-  font-size: 13px;
+
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 4px;
-  box-shadow: 0 0 30px rgba(7, 92, 255, .18);
+
+  box-shadow:
+    0 0 24px rgba(7,92,255,.12);
 }
 
+/* PREMIUM HEADLINE */
 h1 {
   font-size: clamp(58px, 5vw, 88px);
-  line-height: .94;
+
+  line-height: .93;
+
   letter-spacing: -4px;
+
   font-weight: 850;
+
   margin-bottom: 34px;
-  text-shadow: 0 10px 35px rgba(0,0,0,.32);
+
+  text-shadow:
+    0 8px 24px rgba(0,0,0,.28);
 }
 
 h1 span {
   display: inline-block;
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    #d7e7ff 18%,
-    #8ab8ff 48%,
-    #156bff 100%
-  );
+}
+
+/* WHITE */
+h1 .light {
+  color: #f5f7fb;
+}
+
+/* BLUE GRADIENT */
+h1 .blue {
+  background:
+    linear-gradient(
+      180deg,
+      #c9dcff 0%,
+      #4b8cff 52%,
+      #156bff 100%
+    );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 18px rgba(0, 96, 255, .18));
+
+  filter:
+    drop-shadow(0 0 18px rgba(21,107,255,.16));
 }
 
 .subtext {
   font-size: clamp(22px, 1.55vw, 28px);
-  line-height: 1.4;
+
+  line-height: 1.42;
+
   color: rgba(255,255,255,.84);
-  margin-bottom: 42px;
+
+  max-width: 620px;
+
+  margin-bottom: 44px;
 }
 
+/* BUTTONS */
 .buttons {
   display: flex;
   gap: 24px;
-  margin-bottom: 76px;
+
+  margin-bottom: 74px;
 }
 
 .btn {
   height: 62px;
-  min-width: 215px;
-  padding: 0 32px;
-  border-radius: 8px;
+  min-width: 220px;
+
+  padding: 0 34px;
+
+  border-radius: 10px;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   text-decoration: none;
+
   font-size: 20px;
   font-weight: 650;
+
   transition: all .25s ease;
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #075cff 0%, #1674ff 100%);
-  color: #ffffff;
-  box-shadow: 0 18px 50px rgba(0,80,255,.34);
+  background:
+    linear-gradient(
+      135deg,
+      #075cff 0%,
+      #1f74ff 100%
+    );
+
+  color: white;
+
+  box-shadow:
+    0 16px 45px rgba(0,80,255,.34);
 }
 
 .btn.primary:hover {
@@ -147,30 +214,44 @@ h1 span {
 
 .btn.secondary {
   color: rgba(255,255,255,.92);
-  border: 1px solid rgba(255,255,255,.25);
+
+  border: 1px solid rgba(255,255,255,.18);
+
   background: rgba(255,255,255,.025);
+
   backdrop-filter: blur(8px);
 }
 
 .btn.secondary:hover {
-  background: rgba(255,255,255,.07);
+  background: rgba(255,255,255,.06);
 }
 
+/* BRANDS */
 .brands p {
   font-size: 13px;
+
   letter-spacing: 5px;
-  color: rgba(255,255,255,.55);
+
+  color: rgba(255,255,255,.48);
+
   margin-bottom: 28px;
 }
 
 .brand-logos {
   display: flex;
   align-items: center;
-  gap: 38px;
-  font-size: 25px;
+  gap: 42px;
+
+  font-size: 26px;
   font-weight: 850;
 }
 
+/* REMOVE BADGE */
+.founder-tag {
+  display: none;
+}
+
+/* RESPONSIVE */
 @media (max-width: 1400px) {
   .hero {
     background-size: 86% auto;
@@ -211,7 +292,7 @@ h1 span {
 
   h1 {
     font-size: 46px;
-    letter-spacing: -2.2px;
+    letter-spacing: -2px;
   }
 
   .subtext {
@@ -221,6 +302,7 @@ h1 span {
   .buttons {
     flex-direction: column;
     gap: 16px;
+
     margin-bottom: 48px;
   }
 
@@ -232,102 +314,4 @@ h1 span {
     flex-wrap: wrap;
     gap: 24px;
   }
-}
-
-.founder-tag {
-  position: absolute;
-  right: 430px;
-  bottom: 150px;
-
-  z-index: 5;
-  pointer-events: none;
-
-  padding: 14px 22px;
-
-  border-radius: 18px;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255,255,255,.08),
-      rgba(255,255,255,.02)
-    );
-
-  border: 1px solid rgba(255,255,255,.08);
-
-  backdrop-filter: blur(14px);
-
-  box-shadow:
-    0 10px 40px rgba(0,0,0,.45),
-    inset 0 1px 0 rgba(255,255,255,.05);
-}
-
-.founder-tag::before {
-  content: "";
-
-  position: absolute;
-  inset: -1px;
-
-  border-radius: 18px;
-
-  padding: 1px;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(66,133,244,.55),
-      rgba(255,255,255,.04),
-      rgba(66,133,244,.18)
-    );
-
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-
-  -webkit-mask-composite: xor;
-          mask-composite: exclude;
-
-  opacity: .9;
-}
-
-.founder-tag span {
-  display: block;
-
-  font-size: 10px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-
-  font-weight: 700;
-
-  color: rgba(255,255,255,.42);
-
-  margin-bottom: 7px;
-
-  text-align: center;
-}
-
-.founder-tag strong {
-  display: block;
-
-  font-size: 24px;
-  line-height: 1;
-
-  font-weight: 750;
-
-  letter-spacing: -.8px;
-
-  text-align: center;
-
-  background:
-    linear-gradient(
-      180deg,
-      #ffffff 0%,
-      #d7e6ff 100%
-    );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  text-shadow:
-    0 0 22px rgba(66,133,244,.18);
 }
