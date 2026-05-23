@@ -258,57 +258,65 @@ h1 span {
 .laptop-signature {
   position: absolute;
 
-  /* TU JEST CAŁA POPRAWKA */
-  right: 420px;
-  bottom: 150px;
+  right: 245px;
+  bottom: 145px;
 
-  z-index: 5;
+  z-index: 4;
 
   text-align: center;
 
-  pointer-events: none;
+  padding: 18px 28px;
 
-  opacity: .96;
+  border-radius: 18px;
 
-  mix-blend-mode: screen;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.03),
+      rgba(255,255,255,.01)
+    );
 
-  transform:
-    perspective(1200px)
-    rotateX(7deg);
+  backdrop-filter: blur(3px);
 
-  user-select: none;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.05),
+    0 10px 30px rgba(0,0,0,.18);
+
+  overflow: hidden;
 }
 
+/* SUBTELNY GLASS REFLECTION */
 .laptop-signature::before {
   content: "";
 
   position: absolute;
 
-  inset: -16px -24px;
+  top: -40%;
+  left: -20%;
 
-  border-radius: 18px;
+  width: 70%;
+  height: 220%;
 
-  background:
-    radial-gradient(
-      circle,
-      rgba(255,255,255,.07) 0%,
-      rgba(0,80,255,.04) 42%,
-      transparent 75%
-    );
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.06),
+    transparent
+  );
 
-  filter: blur(14px);
+  transform: rotate(22deg);
 
-  z-index: -1;
+  pointer-events: none;
 }
 
 .laptop-signature span {
   display: block;
 
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: 4px;
   text-transform: uppercase;
 
-  color: rgba(255,255,255,.26);
+  color: rgba(255,255,255,.28);
 
   margin-bottom: 5px;
 }
@@ -318,13 +326,12 @@ h1 span {
   font-weight: 700;
   letter-spacing: -.6px;
 
-  color: rgba(230,235,245,.78);
+  color: rgba(235,240,248,.78);
 
   text-shadow:
-    0 0 10px rgba(255,255,255,.06),
-    0 0 18px rgba(0,80,255,.08);
+    0 0 10px rgba(255,255,255,.04),
+    0 0 20px rgba(0,80,255,.05);
 }
-
 /* RESPONSIVE */
 
 @media (max-width: 1400px) {
