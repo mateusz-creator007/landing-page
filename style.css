@@ -16,8 +16,13 @@ body {
   overflow: hidden;
 
   background-image: url("hero-graphic.png");
-  background-size: 88% auto;
-  background-position: center top;
+
+  /* ZMNIEJSZENIE OBRAZU */
+  background-size: 76% auto;
+
+  /* PRZESUNIĘCIE W PRAWO I DO GÓRY */
+  background-position: 92% top;
+
   background-repeat: no-repeat;
   background-color: #050505;
 }
@@ -29,10 +34,10 @@ body {
   background:
     linear-gradient(
       90deg,
-      rgba(0,0,0,.90) 0%,
-      rgba(0,0,0,.74) 34%,
-      rgba(0,0,0,.22) 64%,
-      rgba(0,0,0,.06) 100%
+      rgba(0,0,0,.92) 0%,
+      rgba(0,0,0,.78) 32%,
+      rgba(0,0,0,.28) 62%,
+      rgba(0,0,0,.08) 100%
     );
 
   z-index: 1;
@@ -41,6 +46,7 @@ body {
 .nav {
   position: relative;
   z-index: 2;
+
   padding: 42px 52px 0;
 }
 
@@ -199,7 +205,8 @@ h1 {
 
 @media (max-width: 1400px) {
   .hero {
-    background-size: 98% auto;
+    background-size: 92% auto;
+    background-position: right top;
   }
 }
 
