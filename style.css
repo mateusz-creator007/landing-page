@@ -259,8 +259,8 @@ h1 span {
   position: absolute;
 
   /* przesunięte na środek laptopa */
- right: 365px;
-  bottom: 122px;
+ right: 350px;
+  bottom: 132px;
 
   z-index: 5;
 
