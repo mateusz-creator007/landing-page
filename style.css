@@ -252,3 +252,97 @@ h1 span {
     gap: 24px;
   }
 }
+
+/* LAPTOP BRANDING */
+
+.laptop-signature {
+  position: absolute;
+
+  right: 315px;
+  bottom: 150px;
+
+  z-index: 5;
+
+  text-align: center;
+
+  pointer-events: none;
+
+  opacity: .96;
+
+  mix-blend-mode: screen;
+
+  transform:
+    perspective(1200px)
+    rotateX(7deg);
+
+  user-select: none;
+}
+
+.laptop-signature::before {
+  content: "";
+
+  position: absolute;
+
+  inset: -16px -24px;
+
+  border-radius: 18px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.07) 0%,
+      rgba(0,80,255,.04) 42%,
+      transparent 75%
+    );
+
+  filter: blur(14px);
+
+  z-index: -1;
+}
+
+.laptop-signature span {
+  display: block;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  color: rgba(255,255,255,.36);
+
+  margin-bottom: 5px;
+}
+
+.laptop-signature strong {
+  display: block;
+
+  font-size: 24px;
+
+  font-weight: 760;
+
+  letter-spacing: -.6px;
+
+  color: rgba(255,255,255,.97);
+
+  text-shadow:
+    0 0 12px rgba(255,255,255,.10),
+    0 0 28px rgba(0,80,255,.18);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1400px) {
+  .laptop-signature {
+    right: 245px;
+    bottom: 128px;
+  }
+}
+
+@media (max-width: 900px) {
+  .laptop-signature {
+    display: none;
+  }
+}
