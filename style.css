@@ -16,13 +16,8 @@ body {
   overflow: hidden;
 
   background-image: url("hero-graphic.png");
-
-  /* WIĘKSZY OBRAZ ŻEBY DOTYKAŁ PRAWEJ KRAWĘDZI */
   background-size: 74% auto;
-
-  /* MAKSYMALNIE DO PRAWEJ */
   background-position: right top;
-
   background-repeat: no-repeat;
   background-color: #050505;
 }
@@ -35,8 +30,8 @@ body {
     linear-gradient(
       90deg,
       rgba(0,0,0,.92) 0%,
-      rgba(0,0,0,.70) 30%,
-      rgba(0,0,0,.16) 58%,
+      rgba(0,0,0,.72) 28%,
+      rgba(0,0,0,.22) 56%,
       rgba(0,0,0,.02) 100%
     );
 
@@ -46,7 +41,7 @@ body {
 .nav {
   position: relative;
   z-index: 2;
-  padding: 42px 52px 0;
+  padding: 42px 52px 0 72px;
 }
 
 .brand {
@@ -67,48 +62,40 @@ body {
   position: relative;
   z-index: 2;
 
-  padding: 82px 52px 42px;
+  padding: 76px 52px 42px 72px;
 }
 
 .left {
-  max-width: 620px;
+  max-width: 700px;
 }
 
 h1 {
-  font-size: clamp(42px, 3.7vw, 62px);
-
-  line-height: 1.05;
-  letter-spacing: -2.4px;
+  font-size: clamp(48px, 4.35vw, 74px);
+  line-height: 1.035;
+  letter-spacing: -2.8px;
   font-weight: 850;
 
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .subtext {
-  font-size: clamp(20px, 1.45vw, 26px);
-
-  line-height: 1.42;
-
-  color: rgba(255,255,255,.84);
-
-  margin-bottom: 42px;
-
-  max-width: 540px;
+  font-size: clamp(21px, 1.55vw, 28px);
+  line-height: 1.4;
+  color: rgba(255,255,255,.86);
+  margin-bottom: 40px;
+  max-width: 600px;
 }
 
 .buttons {
   display: flex;
   gap: 24px;
-
-  margin-bottom: 64px;
+  margin-bottom: 58px;
 }
 
 .btn {
-  height: 58px;
-  min-width: 205px;
-
-  padding: 0 30px;
-
+  height: 60px;
+  min-width: 210px;
+  padding: 0 32px;
   border-radius: 7px;
 
   display: inline-flex;
@@ -116,7 +103,6 @@ h1 {
   justify-content: center;
 
   text-decoration: none;
-
   font-size: 20px;
   font-weight: 500;
 
@@ -126,8 +112,7 @@ h1 {
 .btn.primary {
   background: #075cff;
   color: #ffffff;
-
-  box-shadow: 0 14px 40px rgba(0,80,255,.22);
+  box-shadow: 0 14px 40px rgba(0,80,255,.24);
 }
 
 .btn.primary:hover {
@@ -140,29 +125,24 @@ h1 {
 }
 
 .btn.secondary {
-  color: rgba(255,255,255,.90);
-
-  border: 1px solid rgba(255,255,255,.24);
-
-  background: rgba(255,255,255,.02);
+  color: rgba(255,255,255,.92);
+  border: 1px solid rgba(255,255,255,.26);
+  background: rgba(255,255,255,.025);
 }
 
 .btn.secondary:hover {
-  background: rgba(255,255,255,.05);
+  background: rgba(255,255,255,.06);
 }
 
 .brands {
-  margin-bottom: 52px;
+  margin-bottom: 46px;
 }
 
 .brands p {
   font-size: 13px;
-
   letter-spacing: 5px;
-
-  color: rgba(255,255,255,.56);
-
-  margin-bottom: 24px;
+  color: rgba(255,255,255,.58);
+  margin-bottom: 22px;
 }
 
 .brand-logos {
@@ -177,14 +157,12 @@ h1 {
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-  max-width: 620px;
+  max-width: 650px;
 }
 
 .features > div {
   padding-right: 28px;
-
-  border-right: 1px solid rgba(255,255,255,.10);
+  border-right: 1px solid rgba(255,255,255,.11);
 }
 
 .features > div:last-child {
@@ -193,24 +171,20 @@ h1 {
 
 .icon {
   font-size: 28px;
-
-  margin-bottom: 14px;
-
+  margin-bottom: 13px;
   opacity: .92;
 }
 
 .features h3 {
   font-size: 20px;
   line-height: 1.1;
-
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .features p {
   font-size: 14px;
-  line-height: 1.55;
-
-  color: rgba(255,255,255,.58);
+  line-height: 1.5;
+  color: rgba(255,255,255,.60);
 }
 
 .laptop-signature {
@@ -222,6 +196,22 @@ h1 {
   .hero {
     background-size: 86% auto;
     background-position: right top;
+  }
+
+  .nav {
+    padding-left: 52px;
+  }
+
+  .hero-content {
+    padding-left: 52px;
+  }
+
+  .left {
+    max-width: 640px;
+  }
+
+  h1 {
+    font-size: clamp(44px, 4vw, 64px);
   }
 }
 
