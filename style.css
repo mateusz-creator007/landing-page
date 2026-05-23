@@ -258,7 +258,8 @@ h1 span {
 .laptop-signature {
   position: absolute;
 
-  right: 315px;
+  /* TU JEST CAŁA POPRAWKA */
+  right: 420px;
   bottom: 150px;
 
   z-index: 5;
