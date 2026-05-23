@@ -14,15 +14,9 @@ body {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-
   background-image: url("hero-graphic.png");
-
-  /* MNIEJSZA POSTAĆ */
-  background-size: 70% auto;
-
-  /* PRZESUNIĘCIE */
-  background-position: 92% top;
-
+  background-size: 78% auto;
+  background-position: 100% top;
   background-repeat: no-repeat;
   background-color: #050505;
 }
@@ -30,32 +24,27 @@ body {
 .overlay {
   position: absolute;
   inset: 0;
-
-  /* LEPSZE ŚWIATŁO NA TWARZY */
   background:
     linear-gradient(
       90deg,
-      rgba(0,0,0,.92) 0%,
-      rgba(0,0,0,.70) 30%,
-      rgba(0,0,0,.16) 58%,
-      rgba(0,0,0,.02) 100%
+      rgba(0,0,0,.94) 0%,
+      rgba(0,0,0,.82) 31%,
+      rgba(0,0,0,.38) 55%,
+      rgba(0,0,0,.08) 100%
     );
-
   z-index: 1;
 }
 
 .nav {
   position: relative;
   z-index: 2;
-
-  padding: 42px 52px 0;
+  padding: 40px 50px 0;
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: 18px;
-
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 7px;
@@ -68,73 +57,52 @@ body {
 .hero-content {
   position: relative;
   z-index: 2;
-
-  padding: 82px 52px 42px;
+  padding: 70px 50px 34px;
 }
 
 .left {
-  max-width: 620px;
+  max-width: 590px;
 }
 
-/* MNIEJSZY PREMIUM HEADLINE */
 h1 {
-  font-size: clamp(42px, 3.7vw, 62px);
-
-  line-height: 1.05;
-  letter-spacing: -2.4px;
+  font-size: clamp(40px, 3.45vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -2.1px;
   font-weight: 850;
-
   margin-bottom: 28px;
 }
 
 .subtext {
-  font-size: clamp(20px, 1.45vw, 26px);
-
+  font-size: clamp(19px, 1.25vw, 23px);
   line-height: 1.42;
-
   color: rgba(255,255,255,.84);
-
-  margin-bottom: 42px;
-
-  max-width: 540px;
+  margin-bottom: 38px;
+  max-width: 510px;
 }
 
 .buttons {
   display: flex;
-  gap: 24px;
-
-  margin-bottom: 64px;
+  gap: 22px;
+  margin-bottom: 54px;
 }
 
 .btn {
-  height: 58px;
-  min-width: 205px;
-
-  padding: 0 30px;
-
+  height: 56px;
+  min-width: 190px;
+  padding: 0 28px;
   border-radius: 7px;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   text-decoration: none;
-
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
-
-  transition: all .25s ease;
 }
 
 .btn.primary {
   background: #075cff;
   color: #ffffff;
-
   box-shadow: 0 14px 40px rgba(0,80,255,.22);
-}
-
-.btn.primary:hover {
-  transform: translateY(-2px);
 }
 
 .btn.primary span {
@@ -144,49 +112,37 @@ h1 {
 
 .btn.secondary {
   color: rgba(255,255,255,.90);
-
   border: 1px solid rgba(255,255,255,.24);
-
   background: rgba(255,255,255,.02);
 }
 
-.btn.secondary:hover {
-  background: rgba(255,255,255,.05);
-}
-
 .brands {
-  margin-bottom: 52px;
+  margin-bottom: 46px;
 }
 
 .brands p {
-  font-size: 13px;
-
-  letter-spacing: 5px;
-
+  font-size: 12px;
+  letter-spacing: 4.6px;
   color: rgba(255,255,255,.56);
-
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .brand-logos {
   display: flex;
   align-items: center;
-  gap: 38px;
-
-  font-size: 25px;
+  gap: 34px;
+  font-size: 23px;
   font-weight: 800;
 }
 
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
-  max-width: 620px;
+  max-width: 560px;
 }
 
 .features > div {
-  padding-right: 28px;
-
+  padding-right: 24px;
   border-right: 1px solid rgba(255,255,255,.10);
 }
 
@@ -195,24 +151,20 @@ h1 {
 }
 
 .icon {
-  font-size: 28px;
-
-  margin-bottom: 14px;
-
+  font-size: 25px;
+  margin-bottom: 12px;
   opacity: .92;
 }
 
 .features h3 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.1;
-
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .features p {
-  font-size: 14px;
-  line-height: 1.55;
-
+  font-size: 13px;
+  line-height: 1.5;
   color: rgba(255,255,255,.58);
 }
 
@@ -220,14 +172,17 @@ h1 {
   display: none;
 }
 
-/* LAPTOPY */
 @media (max-width: 1400px) {
   .hero {
-    background-size: 82% auto;
+    background-size: 86% auto;
+    background-position: 100% top;
+  }
+
+  h1 {
+    font-size: clamp(39px, 3.7vw, 56px);
   }
 }
 
-/* TABLETY */
 @media (max-width: 1100px) {
   .hero {
     background-size: cover;
@@ -235,11 +190,10 @@ h1 {
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 52px;
   }
 }
 
-/* MOBILE */
 @media (max-width: 900px) {
   .hero {
     background-size: cover;
