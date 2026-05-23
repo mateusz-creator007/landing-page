@@ -14,17 +14,27 @@ body {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+
   background-image: url("hero-graphic.png");
-  background-size: cover;
-  background-position: center 12%;
+  background-size: 88% auto;
+  background-position: center top;
   background-repeat: no-repeat;
+  background-color: #050505;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
+
   background:
-    linear-gradient(90deg, rgba(0,0,0,.88) 0%, rgba(0,0,0,.72) 34%, rgba(0,0,0,.18) 68%, rgba(0,0,0,.04) 100%);
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.90) 0%,
+      rgba(0,0,0,.74) 34%,
+      rgba(0,0,0,.22) 64%,
+      rgba(0,0,0,.06) 100%
+    );
+
   z-index: 1;
 }
 
@@ -38,6 +48,7 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
+
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 7px;
@@ -50,6 +61,7 @@ body {
 .hero-content {
   position: relative;
   z-index: 2;
+
   padding: 82px 52px 42px;
 }
 
@@ -58,36 +70,45 @@ body {
 }
 
 h1 {
-  font-size: clamp(48px, 4.4vw, 72px);
-  line-height: 1.08;
-  letter-spacing: -2.6px;
+  font-size: clamp(46px, 4.2vw, 70px);
+  line-height: 1.06;
+  letter-spacing: -2.5px;
   font-weight: 850;
-  margin-bottom: 32px;
+
+  margin-bottom: 30px;
 }
 
 .subtext {
-  font-size: clamp(20px, 1.55vw, 27px);
+  font-size: clamp(20px, 1.5vw, 27px);
   line-height: 1.42;
+
   color: rgba(255,255,255,.82);
-  margin-bottom: 46px;
+
+  margin-bottom: 44px;
   max-width: 560px;
 }
 
 .buttons {
   display: flex;
-  gap: 30px;
-  margin-bottom: 72px;
+  gap: 28px;
+
+  margin-bottom: 66px;
 }
 
 .btn {
-  height: 60px;
-  min-width: 220px;
-  padding: 0 32px;
+  height: 58px;
+  min-width: 210px;
+
+  padding: 0 30px;
+
   border-radius: 7px;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   text-decoration: none;
+
   font-size: 20px;
   font-weight: 500;
 }
@@ -95,47 +116,57 @@ h1 {
 .btn.primary {
   background: #075cff;
   color: #fff;
+
+  box-shadow: 0 14px 40px rgba(0,80,255,.25);
 }
 
 .btn.primary span {
-  margin-left: 16px;
-  font-size: 25px;
+  margin-left: 14px;
+  font-size: 24px;
 }
 
 .btn.secondary {
   color: rgba(255,255,255,.88);
-  border: 1px solid rgba(255,255,255,.32);
+
+  border: 1px solid rgba(255,255,255,.28);
+
   background: rgba(255,255,255,.02);
 }
 
 .brands {
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 }
 
 .brands p {
-  font-size: 14px;
+  font-size: 13px;
+
   letter-spacing: 5px;
+
   color: rgba(255,255,255,.58);
-  margin-bottom: 26px;
+
+  margin-bottom: 24px;
 }
 
 .brand-logos {
   display: flex;
   align-items: center;
-  gap: 42px;
-  font-size: 27px;
+  gap: 38px;
+
+  font-size: 25px;
   font-weight: 800;
 }
 
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   max-width: 620px;
 }
 
 .features > div {
-  padding-right: 30px;
-  border-right: 1px solid rgba(255,255,255,.14);
+  padding-right: 28px;
+
+  border-right: 1px solid rgba(255,255,255,.12);
 }
 
 .features > div:last-child {
@@ -143,28 +174,49 @@ h1 {
 }
 
 .icon {
-  font-size: 30px;
-  margin-bottom: 15px;
+  font-size: 28px;
+
+  margin-bottom: 14px;
 }
 
 .features h3 {
   font-size: 20px;
   line-height: 1.1;
-  margin-bottom: 14px;
+
+  margin-bottom: 12px;
 }
 
 .features p {
   font-size: 14px;
   line-height: 1.55;
-  color: rgba(255,255,255,.62);
+
+  color: rgba(255,255,255,.60);
 }
 
 .laptop-signature {
   display: none;
 }
 
+@media (max-width: 1400px) {
+  .hero {
+    background-size: 98% auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero {
+    background-size: cover;
+    background-position: center top;
+  }
+
+  h1 {
+    font-size: 58px;
+  }
+}
+
 @media (max-width: 900px) {
   .hero {
+    background-size: cover;
     background-position: center top;
   }
 
@@ -176,8 +228,17 @@ h1 {
     padding: 28px 24px 0;
   }
 
+  .brand {
+    font-size: 13px;
+    letter-spacing: 5px;
+  }
+
   .hero-content {
     padding: 52px 24px 36px;
+  }
+
+  .left {
+    max-width: 100%;
   }
 
   h1 {
