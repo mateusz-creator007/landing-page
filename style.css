@@ -305,32 +305,24 @@ h1 span {
   display: block;
 
   font-size: 10px;
-
-  font-weight: 600;
-
   letter-spacing: 4px;
-
   text-transform: uppercase;
 
-  color: rgba(255,255,255,.36);
+  color: rgba(255,255,255,.38);
 
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .laptop-signature strong {
-  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -.5px;
 
-  font-size: 24px;
-
-  font-weight: 760;
-
-  letter-spacing: -.6px;
-
-  color: rgba(255,255,255,.97);
+  color: rgba(255,255,255,.92);
 
   text-shadow:
-    0 0 12px rgba(255,255,255,.10),
-    0 0 28px rgba(0,80,255,.18);
+    0 0 12px rgba(255,255,255,.18),
+    0 0 24px rgba(0,80,255,.12);
 }
 
 /* RESPONSIVE */
