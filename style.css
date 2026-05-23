@@ -25,11 +25,12 @@ body {
   position: absolute;
   inset: 0;
   background:
+    radial-gradient(circle at 20% 22%, rgba(20, 92, 255, .18), transparent 28%),
     linear-gradient(
       90deg,
-      rgba(0,0,0,.92) 0%,
-      rgba(0,0,0,.72) 28%,
-      rgba(0,0,0,.22) 56%,
+      rgba(0,0,0,.94) 0%,
+      rgba(0,0,0,.76) 30%,
+      rgba(0,0,0,.25) 56%,
       rgba(0,0,0,.02) 100%
     );
   z-index: 1;
@@ -57,20 +58,37 @@ body {
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 76px 52px 42px 72px;
+  padding: 64px 52px 42px 72px;
 }
 
 .left {
-  max-width: 700px;
+  max-width: 720px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 999px;
+  background: rgba(255,255,255,.045);
+  color: rgba(255,255,255,.72);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  box-shadow: 0 0 30px rgba(7,92,255,.16);
 }
 
 h1 {
-  font-size: clamp(46px, 4vw, 68px);
-  line-height: 1.04;
-  letter-spacing: -2.6px;
+  font-size: clamp(50px, 4.65vw, 78px);
+  line-height: .96;
+  letter-spacing: -3.4px;
   font-weight: 850;
   margin-bottom: 30px;
-  max-width: 680px;
+  max-width: 740px;
+  text-shadow: 0 10px 35px rgba(0,0,0,.35);
 }
 
 h1 span {
@@ -78,51 +96,67 @@ h1 span {
 }
 
 .headline-small {
-  font-size: 0.42em;
+  display: inline-block !important;
+  font-size: .27em;
   line-height: 1;
-  letter-spacing: 0.12em;
+  letter-spacing: .42em;
   text-transform: uppercase;
-  font-weight: 650;
-  color: rgba(255,255,255,.72);
-  margin: 8px 0 10px 6px;
+  font-weight: 800;
+  color: rgba(255,255,255,.62);
+  margin: 12px 0 14px 5px;
+  text-shadow: none;
+}
+
+.headline-gradient {
+  width: fit-content;
+  padding-right: 8px;
+  background: linear-gradient(90deg, #ffffff 0%, #dbe8ff 32%, #7eadff 68%, #1767ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(42,117,255,.18));
 }
 
 .subtext {
   font-size: clamp(21px, 1.55vw, 28px);
   line-height: 1.4;
   color: rgba(255,255,255,.86);
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   max-width: 600px;
 }
 
 .buttons {
   display: flex;
   gap: 24px;
-  margin-bottom: 58px;
+  margin-bottom: 52px;
 }
 
 .btn {
   height: 60px;
   min-width: 210px;
   padding: 0 32px;
-  border-radius: 7px;
+  border-radius: 9px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   transition: all .25s ease;
 }
 
 .btn.primary {
-  background: #075cff;
+  background: linear-gradient(135deg, #075cff 0%, #1971ff 55%, #3b8cff 100%);
   color: #ffffff;
-  box-shadow: 0 14px 40px rgba(0,80,255,.24);
+  box-shadow:
+    0 16px 45px rgba(0,80,255,.34),
+    inset 0 1px 0 rgba(255,255,255,.22);
 }
 
 .btn.primary:hover {
   transform: translateY(-2px);
+  box-shadow:
+    0 20px 55px rgba(0,80,255,.42),
+    inset 0 1px 0 rgba(255,255,255,.26);
 }
 
 .btn.primary span {
@@ -132,22 +166,24 @@ h1 span {
 
 .btn.secondary {
   color: rgba(255,255,255,.92);
-  border: 1px solid rgba(255,255,255,.26);
-  background: rgba(255,255,255,.025);
+  border: 1px solid rgba(255,255,255,.24);
+  background: rgba(255,255,255,.035);
+  backdrop-filter: blur(8px);
 }
 
 .btn.secondary:hover {
-  background: rgba(255,255,255,.06);
+  background: rgba(255,255,255,.07);
+  border-color: rgba(255,255,255,.34);
 }
 
 .brands {
-  margin-bottom: 46px;
+  margin-bottom: 42px;
 }
 
 .brands p {
   font-size: 13px;
   letter-spacing: 5px;
-  color: rgba(255,255,255,.58);
+  color: rgba(255,255,255,.56);
   margin-bottom: 22px;
 }
 
@@ -156,7 +192,8 @@ h1 span {
   align-items: center;
   gap: 38px;
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 850;
+  text-shadow: 0 0 18px rgba(255,255,255,.08);
 }
 
 .features {
@@ -211,11 +248,11 @@ h1 span {
   }
 
   .left {
-    max-width: 640px;
+    max-width: 650px;
   }
 
   h1 {
-    font-size: clamp(44px, 4vw, 64px);
+    font-size: clamp(46px, 4.15vw, 66px);
   }
 }
 
@@ -237,7 +274,7 @@ h1 span {
   }
 
   .overlay {
-    background: rgba(0,0,0,.82);
+    background: rgba(0,0,0,.84);
   }
 
   .nav {
@@ -257,9 +294,18 @@ h1 span {
     max-width: 100%;
   }
 
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
   h1 {
-    font-size: 42px;
+    font-size: 43px;
     letter-spacing: -2px;
+  }
+
+  .headline-small {
+    font-size: .32em;
   }
 
   .subtext {
