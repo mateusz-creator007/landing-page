@@ -209,19 +209,19 @@ h1 span {
   position: absolute;
 
   left: 48%;
-  top: 47%;
+  top: 46%;
 
-  width: 38%;
+  width: 46%;
 
   transform:
     translate(-50%, -50%)
-    perspective(800px)
+    perspective(900px)
     rotateX(2deg)
-    rotateY(-8deg);
+    rotateY(-9deg);
 
-  text-align: center;
+  text-align: left;
 
-  opacity: .88;
+  opacity: .96;
 
   pointer-events: none;
   user-select: none;
@@ -231,32 +231,38 @@ h1 span {
   display: block;
 
   font-size: 8px;
-  letter-spacing: 2.4px;
+  letter-spacing: 2.2px;
   font-weight: 800;
 
-  color: rgba(255,255,255,.78);
+  color: rgba(255,255,255,.86);
 
-  margin-bottom: 4px;
+  margin-bottom: 5px;
+
+  text-transform: uppercase;
 
   text-shadow:
-    0 0 4px rgba(255,255,255,.18),
-    0 0 10px rgba(255,255,255,.08);
+    0 0 3px rgba(255,255,255,.28),
+    0 0 8px rgba(255,255,255,.12);
 
-  filter: blur(.08px);
+  filter: blur(.04px);
 }
 
 .mug-text strong {
   display: block;
 
   font-size: 16px;
-  font-weight: 800;
+  line-height: 1;
+  font-weight: 850;
 
-  color: rgba(255,255,255,.92);
+  letter-spacing: -.2px;
+
+  color: rgba(255,255,255,.96);
 
   text-shadow:
-    0 0 8px rgba(255,255,255,.16);
+    0 0 4px rgba(255,255,255,.24),
+    0 0 10px rgba(255,255,255,.10);
 
-  filter: blur(.12px);
+  filter: blur(.04px);
 }
 
 @media (max-width: 1400px) {
