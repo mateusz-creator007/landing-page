@@ -207,36 +207,36 @@ h1 span {
 
 .mug-text {
   position: absolute;
-  left: 43%;
-  top: 52%;
-  width: 44%;
+  left: 38%;
+  top: 45%;
+  width: 34%;
 
   transform:
     translate(-50%, -50%)
-    perspective(700px)
-    rotateX(3deg)
-    rotateY(-8deg);
+    perspective(800px)
+    rotateX(2deg)
+    rotateY(-10deg);
 
   text-align: center;
-  opacity: .88;
+  opacity: .74;
 }
 
 .mug-text span {
   display: block;
-  font-size: 9px;
-  letter-spacing: 2.4px;
+  font-size: 6px;
+  letter-spacing: 1.7px;
   font-weight: 700;
-  color: rgba(255,255,255,.58);
-  margin-bottom: 4px;
-  filter: blur(.2px);
+  color: rgba(255,255,255,.48);
+  margin-bottom: 3px;
+  filter: blur(.22px);
 }
 
 .mug-text strong {
   display: block;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 800;
-  color: rgba(255,255,255,.82);
-  filter: blur(.16px);
+  color: rgba(255,255,255,.68);
+  filter: blur(.18px);
 }
 
 @media (max-width: 1400px) {
