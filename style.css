@@ -242,6 +242,7 @@ h1 span {
   font-weight: 850;
 }
 
+
 /* FOUNDER MUG */
 
 .hero-mug {
@@ -280,10 +281,10 @@ h1 span {
 .mug-text {
   position: absolute;
 
-  left: 52%;
+  left: 50%;
   top: 45%;
 
-  width: 44%;
+  width: 42%;
 
   transform:
     translate(-50%, -50%)
@@ -315,12 +316,12 @@ h1 span {
   font-size: 11px;
   line-height: 1;
 
-  letter-spacing: 2.2px;
+  letter-spacing: 2px;
   font-weight: 850;
 
   color: rgba(255,255,255,.82);
 
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 
   text-transform: uppercase;
 
@@ -334,19 +335,30 @@ h1 span {
 }
 
 
-/* MATEUSZ BOJAR */
+/* NAME */
 
 .mug-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 0px;
+
+  transform:
+    perspective(800px)
+    rotateX(7deg)
+    scaleX(.96);
+}
+
+
+/* COMMON */
+
+.mug-line {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 
-  gap: 1px;
-
   white-space: nowrap;
-
-  font-size: 18px;
-  line-height: 1;
 
   font-weight: 900;
 
@@ -361,75 +373,85 @@ h1 span {
 
   filter: blur(.02px);
 
-  transform:
-    perspective(800px)
-    rotateX(7deg)
-    scaleX(.96);
+  font-family:
+    "SF Pro Display",
+    "Inter",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
 }
 
-
-/* LETTERS */
-
-.mug-name span {
+.mug-line span {
   display: inline-block;
 }
 
 
-/* CURVE */
+/* TOP */
 
-.mug-name span:nth-child(1)  {
+.mug-line-top {
+  font-size: 18px;
+  line-height: .9;
+  margin-bottom: -3px;
+}
+
+.mug-line-top span:nth-child(1) {
   transform: translateY(5px) rotate(-7deg);
 }
 
-.mug-name span:nth-child(2)  {
+.mug-line-top span:nth-child(2) {
   transform: translateY(3px) rotate(-5deg);
 }
 
-.mug-name span:nth-child(3)  {
+.mug-line-top span:nth-child(3) {
   transform: translateY(2px) rotate(-3deg);
 }
 
-.mug-name span:nth-child(4)  {
+.mug-line-top span:nth-child(4) {
   transform: translateY(1px) rotate(-1deg);
 }
 
-.mug-name span:nth-child(5)  {
+.mug-line-top span:nth-child(5) {
+  transform: translateY(1px) rotate(1deg);
+}
+
+.mug-line-top span:nth-child(6) {
+  transform: translateY(2px) rotate(3deg);
+}
+
+.mug-line-top span:nth-child(7) {
+  transform: translateY(4px) rotate(6deg);
+}
+
+
+/* BOTTOM */
+
+.mug-line-bottom {
+  font-size: 16px;
+  line-height: .9;
+}
+
+.mug-line-bottom span:nth-child(1) {
+  transform: translateY(3px) rotate(-5deg);
+}
+
+.mug-line-bottom span:nth-child(2) {
+  transform: translateY(1px) rotate(-2deg);
+}
+
+.mug-line-bottom span:nth-child(3) {
   transform: translateY(0px) rotate(0deg);
 }
 
-.mug-name span:nth-child(6)  {
-  transform: translateY(0px) rotate(1deg);
+.mug-line-bottom span:nth-child(4) {
+  transform: translateY(1px) rotate(2deg);
 }
 
-.mug-name span:nth-child(7)  {
-  transform: translateY(1px) rotate(3deg);
-}
-
-.mug-name span:nth-child(8)  {
-  transform: translateY(2px) rotate(4deg);
-  margin-right: 3px;
-}
-
-.mug-name span:nth-child(9)  {
-  transform: translateY(1px) rotate(-3deg);
-}
-
-.mug-name span:nth-child(10) {
-  transform: translateY(0px) rotate(-1deg);
-}
-
-.mug-name span:nth-child(11) {
-  transform: translateY(0px) rotate(1deg);
-}
-
-.mug-name span:nth-child(12) {
-  transform: translateY(1px) rotate(3deg);
-}
-
-.mug-name span:nth-child(13) {
+.mug-line-bottom span:nth-child(5) {
   transform: translateY(3px) rotate(5deg);
 }
 
+
+/* RESPONSIVE */
 
 @media (max-width: 1400px) {
 
@@ -456,8 +478,12 @@ h1 span {
     font-size: 9px;
   }
 
-  .mug-name {
+  .mug-line-top {
     font-size: 15px;
+  }
+
+  .mug-line-bottom {
+    font-size: 13px;
   }
 }
 
