@@ -285,3 +285,47 @@ h1 span {
     display: none;
   }
 }
+
+/* FORCE BIG MUG FIX */
+
+.hero .hero-mug {
+  position: absolute !important;
+
+  right: 300px !important;
+  bottom: 18px !important;
+
+  z-index: 999 !important;
+
+  width: 460px !important;
+  max-width: none !important;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero .hero-mug img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+
+  opacity: .98 !important;
+
+  filter:
+    drop-shadow(0 36px 58px rgba(0,0,0,.72))
+    drop-shadow(0 0 22px rgba(255,255,255,.04)) !important;
+}
+
+@media (max-width: 1400px) {
+  .hero .hero-mug {
+    right: 245px !important;
+    bottom: 16px !important;
+    width: 380px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero .hero-mug {
+    display: none !important;
+  }
+}
