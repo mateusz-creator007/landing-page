@@ -207,9 +207,11 @@ h1 span {
 
 .mug-text {
   position: absolute;
-  left: 54%;
+
+  left: 58%;
   top: 46%;
-  width: 48%;
+
+  width: 56%;
 
   transform:
     translate(-50%, -50%)
@@ -218,7 +220,9 @@ h1 span {
     rotateY(-9deg);
 
   text-align: center;
-  opacity: .9;
+
+  opacity: .95;
+
   pointer-events: none;
   user-select: none;
 
@@ -230,36 +234,66 @@ h1 span {
     sans-serif;
 }
 
+
+/* TOP TEXT */
+
 .mug-text span {
   display: block;
-  font-size: 8px;
-  letter-spacing: 1.4px;
+
+  font-size: 11px;
+  letter-spacing: 2.4px;
   font-weight: 800;
-  color: rgba(255,255,255,.74);
-  margin-bottom: 4px;
+
+  color: rgba(255,255,255,.76);
+
+  margin-bottom: 2px;
+
   text-transform: uppercase;
 
   text-shadow:
-    0 1px 1px rgba(255,255,255,.08),
-    0 -1px 2px rgba(0,0,0,.60);
+    0 0 3px rgba(255,255,255,.12),
+    0 1px 1px rgba(0,0,0,.60);
 
-  filter: blur(.04px);
+  filter: blur(.03px);
+
+  transform: scaleX(.96);
 }
+
+
+/* MAIN NAME */
 
 .mug-text strong {
   display: block;
-  font-size: 18px;
-  line-height: 1.05;
-  font-weight: 760;
-  letter-spacing: .2px;
+
+  font-size: 22px;
+  line-height: 1;
+
+  font-weight: 850;
+
+  letter-spacing: .4px;
+
+  color: rgba(255,255,255,.80);
+
   text-transform: uppercase;
-  color: rgba(255,255,255,.82);
 
   text-shadow:
+    0 0 4px rgba(255,255,255,.10),
     0 1px 1px rgba(255,255,255,.10),
-    0 -1px 2px rgba(0,0,0,.60);
+    0 -1px 2px rgba(0,0,0,.58);
 
-  filter: blur(.05px);
+  filter: blur(.04px);
+
+  transform:
+    perspective(600px)
+    rotateX(8deg)
+    scaleX(1.06);
+
+  font-family:
+    "SF Pro Display",
+    "Inter",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
 }
 
 @media (max-width: 1400px) {
