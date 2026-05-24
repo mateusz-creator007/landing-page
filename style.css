@@ -389,34 +389,62 @@ h1 span {
 }
 
 
-/* SAME CURVE FOR MATEUSZ AND BOJAR */
+/* MATEUSZ */
 
-.mug-arc-word span:nth-child(1) {
+.mug-arc-word:first-child span:nth-child(1) {
   transform: translateY(4px) rotate(-6deg);
 }
 
-.mug-arc-word span:nth-child(2) {
+.mug-arc-word:first-child span:nth-child(2) {
   transform: translateY(2px) rotate(-4deg);
 }
 
-.mug-arc-word span:nth-child(3) {
+.mug-arc-word:first-child span:nth-child(3) {
   transform: translateY(1px) rotate(-2deg);
 }
 
-.mug-arc-word span:nth-child(4) {
+.mug-arc-word:first-child span:nth-child(4) {
   transform: translateY(0px) rotate(0deg);
 }
 
-.mug-arc-word span:nth-child(5) {
+.mug-arc-word:first-child span:nth-child(5) {
   transform: translateY(1px) rotate(2deg);
 }
 
-.mug-arc-word span:nth-child(6) {
+.mug-arc-word:first-child span:nth-child(6) {
   transform: translateY(2px) rotate(4deg);
 }
 
-.mug-arc-word span:nth-child(7) {
+.mug-arc-word:first-child span:nth-child(7) {
   transform: translateY(4px) rotate(6deg);
+}
+
+
+/* BOJAR */
+
+.mug-arc-word:last-child {
+  margin-top: -1px;
+  letter-spacing: 1.2px;
+}
+
+.mug-arc-word:last-child span:nth-child(1) {
+  transform: translateY(2px) rotate(-4deg);
+}
+
+.mug-arc-word:last-child span:nth-child(2) {
+  transform: translateY(1px) rotate(-2deg);
+}
+
+.mug-arc-word:last-child span:nth-child(3) {
+  transform: translateY(0px) rotate(0deg);
+}
+
+.mug-arc-word:last-child span:nth-child(4) {
+  transform: translateY(1px) rotate(2deg);
+}
+
+.mug-arc-word:last-child span:nth-child(5) {
+  transform: translateY(2px) rotate(4deg);
 }
 
 
