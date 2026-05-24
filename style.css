@@ -211,7 +211,7 @@ h1 span {
   left: 54%;
   top: 46%;
 
-  width: 52%;
+  width: 48%;
 
   transform:
     translate(-50%, -50%)
@@ -227,10 +227,14 @@ h1 span {
   user-select: none;
 
   font-family:
-    Inter,
-    Helvetica,
+    "SF Pro Display",
+    "Inter",
+    "Helvetica Neue",
     Arial,
     sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .mug-text span {
@@ -252,25 +256,39 @@ h1 span {
     0 1px 1px rgba(0,0,0,.55);
 
   filter: blur(.04px);
+
+  font-family:
+    "SF Pro Display",
+    "Inter",
+    sans-serif;
 }
 
 .mug-text strong {
   display: block;
 
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.05;
 
-  font-weight: 650;
+  font-weight: 700;
 
-  letter-spacing: -.2px;
+  letter-spacing: -.4px;
 
-  color: rgba(255,255,255,.68);
+  color: rgba(255,255,255,.70);
 
   text-shadow:
-    0 1px 1px rgba(255,255,255,.10),
+    0 1px 1px rgba(255,255,255,.08),
     0 -1px 2px rgba(0,0,0,.55);
 
-  filter: blur(.10px);
+  filter: blur(.08px);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family:
+    "SF Pro Display",
+    "Inter",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 @media (max-width: 1400px) {
