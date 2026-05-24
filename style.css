@@ -341,17 +341,16 @@ h1 span {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  gap: 5px;
+  gap: 1px;
 
   transform:
     perspective(800px)
-    rotateX(7deg)
+    rotateX(6deg)
     scaleX(.96);
 }
 
 
-/* COMMON */
+/* COMMON NAME LINES */
 
 .mug-line {
   display: flex;
@@ -360,7 +359,11 @@ h1 span {
 
   white-space: nowrap;
 
+  font-size: 18px;
+  line-height: .9;
+
   font-weight: 900;
+  letter-spacing: 1px;
 
   color: rgba(255,255,255,.86);
 
@@ -386,71 +389,34 @@ h1 span {
 }
 
 
-/* TOP */
+/* SAME CURVE FOR MATEUSZ AND BOJAR */
 
-.mug-line-top {
-  font-size: 18px;
-  line-height: .9;
-  margin-bottom: -3px;
+.mug-arc-word span:nth-child(1) {
+  transform: translateY(4px) rotate(-6deg);
 }
 
-.mug-line-top span:nth-child(1) {
-  transform: translateY(5px) rotate(-7deg);
+.mug-arc-word span:nth-child(2) {
+  transform: translateY(2px) rotate(-4deg);
 }
 
-.mug-line-top span:nth-child(2) {
-  transform: translateY(3px) rotate(-5deg);
+.mug-arc-word span:nth-child(3) {
+  transform: translateY(1px) rotate(-2deg);
 }
 
-.mug-line-top span:nth-child(3) {
-  transform: translateY(2px) rotate(-3deg);
-}
-
-.mug-line-top span:nth-child(4) {
-  transform: translateY(1px) rotate(-1deg);
-}
-
-.mug-line-top span:nth-child(5) {
-  transform: translateY(1px) rotate(1deg);
-}
-
-.mug-line-top span:nth-child(6) {
-  transform: translateY(2px) rotate(3deg);
-}
-
-.mug-line-top span:nth-child(7) {
-  transform: translateY(4px) rotate(6deg);
-}
-
-/* BOTTOM */
-
-.mug-line-bottom {
-  font-size: 16px;
-  line-height: .9;
-
-  margin-top: 3px;
-
-  letter-spacing: .8px;
-}
-
-.mug-line-bottom span:nth-child(1) {
-  transform: translateY(2px) rotate(-3deg);
-}
-
-.mug-line-bottom span:nth-child(2) {
-  transform: translateY(1px) rotate(-1deg);
-}
-
-.mug-line-bottom span:nth-child(3) {
+.mug-arc-word span:nth-child(4) {
   transform: translateY(0px) rotate(0deg);
 }
 
-.mug-line-bottom span:nth-child(4) {
-  transform: translateY(1px) rotate(1deg);
+.mug-arc-word span:nth-child(5) {
+  transform: translateY(1px) rotate(2deg);
 }
 
-.mug-line-bottom span:nth-child(5) {
-  transform: translateY(2px) rotate(3deg);
+.mug-arc-word span:nth-child(6) {
+  transform: translateY(2px) rotate(4deg);
+}
+
+.mug-arc-word span:nth-child(7) {
+  transform: translateY(4px) rotate(6deg);
 }
 
 
@@ -481,12 +447,8 @@ h1 span {
     font-size: 9px;
   }
 
-  .mug-line-top {
+  .mug-line {
     font-size: 15px;
-  }
-
-  .mug-line-bottom {
-    font-size: 13px;
   }
 }
 
