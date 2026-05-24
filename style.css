@@ -203,6 +203,42 @@ h1 span {
     drop-shadow(0 0 22px rgba(255,255,255,.04));
 }
 
+/* REALISTIC PRINT ON MUG */
+
+.mug-text {
+  position: absolute;
+  left: 43%;
+  top: 52%;
+  width: 44%;
+
+  transform:
+    translate(-50%, -50%)
+    perspective(700px)
+    rotateX(3deg)
+    rotateY(-8deg);
+
+  text-align: center;
+  opacity: .88;
+}
+
+.mug-text span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2.4px;
+  font-weight: 700;
+  color: rgba(255,255,255,.58);
+  margin-bottom: 4px;
+  filter: blur(.2px);
+}
+
+.mug-text strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  color: rgba(255,255,255,.82);
+  filter: blur(.16px);
+}
+
 @media (max-width: 1400px) {
   .hero {
     background-size: 86% auto;
@@ -221,6 +257,15 @@ h1 span {
     right: 245px;
     bottom: -4px;
     width: 360px;
+  }
+
+  .mug-text span {
+    font-size: 8px;
+    letter-spacing: 2.1px;
+  }
+
+  .mug-text strong {
+    font-size: 16px;
   }
 }
 
