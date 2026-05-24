@@ -203,7 +203,7 @@ h1 span {
     drop-shadow(0 0 22px rgba(255,255,255,.04));
 }
 
-/* REALISTIC PRINT ON MUG */
+/* REALISTIC ENGRAVED MUG PRINT */
 
 .mug-text {
   position: absolute;
@@ -211,7 +211,7 @@ h1 span {
   left: 48%;
   top: 46%;
 
-  width: 46%;
+  width: 44%;
 
   transform:
     translate(-50%, -50%)
@@ -221,48 +221,55 @@ h1 span {
 
   text-align: left;
 
-  opacity: .96;
+  opacity: .92;
 
   pointer-events: none;
   user-select: none;
+
+  font-family:
+    Inter,
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 .mug-text span {
   display: block;
 
-  font-size: 8px;
-  letter-spacing: 2.2px;
-  font-weight: 800;
+  font-size: 7px;
+  letter-spacing: 2.8px;
+  font-weight: 700;
 
-  color: rgba(255,255,255,.86);
+  color: rgba(255,255,255,.52);
 
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 
   text-transform: uppercase;
 
   text-shadow:
-    0 0 3px rgba(255,255,255,.28),
-    0 0 8px rgba(255,255,255,.12);
+    0 1px 1px rgba(255,255,255,.08),
+    0 -1px 1px rgba(0,0,0,.45);
 
-  filter: blur(.04px);
+  filter: blur(.12px);
 }
 
 .mug-text strong {
   display: block;
 
-  font-size: 16px;
-  line-height: 1;
-  font-weight: 850;
+  font-size: 15px;
+  line-height: 1.05;
+
+  font-weight: 650;
 
   letter-spacing: -.2px;
 
-  color: rgba(255,255,255,.96);
+  color: rgba(255,255,255,.68);
 
   text-shadow:
-    0 0 4px rgba(255,255,255,.24),
-    0 0 10px rgba(255,255,255,.10);
+    0 1px 1px rgba(255,255,255,.10),
+    0 -1px 2px rgba(0,0,0,.55);
 
-  filter: blur(.04px);
+  filter: blur(.10px);
 }
 
 @media (max-width: 1400px) {
