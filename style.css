@@ -25,27 +25,64 @@ body {
 .hero::before {
   content: "";
   position: absolute;
+
   right: 31%;
-  bottom: 10%;
-  width: 430px;
-  height: 300px;
+bottom: 10%;
+
+width: 430px;
+height: 300px;
+
   pointer-events: none;
   z-index: 1;
 
   background:
-    radial-gradient(ellipse at center, rgba(255,255,255,.10) 0%, rgba(255,255,255,.06) 34%, rgba(120,170,255,.05) 52%, transparent 74%),
-    radial-gradient(ellipse at 50% 18%, rgba(255,255,255,.12) 0%, transparent 42%),
-    radial-gradient(ellipse at 50% 92%, rgba(255,255,255,.06) 0%, transparent 38%);
+  
+    /* miękkie światło na całym laptopie */
+    radial-gradient(
+      ellipse at center,
+      rgba(255,255,255,.10) 0%,
+      rgba(255,255,255,.06) 34%,
+      rgba(120,170,255,.05) 52%,
+      transparent 74%
+    ),
+
+    /* highlight górnej klapy */
+    radial-gradient(
+      ellipse at 50% 18%,
+      rgba(255,255,255,.12) 0%,
+      transparent 42%
+    ),
+
+    /* delikatne światło na dole */
+    radial-gradient(
+      ellipse at 50% 92%,
+      rgba(255,255,255,.06) 0%,
+      transparent 38%
+    );
 
   filter: blur(24px);
 }
 
+/* POPRAWIONY OVERLAY — tylko jaśniejszy ekran laptopa */
 .overlay {
   position: absolute;
   inset: 0;
+
   background:
-    radial-gradient(circle at 18% 36%, rgba(0,88,255,.16), transparent 30%),
-    linear-gradient(90deg, rgba(0,0,0,.94) 0%, rgba(0,0,0,.76) 30%, rgba(0,0,0,.10) 58%, rgba(0,0,0,0) 100%);
+    radial-gradient(
+      circle at 18% 36%,
+      rgba(0,88,255,.16),
+      transparent 30%
+    ),
+
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.94) 0%,
+      rgba(0,0,0,.76) 30%,
+      rgba(0,0,0,.10) 58%,
+      rgba(0,0,0,0) 100%
+    );
+
   z-index: 2;
 }
 
@@ -104,9 +141,17 @@ h1 {
 
 h1 span {
   display: inline-block;
-  background: linear-gradient(90deg, #ffffff 0%, #d7e7ff 18%, #8ab8ff 48%, #156bff 100%);
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #d7e7ff 18%,
+    #8ab8ff 48%,
+    #156bff 100%
+  );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
   filter: drop-shadow(0 0 18px rgba(0, 96, 255, .18));
 }
 
@@ -128,19 +173,30 @@ h1 span {
   min-width: 215px;
   padding: 0 32px;
   border-radius: 8px;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   text-decoration: none;
+
   font-size: 20px;
   font-weight: 650;
+
   transition: all .25s ease;
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #075cff 0%, #1674ff 100%);
+  background: linear-gradient(
+    135deg,
+    #075cff 0%,
+    #1674ff 100%
+  );
+
   color: #ffffff;
-  box-shadow: 0 18px 50px rgba(0,80,255,.34);
+
+  box-shadow:
+    0 18px 50px rgba(0,80,255,.34);
 }
 
 .btn.primary:hover {
@@ -154,8 +210,11 @@ h1 span {
 
 .btn.secondary {
   color: rgba(255,255,255,.92);
+
   border: 1px solid rgba(255,255,255,.25);
+
   background: rgba(255,255,255,.025);
+
   backdrop-filter: blur(8px);
 }
 
@@ -174,33 +233,13 @@ h1 span {
   display: flex;
   align-items: center;
   gap: 38px;
+
   font-size: 25px;
   font-weight: 850;
 }
 
-/* FOUNDER MUG */
-
-.hero-mug {
-  position: absolute;
-  right: 185px;
-  bottom: 86px;
-  z-index: 5;
-  width: 145px;
-  pointer-events: none;
-  user-select: none;
-}
-
-.hero-mug img {
-  display: block;
-  width: 100%;
-  height: auto;
-  opacity: .94;
-  filter:
-    drop-shadow(0 20px 34px rgba(0,0,0,.62))
-    drop-shadow(0 0 18px rgba(255,255,255,.035));
-}
-
 @media (max-width: 1400px) {
+
   .hero {
     background-size: 86% auto;
   }
@@ -213,15 +252,10 @@ h1 span {
   h1 {
     font-size: clamp(50px, 4.6vw, 74px);
   }
-
-  .hero-mug {
-    right: 150px;
-    bottom: 92px;
-    width: 130px;
-  }
 }
 
 @media (max-width: 900px) {
+
   .hero {
     background-size: cover;
     background-position: center top;
@@ -267,8 +301,104 @@ h1 span {
     flex-wrap: wrap;
     gap: 24px;
   }
+}
 
-  .hero-mug {
+/* LAPTOP BRANDING */
+
+.laptop-signature {
+  position: absolute;
+
+  right: 350px;
+  bottom: 132px;
+
+  z-index: 5;
+
+  width: 260px;
+
+  text-align: center;
+
+  pointer-events: none;
+  user-select: none;
+
+  opacity: .9;
+
+  transform:
+    perspective(900px)
+    rotateX(6deg);
+}
+
+.laptop-signature::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 230px;
+  height: 70px;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(-8deg);
+
+  background:
+    linear-gradient(
+      110deg,
+      transparent 0%,
+      rgba(255,255,255,.025) 38%,
+      rgba(255,255,255,.075) 50%,
+      rgba(255,255,255,.025) 62%,
+      transparent 100%
+    );
+
+  filter: blur(6px);
+
+  z-index: -1;
+}
+
+.laptop-signature span {
+  display: block;
+
+  font-size: 8px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  color: rgba(225,232,242,.42);
+
+  margin-bottom: 5px;
+}
+
+.laptop-signature strong {
+  display: block;
+
+  font-size: 19px;
+  font-weight: 720;
+  letter-spacing: -.5px;
+
+  color: rgba(225,232,242,.52);
+
+  filter: blur(.15px);
+
+  text-shadow:
+    0 0 8px rgba(255,255,255,.035),
+    0 0 16px rgba(0,80,255,.05);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1400px) {
+
+  .laptop-signature {
+    right: 360px;
+    bottom: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .laptop-signature {
     display: none;
   }
 }
