@@ -182,16 +182,11 @@ h1 span {
 
 .hero-mug {
   position: absolute;
-
-  /* przesunięcie bardziej na blat między laptopem a notesem */
-  right: 355px;
-  bottom: 28px;
-
+  right: 255px;
+  bottom: -6px;
   z-index: 50;
-
-  /* BYŁO 230px */
-  width: 430px;
-
+  width: 390px;
+  max-width: none;
   pointer-events: none;
   user-select: none;
 }
@@ -200,7 +195,7 @@ h1 span {
   display: block;
   width: 100%;
   height: auto;
-
+  max-width: none;
   opacity: .98;
 
   filter:
@@ -209,15 +204,10 @@ h1 span {
 }
 
 @media (max-width: 1400px) {
-
-  .hero-mug {
-    right: 270px;
-    bottom: 24px;
-
-    /* BYŁO 200px */
-    width: 340px;
+  .hero {
+    background-size: 86% auto;
   }
-}
+
   .nav,
   .hero-content {
     padding-left: 52px;
@@ -228,9 +218,9 @@ h1 span {
   }
 
   .hero-mug {
-    right: 250px;
-    bottom: 50px;
-    width: 200px;
+    right: 245px;
+    bottom: -4px;
+    width: 360px;
   }
 }
 
@@ -283,50 +273,5 @@ h1 span {
 
   .hero-mug {
     display: none;
-  }
-}
-
-/* FORCE BIG MUG FIX */
-
-.hero .hero-mug {
-  position: absolute !important;
-
-  right: 300px !important;
-  bottom: 18px !important;
-
-  z-index: 999 !important;
-
-  width: 460px !important;
-  max-width: none !important;
-
-  pointer-events: none;
-  user-select: none;
-}
-
-.hero .hero-mug img {
-  display: block !important;
-  width: 100% !important;
-  height: auto !important;
-  max-width: none !important;
-
-  opacity: .98 !important;
-
-  filter:
-    drop-shadow(0 36px 58px rgba(0,0,0,.72))
-    drop-shadow(0 0 22px rgba(255,255,255,.04)) !important;
-}
-
-@media (max-width: 1400px) {
-  .hero .hero-mug {
-  right: 255px !important;
-  bottom: -6px !important;
-  width: 390px !important;
-}
-  
-}
-
-@media (max-width: 900px) {
-  .hero .hero-mug {
-    display: none !important;
   }
 }
