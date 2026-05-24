@@ -342,7 +342,7 @@ h1 span {
   flex-direction: column;
   align-items: center;
 
-  gap: 0px;
+  gap: 5px;
 
   transform:
     perspective(800px)
