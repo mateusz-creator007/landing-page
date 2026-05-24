@@ -237,20 +237,21 @@ h1 span {
   display: block;
 
   font-size: 7px;
-  letter-spacing: 2.8px;
-  font-weight: 700;
 
-  color: rgba(255,255,255,.52);
+  letter-spacing: 1.6px;
+  font-weight: 800;
 
-  margin-bottom: 4px;
+  color: rgba(255,255,255,.72);
+
+  margin-bottom: 5px;
 
   text-transform: uppercase;
 
   text-shadow:
-    0 1px 1px rgba(255,255,255,.08),
-    0 -1px 1px rgba(0,0,0,.45);
+    0 0 2px rgba(255,255,255,.10),
+    0 1px 1px rgba(0,0,0,.55);
 
-  filter: blur(.12px);
+  filter: blur(.04px);
 }
 
 .mug-text strong {
