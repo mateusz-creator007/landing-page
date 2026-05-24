@@ -1,375 +1,150 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+sprawdz jeszcze raz caly poprawny kod ale zmien tylko ekran na jasniejszy laptopa 
+{margin: 0;padding: 0;box-sizing: border-box;}
 
-body {
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  background: #050505;
-  color: #ffffff;
-}
+body {font-family: Inter, Arial, Helvetica, sans-serif;background: #050505;color: #ffffff;}
 
-.hero {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
+.hero {position: relative;min-height: 100vh;overflow: hidden;
 
-  background-image: url("ghh.png");
-  background-size: 74% auto;
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-color: #050505;
-}
+background-image: url("ghh.png");background-size: 74% auto;background-position: right top;background-repeat: no-repeat;background-color: #050505;}
 
-/* POPRAWIONY OVERLAY — tylko jaśniejszy ekran laptopa */
-.overlay {
-  position: absolute;
-  inset: 0;
+/* TYLKO POPRAWIONY OVERLAY */.overlay {position: absolute;inset: 0;
 
-  background:
+background:/* DELIKATNE ŚWIATŁO NA LAPTOP */radial-gradient(circle at 72% 78%,rgba(255,255,255,.14) 0%,rgba(255,255,255,.05) 16%,transparent 30%),
 
-    /* REAL SCREEN GLOW */
-    radial-gradient(
-      ellipse at 69% 61%,
-      rgba(255,255,255,.18) 0%,
-      rgba(255,255,255,.10) 12%,
-      rgba(120,170,255,.05) 20%,
-      transparent 34%
-    ),
+/* NIEBIESKI GLOW */
+radial-gradient(
+  circle at 18% 36%,
+  rgba(0,88,255,.16),
+  transparent 30%
+),
 
-    /* LEFT BLUE GLOW */
-    radial-gradient(
-      circle at 18% 36%,
-      rgba(0,88,255,.16),
-      transparent 30%
-    ),
+/* GŁÓWNY OVERLAY */
+linear-gradient(
+  90deg,
+  rgba(0,0,0,.94) 0%,
+  rgba(0,0,0,.78) 30%,
+  rgba(0,0,0,.28) 58%,
+  rgba(0,0,0,.02) 100%
+);
 
-    /* MAIN DARK OVERLAY */
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,.94) 0%,
-      rgba(0,0,0,.78) 30%,
-      rgba(0,0,0,.28) 58%,
-      rgba(0,0,0,.02) 100%
-    );
+z-index: 1;}
 
-  z-index: 1;
-}
+.nav {position: relative;z-index: 2;padding: 54px 0 0 72px;}
 
-.nav {
-  position: relative;
-  z-index: 2;
-  padding: 54px 0 0 72px;
-}
+.brand {display: flex;align-items: center;gap: 18px;font-size: 15px;font-weight: 700;letter-spacing: 7px;}
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 7px;
-}
+.logo {font-size: 31px;line-height: 1;}
 
-.logo {
-  font-size: 31px;
-  line-height: 1;
-}
+.hero-content {position: relative;z-index: 2;padding: 88px 0 0 72px;}
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 88px 0 0 72px;
-}
+.left {max-width: 690px;}
 
-.left {
-  max-width: 690px;
-}
+.eyebrow {width: fit-content;padding: 8px 15px;margin-bottom: 30px;border: 1px solid rgba(64, 132, 255, .45);border-radius: 999px;background: rgba(7, 92, 255, .08);color: rgba(255,255,255,.78);font-size: 13px;font-weight: 700;letter-spacing: 4px;box-shadow: 0 0 30px rgba(7, 92, 255, .18);}
 
-.eyebrow {
-  width: fit-content;
-  padding: 8px 15px;
-  margin-bottom: 30px;
-  border: 1px solid rgba(64, 132, 255, .45);
-  border-radius: 999px;
-  background: rgba(7, 92, 255, .08);
-  color: rgba(255,255,255,.78);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  box-shadow: 0 0 30px rgba(7, 92, 255, .18);
-}
+h1 {font-size: clamp(58px, 5vw, 88px);line-height: .94;letter-spacing: -4px;font-weight: 850;margin-bottom: 34px;text-shadow: 0 10px 35px rgba(0,0,0,.32);}
 
-h1 {
-  font-size: clamp(58px, 5vw, 88px);
-  line-height: .94;
-  letter-spacing: -4px;
-  font-weight: 850;
-  margin-bottom: 34px;
-  text-shadow: 0 10px 35px rgba(0,0,0,.32);
-}
+h1 span {display: inline-block;background: linear-gradient(90deg,#ffffff 0%,#d7e7ff 18%,#8ab8ff 48%,#156bff 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;filter: drop-shadow(0 0 18px rgba(0, 96, 255, .18));}
 
-h1 span {
-  display: inline-block;
-  background: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    #d7e7ff 18%,
-    #8ab8ff 48%,
-    #156bff 100%
-  );
+.subtext {font-size: clamp(22px, 1.55vw, 28px);line-height: 1.4;color: rgba(255,255,255,.84);margin-bottom: 42px;}
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.buttons {display: flex;gap: 24px;margin-bottom: 76px;}
 
-  filter: drop-shadow(0 0 18px rgba(0, 96, 255, .18));
-}
+.btn {height: 62px;min-width: 215px;padding: 0 32px;border-radius: 8px;display: inline-flex;align-items: center;justify-content: center;text-decoration: none;font-size: 20px;font-weight: 650;transition: all .25s ease;}
 
-.subtext {
-  font-size: clamp(22px, 1.55vw, 28px);
-  line-height: 1.4;
-  color: rgba(255,255,255,.84);
-  margin-bottom: 42px;
-}
+.btn.primary {background: linear-gradient(135deg, #075cff 0%, #1674ff 100%);color: #ffffff;box-shadow: 0 18px 50px rgba(0,80,255,.34);}
 
-.buttons {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 76px;
-}
+.btn.primary {transform: translateY(-2px);}
 
-.btn {
-  height: 62px;
-  min-width: 215px;
-  padding: 0 32px;
-  border-radius: 8px;
+.btn.primary span {margin-left: 14px;font-size: 24px;}
 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.btn.secondary {color: rgba(255,255,255,.92);border: 1px solid rgba(255,255,255,.25);background: rgba(255,255,255,.025);backdrop-filter: blur(8px);}
 
-  text-decoration: none;
+.btn.secondary {background: rgba(255,255,255,.07);}
 
-  font-size: 20px;
-  font-weight: 650;
+.brands p {font-size: 13px;letter-spacing: 5px;color: rgba(255,255,255,.55);margin-bottom: 28px;}
 
-  transition: all .25s ease;
-}
+.brand-logos {display: flex;align-items: center;gap: 38px;font-size: 25px;font-weight: 850;}
 
-.btn.primary {
-  background: linear-gradient(
-    135deg,
-    #075cff 0%,
-    #1674ff 100%
-  );
+@media (max-width: 1400px) {.hero {background-size: 86% auto;}
 
-  color: #ffffff;
+.nav,.hero-content {padding-left: 52px;}
 
-  box-shadow:
-    0 18px 50px rgba(0,80,255,.34);
-}
+h1 {font-size: clamp(50px, 4.6vw, 74px);}}
 
-.btn.primary:hover {
-  transform: translateY(-2px);
-}
+@media (max-width: 900px) {.hero {background-size: cover;background-position: center top;}
 
-.btn.primary span {
-  margin-left: 14px;
-  font-size: 24px;
-}
+.overlay {background: rgba(0,0,0,.84);}
 
-.btn.secondary {
-  color: rgba(255,255,255,.92);
+.nav {padding: 28px 24px 0;}
 
-  border: 1px solid rgba(255,255,255,.25);
+.brand {font-size: 13px;letter-spacing: 5px;}
 
-  background: rgba(255,255,255,.025);
+.hero-content {padding: 52px 24px 36px;}
 
-  backdrop-filter: blur(8px);
-}
+h1 {font-size: 46px;letter-spacing: -2.2px;}
 
-.btn.secondary:hover {
-  background: rgba(255,255,255,.07);
-}
+.subtext {font-size: 20px;}
 
-.brands p {
-  font-size: 13px;
-  letter-spacing: 5px;
-  color: rgba(255,255,255,.55);
-  margin-bottom: 28px;
-}
+.buttons {flex-direction: column;gap: 16px;margin-bottom: 48px;}
 
-.brand-logos {
-  display: flex;
-  align-items: center;
-  gap: 38px;
+.btn {width: 100%;}
 
-  font-size: 25px;
-  font-weight: 850;
-}
-
-@media (max-width: 1400px) {
-
-  .hero {
-    background-size: 86% auto;
-  }
-
-  .nav,
-  .hero-content {
-    padding-left: 52px;
-  }
-
-  h1 {
-    font-size: clamp(50px, 4.6vw, 74px);
-  }
-}
-
-@media (max-width: 900px) {
-
-  .hero {
-    background-size: cover;
-    background-position: center top;
-  }
-
-  .overlay {
-    background: rgba(0,0,0,.84);
-  }
-
-  .nav {
-    padding: 28px 24px 0;
-  }
-
-  .brand {
-    font-size: 13px;
-    letter-spacing: 5px;
-  }
-
-  .hero-content {
-    padding: 52px 24px 36px;
-  }
-
-  h1 {
-    font-size: 46px;
-    letter-spacing: -2.2px;
-  }
-
-  .subtext {
-    font-size: 20px;
-  }
-
-  .buttons {
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 48px;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .brand-logos {
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-}
+.brand-logos {flex-wrap: wrap;gap: 24px;}}
 
 /* LAPTOP BRANDING */
 
-.laptop-signature {
-  position: absolute;
+.laptop-signature {position: absolute;
 
-  right: 350px;
-  bottom: 132px;
+/* przesunięte na środek laptopa */right: 350px;bottom: 132px;
 
-  z-index: 5;
+z-index: 5;
 
-  width: 260px;
+width: 260px;
 
-  text-align: center;
+text-align: center;
 
-  pointer-events: none;
-  user-select: none;
+pointer-events: none;user-select: none;
 
-  opacity: .9;
+opacity: .9;
 
-  transform:
-    perspective(900px)
-    rotateX(6deg);
-}
+transform: perspective(900px) rotateX(6deg);}
 
-.laptop-signature::before {
-  content: "";
+/* ultra subtelny glass / reflection BEZ szarego boxa */.laptop-signature::before {content: "";
 
-  position: absolute;
+position: absolute;
 
-  left: 50%;
-  top: 50%;
+left: 50%;top: 50%;
 
-  width: 230px;
-  height: 70px;
+width: 230px;height: 70px;
 
-  transform:
-    translate(-50%, -50%)
-    rotate(-8deg);
+transform: translate(-50%, -50%) rotate(-8deg);
 
-  background:
-    linear-gradient(
-      110deg,
-      transparent 0%,
-      rgba(255,255,255,.025) 38%,
-      rgba(255,255,255,.075) 50%,
-      rgba(255,255,255,.025) 62%,
-      transparent 100%
-    );
+background:linear-gradient(110deg,transparent 0%,rgba(255,255,255,.025) 38%,rgba(255,255,255,.075) 50%,rgba(255,255,255,.025) 62%,transparent 100%);
 
-  filter: blur(6px);
+filter: blur(6px);
 
-  z-index: -1;
-}
+z-index: -1;}
 
-.laptop-signature span {
-  display: block;
+.laptop-signature span {display: block;
 
-  font-size: 8px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  font-weight: 600;
+font-size: 8px;letter-spacing: 4px;text-transform: uppercase;font-weight: 600;
 
-  color: rgba(225,232,242,.42);
+color: rgba(225,232,242,.42);
 
-  margin-bottom: 5px;
-}
+margin-bottom: 5px;}
 
-.laptop-signature strong {
-  display: block;
+.laptop-signature strong {display: block;
 
-  font-size: 19px;
-  font-weight: 720;
-  letter-spacing: -.5px;
+font-size: 19px;font-weight: 720;letter-spacing: -.5px;
 
-  color: rgba(225,232,242,.52);
+color: rgba(225,232,242,.52);
 
-  filter: blur(.15px);
+filter: blur(.15px);
 
-  text-shadow:
-    0 0 8px rgba(255,255,255,.035),
-    0 0 16px rgba(0,80,255,.05);
-}
+text-shadow:0 0 8px rgba(255,255,255,.035),0 0 16px rgba(0,80,255,.05);}
 
 /* RESPONSIVE */
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) {.laptop-signature {right: 360px;bottom: 150px;}}
 
-  .laptop-signature {
-    right: 360px;
-    bottom: 150px;
-  }
-}
-
-@media (max-width: 900px) {
-
-  .laptop-signature {
-    display: none;
-  }
-}
+@media (max-width: 900px) {.laptop-signature {display: none;}}
