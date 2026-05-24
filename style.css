@@ -208,10 +208,10 @@ h1 span {
 .mug-text {
   position: absolute;
 
-  left: 58%;
+  left: 57%;
   top: 46%;
 
-  width: 56%;
+  width: 44%;
 
   transform:
     translate(-50%, -50%)
@@ -235,58 +235,55 @@ h1 span {
 }
 
 
-/* TOP TEXT */
+/* FOUNDER & DIRECTOR */
 
 .mug-text span {
   display: block;
 
-  font-size: 11px;
-  letter-spacing: 2.4px;
+  font-size: 10px;
+  letter-spacing: 2px;
   font-weight: 800;
 
-  color: rgba(255,255,255,.76);
+  color: rgba(255,255,255,.74);
 
   margin-bottom: 2px;
 
   text-transform: uppercase;
 
   text-shadow:
-    0 0 3px rgba(255,255,255,.12),
-    0 1px 1px rgba(0,0,0,.60);
+    0 0 2px rgba(255,255,255,.08),
+    0 1px 1px rgba(0,0,0,.58);
 
-  filter: blur(.03px);
+  filter: blur(.02px);
 
-  transform: scaleX(.96);
+  transform: scaleX(.94);
 }
 
 
-/* MAIN NAME */
+/* CURVED MATEUSZ BOJAR */
 
 .mug-text strong {
   display: block;
 
-  font-size: 22px;
+  font-size: 17px;
   line-height: 1;
 
   font-weight: 850;
 
-  letter-spacing: .4px;
+  letter-spacing: .2px;
 
   color: rgba(255,255,255,.80);
 
   text-transform: uppercase;
 
+  white-space: nowrap;
+
   text-shadow:
-    0 0 4px rgba(255,255,255,.10),
-    0 1px 1px rgba(255,255,255,.10),
-    0 -1px 2px rgba(0,0,0,.58);
+    0 0 3px rgba(255,255,255,.08),
+    0 1px 1px rgba(255,255,255,.08),
+    0 -1px 2px rgba(0,0,0,.60);
 
-  filter: blur(.04px);
-
-  transform:
-    perspective(600px)
-    rotateX(8deg)
-    scaleX(1.06);
+  filter: blur(.03px);
 
   font-family:
     "SF Pro Display",
@@ -294,7 +291,54 @@ h1 span {
     "Helvetica Neue",
     Arial,
     sans-serif;
+
+  transform:
+    perspective(800px)
+    rotateX(10deg)
+    scaleX(1.02);
+
+  position: relative;
 }
+
+
+/* INDYWIDUALNE LITERY */
+
+.mug-text strong span {
+  display: inline-block;
+
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+
+  margin: 0 -.5px;
+
+  text-shadow: inherit;
+  filter: inherit;
+}
+
+
+/* ŁUK */
+
+.mug-text strong span:nth-child(1)  { transform: translateY(7px) rotate(-11deg); }
+.mug-text strong span:nth-child(2)  { transform: translateY(5px) rotate(-9deg); }
+.mug-text strong span:nth-child(3)  { transform: translateY(3px) rotate(-7deg); }
+.mug-text strong span:nth-child(4)  { transform: translateY(1px) rotate(-5deg); }
+.mug-text strong span:nth-child(5)  { transform: translateY(0px) rotate(-3deg); }
+.mug-text strong span:nth-child(6)  { transform: translateY(-1px) rotate(-1deg); }
+.mug-text strong span:nth-child(7)  { transform: translateY(-2px) rotate(0deg); }
+
+.mug-text strong span:nth-child(8)  {
+  transform: translateY(-2px) rotate(0deg);
+  margin-right: 3px;
+}
+
+.mug-text strong span:nth-child(9)  { transform: translateY(-1px) rotate(1deg); }
+.mug-text strong span:nth-child(10) { transform: translateY(0px) rotate(3deg); }
+.mug-text strong span:nth-child(11) { transform: translateY(1px) rotate(5deg); }
+.mug-text strong span:nth-child(12) { transform: translateY(3px) rotate(7deg); }
+.mug-text strong span:nth-child(13) { transform: translateY(5px) rotate(9deg); }
+.mug-text strong span:nth-child(14) { transform: translateY(7px) rotate(11deg); }
 
 @media (max-width: 1400px) {
   .hero {
