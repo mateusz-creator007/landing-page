@@ -1,3 +1,4 @@
+przesylam caly obecny kod popraw i przeslij caly kod 
 * {
   margin: 0;
   padding: 0;
@@ -22,31 +23,7 @@ body {
   background-color: #050505;
 }
 
-/* ROZJAŚNIA TYLKO OBSZAR LAPTOPA */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-image: url("ghh.png");
-  background-size: 74% auto;
-  background-position: right top;
-  background-repeat: no-repeat;
-
-  filter: brightness(1.85) contrast(1.18) saturate(1.12);
-
-  clip-path: polygon(
-    37% 43%,
-    66% 43%,
-    70% 82%,
-    38% 82%
-  );
-
-  z-index: 1;
-  pointer-events: none;
-}
-
-/* GŁÓWNY OVERLAY */
+/* POPRAWIONY OVERLAY — tylko jaśniejszy ekran laptopa */
 .overlay {
   position: absolute;
   inset: 0;
@@ -62,16 +39,16 @@ body {
       90deg,
       rgba(0,0,0,.94) 0%,
       rgba(0,0,0,.76) 30%,
-      rgba(0,0,0,.08) 58%,
+      rgba(0,0,0,.10) 58%,
       rgba(0,0,0,0) 100%
     );
 
-  z-index: 2;
+  z-index: 1;
 }
 
 .nav {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   padding: 54px 0 0 72px;
 }
 
@@ -91,7 +68,7 @@ body {
 
 .hero-content {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   padding: 88px 0 0 72px;
 }
 
@@ -227,17 +204,6 @@ h1 span {
     background-size: 86% auto;
   }
 
-  .hero::before {
-    background-size: 86% auto;
-
-    clip-path: polygon(
-      36% 43%,
-      68% 43%,
-      72% 83%,
-      37% 83%
-    );
-  }
-
   .nav,
   .hero-content {
     padding-left: 52px;
@@ -253,10 +219,6 @@ h1 span {
   .hero {
     background-size: cover;
     background-position: center top;
-  }
-
-  .hero::before {
-    display: none;
   }
 
   .overlay {
