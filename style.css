@@ -14,6 +14,7 @@ body {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+
   background-image: url("ghh.png");
   background-size: 74% auto;
   background-position: right top;
@@ -21,52 +22,51 @@ body {
   background-color: #050505;
 }
 
+/* POPRAWIONY OVERLAY — tylko jaśniejszy ekran laptopa */
 .overlay {
   position: absolute;
   inset: 0;
+
   background:
+
+    /* REALISTYCZNY SCREEN LIGHT */
+    radial-gradient(
+      ellipse at 57% 59%,
+      rgba(120,170,255,.10) 0%,
+      rgba(120,170,255,.06) 18%,
+      rgba(255,255,255,.03) 28%,
+      transparent 42%
+    ),
+
+    /* LEKKI REFLECTION NA BIURKU */
+    radial-gradient(
+      ellipse at 58% 74%,
+      rgba(120,170,255,.06) 0%,
+      transparent 46%
+    ),
+
+    /* LEFT BLUE GLOW */
     radial-gradient(
       circle at 18% 36%,
       rgba(0,88,255,.16),
       transparent 30%
     ),
+
+    /* MAIN OVERLAY */
     linear-gradient(
       90deg,
       rgba(0,0,0,.94) 0%,
       rgba(0,0,0,.78) 30%,
-      rgba(0,0,0,.22) 58%,
+      rgba(0,0,0,.24) 58%,
       rgba(0,0,0,.02) 100%
     );
+
   z-index: 1;
-}
-
-/* ŚWIATŁO TYLKO NA EKRAN LAPTOPA */
-.laptop-light {
-  position: absolute;
-  left: 37.4%;
-  top: 42.7%;
-  width: 29%;
-  height: 31%;
-  z-index: 2;
-  pointer-events: none;
-
-  background:
-    radial-gradient(
-      ellipse at center,
-      rgba(255,255,255,.42) 0%,
-      rgba(170,205,255,.30) 22%,
-      rgba(70,130,255,.16) 46%,
-      transparent 72%
-    );
-
-  mix-blend-mode: screen;
-  filter: blur(12px);
-  opacity: .95;
 }
 
 .nav {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   padding: 54px 0 0 72px;
 }
 
@@ -86,7 +86,7 @@ body {
 
 .hero-content {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   padding: 88px 0 0 72px;
 }
 
@@ -126,8 +126,10 @@ h1 span {
     #8ab8ff 48%,
     #156bff 100%
   );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
   filter: drop-shadow(0 0 18px rgba(0, 96, 255, .18));
 }
 
@@ -149,19 +151,30 @@ h1 span {
   min-width: 215px;
   padding: 0 32px;
   border-radius: 8px;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   text-decoration: none;
+
   font-size: 20px;
   font-weight: 650;
+
   transition: all .25s ease;
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #075cff 0%, #1674ff 100%);
+  background: linear-gradient(
+    135deg,
+    #075cff 0%,
+    #1674ff 100%
+  );
+
   color: #ffffff;
-  box-shadow: 0 18px 50px rgba(0,80,255,.34);
+
+  box-shadow:
+    0 18px 50px rgba(0,80,255,.34);
 }
 
 .btn.primary:hover {
@@ -175,8 +188,11 @@ h1 span {
 
 .btn.secondary {
   color: rgba(255,255,255,.92);
+
   border: 1px solid rgba(255,255,255,.25);
+
   background: rgba(255,255,255,.025);
+
   backdrop-filter: blur(8px);
 }
 
@@ -195,67 +211,13 @@ h1 span {
   display: flex;
   align-items: center;
   gap: 38px;
+
   font-size: 25px;
   font-weight: 850;
 }
 
-.laptop-signature {
-  position: absolute;
-  right: 350px;
-  bottom: 132px;
-  z-index: 5;
-  width: 260px;
-  text-align: center;
-  pointer-events: none;
-  user-select: none;
-  opacity: .9;
-  transform: perspective(900px) rotateX(6deg);
-}
-
-.laptop-signature::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 230px;
-  height: 70px;
-  transform: translate(-50%, -50%) rotate(-8deg);
-  background:
-    linear-gradient(
-      110deg,
-      transparent 0%,
-      rgba(255,255,255,.025) 38%,
-      rgba(255,255,255,.075) 50%,
-      rgba(255,255,255,.025) 62%,
-      transparent 100%
-    );
-  filter: blur(6px);
-  z-index: -1;
-}
-
-.laptop-signature span {
-  display: block;
-  font-size: 8px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: rgba(225,232,242,.42);
-  margin-bottom: 5px;
-}
-
-.laptop-signature strong {
-  display: block;
-  font-size: 19px;
-  font-weight: 720;
-  letter-spacing: -.5px;
-  color: rgba(225,232,242,.52);
-  filter: blur(.15px);
-  text-shadow:
-    0 0 8px rgba(255,255,255,.035),
-    0 0 16px rgba(0,80,255,.05);
-}
-
 @media (max-width: 1400px) {
+
   .hero {
     background-size: 86% auto;
   }
@@ -268,21 +230,10 @@ h1 span {
   h1 {
     font-size: clamp(50px, 4.6vw, 74px);
   }
-
-  .laptop-light {
-    left: 37%;
-    top: 43%;
-    width: 31%;
-    height: 32%;
-  }
-
-  .laptop-signature {
-    right: 360px;
-    bottom: 150px;
-  }
 }
 
 @media (max-width: 900px) {
+
   .hero {
     background-size: cover;
     background-position: center top;
@@ -290,10 +241,6 @@ h1 span {
 
   .overlay {
     background: rgba(0,0,0,.84);
-  }
-
-  .laptop-light {
-    display: none;
   }
 
   .nav {
@@ -332,6 +279,102 @@ h1 span {
     flex-wrap: wrap;
     gap: 24px;
   }
+}
+
+/* LAPTOP BRANDING */
+
+.laptop-signature {
+  position: absolute;
+
+  right: 350px;
+  bottom: 132px;
+
+  z-index: 5;
+
+  width: 260px;
+
+  text-align: center;
+
+  pointer-events: none;
+  user-select: none;
+
+  opacity: .9;
+
+  transform:
+    perspective(900px)
+    rotateX(6deg);
+}
+
+.laptop-signature::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 230px;
+  height: 70px;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(-8deg);
+
+  background:
+    linear-gradient(
+      110deg,
+      transparent 0%,
+      rgba(255,255,255,.025) 38%,
+      rgba(255,255,255,.075) 50%,
+      rgba(255,255,255,.025) 62%,
+      transparent 100%
+    );
+
+  filter: blur(6px);
+
+  z-index: -1;
+}
+
+.laptop-signature span {
+  display: block;
+
+  font-size: 8px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  color: rgba(225,232,242,.42);
+
+  margin-bottom: 5px;
+}
+
+.laptop-signature strong {
+  display: block;
+
+  font-size: 19px;
+  font-weight: 720;
+  letter-spacing: -.5px;
+
+  color: rgba(225,232,242,.52);
+
+  filter: blur(.15px);
+
+  text-shadow:
+    0 0 8px rgba(255,255,255,.035),
+    0 0 16px rgba(0,80,255,.05);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1400px) {
+
+  .laptop-signature {
+    right: 360px;
+    bottom: 150px;
+  }
+}
+
+@media (max-width: 900px) {
 
   .laptop-signature {
     display: none;
