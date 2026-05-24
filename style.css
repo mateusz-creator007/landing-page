@@ -318,10 +318,11 @@ h1 span {
 
 @media (max-width: 1400px) {
   .hero .hero-mug {
-    right: 245px !important;
-    bottom: 16px !important;
-    width: 380px !important;
-  }
+  right: 255px !important;
+  bottom: -6px !important;
+  width: 390px !important;
+}
+  
 }
 
 @media (max-width: 900px) {
