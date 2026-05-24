@@ -28,29 +28,25 @@ body {
   inset: 0;
 
   background:
-
-    /* REAL SCREEN GLOW */
     radial-gradient(
-      ellipse at 69% 61%,
-      rgba(255,255,255,.18) 0%,
-      rgba(255,255,255,.10) 12%,
-      rgba(120,170,255,.05) 20%,
-      transparent 34%
+      ellipse at 58% 58%,
+      rgba(255,255,255,.34) 0%,
+      rgba(255,255,255,.22) 13%,
+      rgba(120,170,255,.10) 24%,
+      transparent 42%
     ),
 
-    /* LEFT BLUE GLOW */
     radial-gradient(
       circle at 18% 36%,
       rgba(0,88,255,.16),
       transparent 30%
     ),
 
-    /* MAIN DARK OVERLAY */
     linear-gradient(
       90deg,
       rgba(0,0,0,.94) 0%,
       rgba(0,0,0,.78) 30%,
-      rgba(0,0,0,.28) 58%,
+      rgba(0,0,0,.16) 55%,
       rgba(0,0,0,.02) 100%
     );
 
