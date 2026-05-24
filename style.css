@@ -23,6 +23,33 @@ body {
   background-color: #050505;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+
+  /* pozycja światła */
+  right: 24%;
+  bottom: 9%;
+
+  width: 540px;
+  height: 380px;
+
+  pointer-events: none;
+  z-index: 1;
+
+  /* realistyczny glow */
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(255,255,255,.22) 0%,
+      rgba(120,170,255,.12) 28%,
+      rgba(120,170,255,.05) 48%,
+      transparent 72%
+    );
+
+  filter: blur(26px);
+}
+
 /* POPRAWIONY OVERLAY — tylko jaśniejszy ekran laptopa */
 .overlay {
   position: absolute;
@@ -43,7 +70,7 @@ body {
       rgba(0,0,0,0) 100%
     );
 
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav {
