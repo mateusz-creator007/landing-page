@@ -211,7 +211,7 @@ h1 span {
   left: 54%;
   top: 46%;
 
-  width: 44%;
+  width: 52%;
 
   transform:
     translate(-50%, -50%)
@@ -236,7 +236,7 @@ h1 span {
 .mug-text span {
   display: block;
 
-  font-size: 7px;
+  font-size: 9px;
 
   letter-spacing: 1.6px;
   font-weight: 800;
@@ -257,7 +257,7 @@ h1 span {
 .mug-text strong {
   display: block;
 
-  font-size: 15px;
+  font-size: 21px;
   line-height: 1.05;
 
   font-weight: 650;
