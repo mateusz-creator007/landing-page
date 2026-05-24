@@ -183,12 +183,14 @@ h1 span {
 .hero-mug {
   position: absolute;
 
-  right: 315px;
-  bottom: 52px;
+  /* przesunięcie bardziej na blat między laptopem a notesem */
+  right: 355px;
+  bottom: 28px;
 
   z-index: 50;
 
-  width: 230px;
+  /* BYŁO 230px */
+  width: 430px;
 
   pointer-events: none;
   user-select: none;
@@ -202,15 +204,20 @@ h1 span {
   opacity: .98;
 
   filter:
-    drop-shadow(0 28px 46px rgba(0,0,0,.66))
-    drop-shadow(0 0 16px rgba(255,255,255,.03));
+    drop-shadow(0 34px 56px rgba(0,0,0,.72))
+    drop-shadow(0 0 22px rgba(255,255,255,.04));
 }
 
 @media (max-width: 1400px) {
-  .hero {
-    background-size: 86% auto;
-  }
 
+  .hero-mug {
+    right: 270px;
+    bottom: 24px;
+
+    /* BYŁO 200px */
+    width: 340px;
+  }
+}
   .nav,
   .hero-content {
     padding-left: 52px;
