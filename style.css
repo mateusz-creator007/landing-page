@@ -182,10 +182,10 @@ h1 span {
 
 .hero-mug {
   position: absolute;
-  right: 185px;
-  bottom: 86px;
-  z-index: 5;
-  width: 145px;
+  right: 230px;
+  bottom: 92px;
+  z-index: 50;
+  width: 215px;
   pointer-events: none;
   user-select: none;
 }
@@ -194,10 +194,10 @@ h1 span {
   display: block;
   width: 100%;
   height: auto;
-  opacity: .94;
+  opacity: .98;
   filter:
-    drop-shadow(0 20px 34px rgba(0,0,0,.62))
-    drop-shadow(0 0 18px rgba(255,255,255,.035));
+    drop-shadow(0 26px 42px rgba(0,0,0,.62))
+    drop-shadow(0 0 16px rgba(255,255,255,.03));
 }
 
 @media (max-width: 1400px) {
@@ -215,9 +215,9 @@ h1 span {
   }
 
   .hero-mug {
-    right: 150px;
-    bottom: 92px;
-    width: 130px;
+    right: 185px;
+    bottom: 88px;
+    width: 185px;
   }
 }
 
