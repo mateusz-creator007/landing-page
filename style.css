@@ -312,3 +312,19 @@ h1 span {
     display: none;
   }
 }
+
+.proof-image-section {
+  width: 100%;
+  background: #050505;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.proof-image-section img {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  display: block;
+}
