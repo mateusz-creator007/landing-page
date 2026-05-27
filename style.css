@@ -318,8 +318,9 @@ h1 span {
   background: #050505;
   display: flex;
   justify-content: center;
-  padding: 40px 32px 80px;
+  padding: 70px 32px 90px;
   overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,.06);
 }
 
 .proof-image-section img {
