@@ -330,3 +330,18 @@ h1 span {
   display: block;
   border-radius: 28px;
 }
+
+.campaign-proof-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.campaign-proof-image img {
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+}
