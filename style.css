@@ -348,7 +348,9 @@ h1 span {
 .proof-title {
   background: #050505;
   text-align: center;
-  padding: 55px 20px 30px;
+
+  /* obniża cały nagłówek */
+  padding: 85px 20px 38px;
 }
 
 .proof-title h2 {
@@ -380,12 +382,13 @@ h1 span {
 }
 
 .proof-title p {
-  margin-top: 18px;
+  margin-top: 24px;
 
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.6;
+  /* większy tekst */
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.55;
 
-  color: rgba(255,255,255,.65);
-  letter-spacing: .02em;
+  color: rgba(255,255,255,.72);
+  letter-spacing: .015em;
 }
