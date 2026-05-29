@@ -367,19 +367,16 @@ h1 span {
   background: linear-gradient(
     180deg,
     #ffffff 0%,
-    #dbe7ff 35%,
-    #9fc2ff 70%,
-    #7aa8ff 100%
+    #eef4ff 40%,
+    #bdd5ff 100%
   );
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   text-shadow:
-    0 0 8px rgba(122,168,255,.18),
-    0 0 20px rgba(122,168,255,.10);
+    0 0 12px rgba(150,190,255,.15);
 }
-
 .proof-title p {
   margin-top: 18px;
 
