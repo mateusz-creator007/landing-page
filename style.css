@@ -331,17 +331,16 @@ h1 span {
   border-radius: 28px;
 }
 
-.campaign-proof-image {
-  width: 100%;
+.campaign-showcase {
   display: flex;
   justify-content: center;
   margin-top: 28px;
+  margin-bottom: 80px;
 }
 
-.campaign-proof-image img {
-  width: 650px;
-  max-width: 100%;
+.campaign-card {
+  width: 1200px;
+  max-width: 95%;
   height: auto;
   display: block;
-  border-radius: 18px;
 }
