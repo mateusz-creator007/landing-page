@@ -364,18 +364,19 @@ h1 span {
 }
 
 .proof-title h2 .word {
-  color: #9fb6ff;
-  background: none;
-  -webkit-text-fill-color: #9fb6ff;
+  color: #a8b7ff;
+  -webkit-text-fill-color: #a8b7ff;
 
   text-shadow:
-    0 0 2px rgba(255,255,255,.75),
-    0 0 6px rgba(170,185,255,.85),
-    0 0 12px rgba(95,115,255,.95),
-    0 0 22px rgba(65,80,255,.75),
-    0 0 38px rgba(35,45,255,.45);
+    0 0 4px rgba(180,190,255,.85),
+    0 0 10px rgba(120,140,255,.95),
+    0 0 22px rgba(90,110,255,.85),
+    0 0 42px rgba(70,80,255,.65),
+    0 0 70px rgba(60,70,255,.35);
 
-  filter: saturate(1.35) brightness(1.05);
+  filter:
+    saturate(1.25)
+    brightness(1.02);
 }
 
 .proof-title p {
