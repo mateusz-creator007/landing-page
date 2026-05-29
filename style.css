@@ -19,6 +19,17 @@ body {
   background-position: right top;
   background-repeat: no-repeat;
   background-color: #050505;
+
+  /* większy oddech pod hero */
+  margin-bottom: 90px;
+}
+
+.proof-title {
+  background: #050505;
+  text-align: center;
+
+  /* mniej góry, bo odstęp daje hero */
+  padding: 55px 20px 42px;
 }
 
 .overlay {
