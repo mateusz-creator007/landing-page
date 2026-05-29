@@ -364,17 +364,20 @@ h1 span {
 }
 
 .proof-title h2 span {
-  color: #b9c8ff;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #dbe7ff 35%,
+    #9fc2ff 70%,
+    #7aa8ff 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   text-shadow:
-    0 0 4px #ffffff,
-    0 0 8px #7d8cff,
-    0 0 18px #355dff,
-    0 0 34px rgba(53, 93, 255, .75);
-
-  background: none;
-  -webkit-background-clip: initial;
-  -webkit-text-fill-color: initial;
+    0 0 8px rgba(122,168,255,.18),
+    0 0 20px rgba(122,168,255,.10);
 }
 
 .proof-title p {
