@@ -348,18 +348,24 @@ h1 span {
 .proof-title {
   background: #050505;
   text-align: center;
-  padding: 60px 20px 35px;
+  padding: 42px 20px 22px;
 }
 
 .proof-title h2 {
   margin: 0;
-  font-size: clamp(44px, 5vw, 72px);
-  font-weight: 900;
-  line-height: .95;
-  letter-spacing: -0.04em;
-  color: #ffffff;
+
+  font-size: clamp(38px, 4vw, 52px);
+  font-weight: 800;
+
+  line-height: 1;
+  letter-spacing: -0.03em;
+
+  color: rgba(255,255,255,.92);
 
   text-transform: uppercase;
+
+  text-shadow:
+    0 0 20px rgba(79,132,255,.08);
 }
 
 .proof-title h2 span {
@@ -374,16 +380,16 @@ h1 span {
   -webkit-text-fill-color: transparent;
 
   text-shadow:
-    0 0 25px rgba(79,132,255,.35);
+    0 0 18px rgba(79,132,255,.22);
 }
 
 .proof-title p {
-  margin-top: 18px;
+  margin-top: 12px;
 
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
 
-  color: rgba(255,255,255,.65);
+  color: rgba(255,255,255,.55);
 
-  letter-spacing: .02em;
+  letter-spacing: .01em;
 }
