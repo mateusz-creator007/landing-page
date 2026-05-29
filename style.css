@@ -348,29 +348,42 @@ h1 span {
 .proof-title {
   background: #050505;
   text-align: center;
-  padding: 46px 20px 26px;
-  border-top: 1px solid rgba(255,255,255,.06);
-}
-
-.proof-kicker {
-  display: block;
-  margin-bottom: 12px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .32em;
-  text-transform: uppercase;
-  color: #4b83ff;
+  padding: 60px 20px 35px;
 }
 
 .proof-title h2 {
   margin: 0;
-  font-size: 34px;
-  font-weight: 800;
-  line-height: 1.05;
-  color: rgba(255,255,255,.92);
-  letter-spacing: -0.035em;
+  font-size: clamp(44px, 5vw, 72px);
+  font-weight: 900;
+  line-height: .95;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+.proof-title h2 span {
+  background: linear-gradient(
+    180deg,
+    #9fc2ff 0%,
+    #6a9cff 35%,
+    #3f7cff 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 25px rgba(79,132,255,.35);
 }
 
 .proof-title p {
-  display: none;
+  margin-top: 18px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  color: rgba(255,255,255,.65);
+
+  letter-spacing: .02em;
 }
