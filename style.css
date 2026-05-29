@@ -361,25 +361,23 @@ h1 span {
 
   color: #ffffff;
   text-transform: uppercase;
-
-  text-shadow:
-    0 1px 0 rgba(255,255,255,.05);
 }
 
-/* WORD */
 .proof-title h2 .word {
-  color: #dce9ff;
+  color: #9fb6ff;
+  background: none;
+  -webkit-text-fill-color: #9fb6ff;
 
   text-shadow:
-    0 0 2px rgba(255,255,255,.95),
-    0 0 8px rgba(185,210,255,.9),
-    0 0 18px rgba(120,165,255,.8),
-    0 0 35px rgba(95,135,255,.7);
+    0 0 2px rgba(255,255,255,.75),
+    0 0 6px rgba(170,185,255,.85),
+    0 0 12px rgba(95,115,255,.95),
+    0 0 22px rgba(65,80,255,.75),
+    0 0 38px rgba(35,45,255,.45);
 
-  filter: saturate(1.15);
+  filter: saturate(1.35) brightness(1.05);
 }
 
-/* opis pod nagłówkiem */
 .proof-title p {
   margin-top: 18px;
 
