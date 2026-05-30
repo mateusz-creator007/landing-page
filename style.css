@@ -325,21 +325,41 @@ h1 span {
 }
 
 .proof-image-section {
+  position: relative;
   width: 100%;
-  background: #050505;
   display: flex;
   justify-content: center;
-  padding: 35px 32px 0;
+  padding: 70px 32px 20px;
   overflow: hidden;
   border-top: 1px solid rgba(255,255,255,.06);
+
+  background:
+    radial-gradient(circle at 15% 45%, rgba(35, 95, 255, .18), transparent 34%),
+    radial-gradient(circle at 85% 45%, rgba(75, 120, 255, .16), transparent 36%),
+    radial-gradient(ellipse at center, rgba(55,115,255,.12), transparent 65%),
+    #050505;
+}
+
+.proof-image-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.75), transparent 25%, transparent 75%, rgba(0,0,0,.75));
+  pointer-events: none;
 }
 
 .proof-image-section img {
+  position: relative;
+  z-index: 2;
   width: 100%;
   max-width: 1450px;
   height: auto;
   display: block;
   border-radius: 28px;
+  box-shadow:
+    0 0 80px rgba(40, 95, 255, .18),
+    0 30px 90px rgba(0,0,0,.75);
 }
 
 .campaign-showcase {
@@ -413,25 +433,4 @@ h1 span {
   width:100%;
   max-width:1600px;
   margin:0 auto;
-}
-
-.verified-section{
-  position:relative;
-  background:#050505;
-}
-
-.verified-section::before{
-  content:"";
-  position:absolute;
-  inset:0;
-
-  background:
-    radial-gradient(
-      ellipse at center,
-      rgba(55,115,255,.14) 0%,
-      rgba(55,115,255,.05) 30%,
-      transparent 70%
-    );
-
-  pointer-events:none;
 }
