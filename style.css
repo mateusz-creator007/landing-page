@@ -402,3 +402,15 @@ h1 span {
   color: rgba(255,255,255,.8);
   letter-spacing: .01em;
 }
+
+.how-it-works-image{
+  background:#050509;
+  padding:60px 20px;
+}
+
+.how-it-works-image img{
+  display:block;
+  width:100%;
+  max-width:1600px;
+  margin:0 auto;
+}
