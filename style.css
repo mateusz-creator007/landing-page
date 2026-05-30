@@ -325,53 +325,47 @@ h1 span {
 }
 
 .proof-image-section{
-  position: relative;
-  background: #050505;
-  display: flex;
-  justify-content: center;
-  padding: 35px 32px 0;
-  overflow: hidden;
-  border-top: 1px solid rgba(255,255,255,.06);
+  position:relative;
+  background:#050505;
+  overflow:hidden;
 }
 
 .proof-image-section::before{
   content:"";
   position:absolute;
-
-  width:1400px;
-  height:700px;
-
-  left:50%;
+  left:-250px;
   top:50%;
+  width:500px;
+  height:900px;
+  transform:translateY(-50%);
 
-  transform:translate(-50%,-50%);
+  background:radial-gradient(
+    circle,
+    rgba(25,90,255,.22) 0%,
+    rgba(25,90,255,.08) 45%,
+    transparent 75%
+  );
 
-  background:
-    radial-gradient(
-      ellipse at center,
-      rgba(38,98,255,.14) 0%,
-      rgba(38,98,255,.08) 35%,
-      rgba(38,98,255,.03) 60%,
-      transparent 80%
-    );
-
-  filter: blur(90px);
-  pointer-events:none;
+  filter:blur(80px);
 }
 
-.proof-image-section img{
-  position:relative;
-  z-index:2;
+.proof-image-section::after{
+  content:"";
+  position:absolute;
+  right:-250px;
+  top:50%;
+  width:500px;
+  height:900px;
+  transform:translateY(-50%);
 
-  width:100%;
-  max-width:1450px;
-  height:auto;
-  display:block;
-  border-radius:28px;
+  background:radial-gradient(
+    circle,
+    rgba(25,90,255,.22) 0%,
+    rgba(25,90,255,.08) 45%,
+    transparent 75%
+  );
 
-  box-shadow:
-    0 0 80px rgba(25,80,255,.12),
-    0 35px 80px rgba(0,0,0,.65);
+  filter:blur(80px);
 }
 
 .campaign-showcase {
