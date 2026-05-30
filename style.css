@@ -324,48 +324,22 @@ h1 span {
   }
 }
 
-.proof-image-section{
-  position:relative;
-  background:#050505;
-  overflow:hidden;
+.proof-image-section {
+  width: 100%;
+  background: #050505;
+  display: flex;
+  justify-content: center;
+  padding: 35px 32px 0;
+  overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,.06);
 }
 
-.proof-image-section::before{
-  content:"";
-  position:absolute;
-  left:-250px;
-  top:50%;
-  width:500px;
-  height:900px;
-  transform:translateY(-50%);
-
-  background:radial-gradient(
-    circle,
-    rgba(25,90,255,.22) 0%,
-    rgba(25,90,255,.08) 45%,
-    transparent 75%
-  );
-
-  filter:blur(80px);
-}
-
-.proof-image-section::after{
-  content:"";
-  position:absolute;
-  right:-250px;
-  top:50%;
-  width:500px;
-  height:900px;
-  transform:translateY(-50%);
-
-  background:radial-gradient(
-    circle,
-    rgba(25,90,255,.22) 0%,
-    rgba(25,90,255,.08) 45%,
-    transparent 75%
-  );
-
-  filter:blur(80px);
+.proof-image-section img {
+  width: 100%;
+  max-width: 1450px;
+  height: auto;
+  display: block;
+  border-radius: 28px;
 }
 
 .campaign-showcase {
