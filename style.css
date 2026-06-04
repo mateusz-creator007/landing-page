@@ -414,3 +414,18 @@ h1 span {
   max-width:1600px;
   margin:0 auto;
 }
+
+/* --- Creator Showcase (pod War Thunder) --- */
+
+.creator-showcase-image{
+  background:#050505;
+  padding:20px 20px 90px;
+}
+
+.creator-showcase-image img{
+  display:block;
+  width:100%;
+  max-width:1500px;
+  height:auto;
+  margin:0 auto;
+}
