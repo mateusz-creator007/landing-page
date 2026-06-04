@@ -428,10 +428,10 @@ h1 span {
 
 .creator-showcase-image img{
 
-  width:88%;          /* było 100% */
-
-  max-width:1320px;   /* było 1500 */
-
+  width:82%;
+  
+max-width:1240px;
+  
   height:auto;
 
   display:block;
