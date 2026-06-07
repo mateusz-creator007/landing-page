@@ -361,15 +361,14 @@ h1 span {
   background:
     radial-gradient(
       ellipse at center,
-      rgba(60,80,255,.06) 0%,
-      rgba(60,80,255,.02) 35%,
-      transparent 70%
+      rgba(70,95,255,.16) 0%,
+      rgba(70,95,255,.07) 35%,
+      transparent 72%
     ),
     #050505;
 
-  text-align:center;
-
-  padding:48px 20px 0;
+  text-align: center;
+  padding: 48px 20px 0;
 }
 
 .proof-title h2 {
