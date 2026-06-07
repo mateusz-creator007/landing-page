@@ -361,7 +361,7 @@ h1 span {
   background: #050505;
   text-align: center;
 
- padding: 30px 20px 8px;
+ padding: 30px 20px 0px;
 }
 
 .proof-title h2 {
