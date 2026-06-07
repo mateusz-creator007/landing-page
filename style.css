@@ -88,27 +88,27 @@ inset 0 1px rgba(255,255,255,.04);
   align-items: center;
   justify-content: center;
 
-  border-radius: 22px;
+  border-radius: 20px;
 
   background:
     linear-gradient(
       180deg,
-      #17306b 0%,
+      #14234f 0%,
       #091325 100%
     );
 
-  border: 1px solid rgba(140,180,255,.55);
+  border: 1px solid rgba(125,170,255,.45);
 
   color: #ffffff;
 
-  font-size: 31px;
+  font-size: 26px;
   font-weight: 900;
 
-  letter-spacing: -.09em;
+  letter-spacing: -.08em;
 
   box-shadow:
-    0 0 60px rgba(60,110,255,.30),
-    inset 0 1px rgba(255,255,255,.18);
+    0 0 45px rgba(70,120,255,.24),
+    inset 0 1px rgba(255,255,255,.12);
 }
 
 .brand-name {
@@ -116,31 +116,25 @@ inset 0 1px rgba(255,255,255,.04);
   align-items: center;
 }
 
-.brand-name strong{
+.brand-name strong {
 
-  color:#ffffff;
+  color: #ffffff;
 
-  font-size:30px;
+  font-size: 38px;
 
-  font-weight:850;
+  font-weight: 900;
 
-  line-height:1;
+  line-height: 1;
 
-  letter-spacing:-0.05em;
+  letter-spacing: -.08em;
 
-  display:block;
+  text-decoration: none !important;
 
-  text-decoration:none !important;
+  text-shadow: none;
 
-  border-bottom:none !important;
+  border-bottom: none;
 
-  box-shadow:none !important;
-
-  background:none !important;
-
-  filter:none !important;
-
-  text-shadow:none !important;
+  background: none;
 }
 
 .nav-links {
