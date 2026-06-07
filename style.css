@@ -546,3 +546,63 @@ max-width:1240px;
 
   border-radius:22px;
 }
+
+.creator-network-copy{
+  margin-top: 18px;
+}
+
+.network-main{
+  margin: 0;
+
+  font-size: clamp(24px, 1.7vw, 32px);
+
+  line-height: 1.45;
+
+  color: rgba(255,255,255,.92);
+
+  max-width: 760px;
+}
+
+.network-footer{
+
+  margin-top: 28px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 14px 22px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.04),
+      rgba(255,255,255,.02)
+    );
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  color:
+    rgba(255,255,255,.62);
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  letter-spacing: .02em;
+
+  backdrop-filter: blur(10px);
+}
+
+.network-footer span{
+  color:#7aaeff;
+
+  font-size:18px;
+
+  font-weight:900;
+}
