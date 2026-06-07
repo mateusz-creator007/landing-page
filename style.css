@@ -358,10 +358,18 @@ h1 span {
 }
 
 .proof-title {
-  background: #050505;
-  text-align: center;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(60,80,255,.06) 0%,
+      rgba(60,80,255,.02) 35%,
+      transparent 70%
+    ),
+    #050505;
 
- padding: 48px 20px 0px;
+  text-align:center;
+
+  padding:48px 20px 0;
 }
 
 .proof-title h2 {
