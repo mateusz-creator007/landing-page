@@ -9,9 +9,22 @@
 
 <body>
 
-  <main class="hero">
+  <main class="hero" id="home">
 
     <div class="overlay"></div>
+
+    <nav class="nav">
+      <a href="#home" class="brand">
+        <div class="logo-mark">MB</div>
+        <span>MBOJAR</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#proofs">Proof</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
 
     <div class="hero-mug">
       <img src="/kubek.png" alt="Founder mug" />
@@ -31,13 +44,6 @@
       </div>
     </div>
 
-    <nav class="nav">
-      <div class="brand">
-        <div class="logo">▽</div>
-        <span>INFLUENCE SCALE</span>
-      </div>
-    </nav>
-
     <section class="hero-content">
       <div class="left">
 
@@ -55,8 +61,8 @@
         </p>
 
         <div class="buttons">
-          <a href="#" class="btn primary">Get Started <span>→</span></a>
-          <a href="#" class="btn secondary">Talk to an Expert</a>
+          <a href="#contact" class="btn primary">Get Started <span>→</span></a>
+          <a href="#contact" class="btn secondary">Talk to an Expert</a>
         </div>
 
         <div class="brands">
@@ -75,12 +81,12 @@
 
   </main>
 
-<section class="proof-title">
- <h2>
-  DON'T TAKE OUR <span class="word">WORD</span> FOR IT
-</h2>
-  <p>See real creator-brand collaborations below.</p>
-</section>
+  <section class="proof-title" id="proofs">
+    <h2>
+      DON'T TAKE OUR <span class="word">WORD</span> FOR IT
+    </h2>
+    <p>See real creator-brand collaborations below.</p>
+  </section>
 
   <section class="proof-image-section">
     <img src="brandcreator.png" alt="Verified collaborations proof" />
@@ -97,10 +103,12 @@
   <section class="creator-showcase-image">
     <img src="morem.png" alt="Creator collaboration cards" />
   </section>
-  
-  <section class="how-it-works-image">
-  <img src="/ggb.png" alt="How It Works" />
-</section>
-  
+
+  <section class="how-it-works-image" id="how-it-works">
+    <img src="/ggb.png" alt="How It Works" />
+  </section>
+
+  <section id="contact"></section>
+
 </body>
 </html>
