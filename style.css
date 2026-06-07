@@ -116,19 +116,31 @@ inset 0 1px rgba(255,255,255,.04);
   align-items: center;
 }
 
-.brand-name strong {
-  color: #ffffff;
+.brand-name strong{
 
-  font-size: 46px;
+  color:#ffffff;
 
-  font-weight: 950;
+  font-size:30px;
 
-  line-height: .95;
+  font-weight:850;
 
-  letter-spacing: -.075em;
+  line-height:1;
 
-  text-shadow:
-    0 0 22px rgba(90,140,255,.12);
+  letter-spacing:-0.05em;
+
+  display:block;
+
+  text-decoration:none !important;
+
+  border-bottom:none !important;
+
+  box-shadow:none !important;
+
+  background:none !important;
+
+  filter:none !important;
+
+  text-shadow:none !important;
 }
 
 .nav-links {
@@ -621,4 +633,17 @@ max-width:1240px;
   margin:0 auto;
 
   border-radius:22px;
+}
+
+.brand,
+.brand:hover,
+.brand:focus,
+.brand:visited{
+
+  text-decoration:none !important;
+}
+
+.brand *{
+
+  text-decoration:none !important;
 }
