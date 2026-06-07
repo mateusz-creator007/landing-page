@@ -419,15 +419,11 @@ h1 span {
 /* --- Creator Showcase (mniejsza i bliżej) --- */
 
 .creator-showcase-image{
-
   background:#050505;
-
   padding:0 20px 60px;
-
-  margin-top:-120px;
+  margin-top:-40px;
 
   display:flex;
-
   justify-content:center;
 }
 
