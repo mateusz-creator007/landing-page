@@ -571,47 +571,6 @@ box-shadow:
   display: block;
 }
 
-.campaign-wrapper{
-  position:relative;
-  width:fit-content;
-  margin:auto;
-}
-
-.campaign-wrapper img{
-  display:block;
-  width:100%;
-}
-
-.campaign-link{
-  position:absolute;
-  display:block;
-  z-index:20;
-  cursor:pointer;
-  border-radius:18px;
-  background:rgba(255,0,0,.25); /* test */
-}
-
-/* GÓRNY LEWY CLICK HERE */
-.campaign-link.war-top{
-  left:5.8%;
-  top:12.6%;
-  width:13.6%;
-  height:8.5%;
-}
-
-/* PRAWY CLICK HERE */
-.campaign-link.war-right{
-  left:80.4%;
-  top:52.5%;
-  width:13.8%;
-  height:9.5%;
-}
-
-.campaign-link:hover{
-  background:rgba(0,120,255,.10);
-  box-shadow:0 0 24px rgba(0,120,255,.28);
-}
-
 .proof-title {
   background: #050505;
 
