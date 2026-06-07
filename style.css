@@ -44,14 +44,14 @@ body {
 .nav {
   position: fixed;
 
-  top: 18px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
 
-  width: calc(100% - 72px);
+  width: calc(100% - 64px);
   max-width: 1820px;
 
-  height: 92px;
+  height: 72px;
 
   z-index: 999;
 
@@ -59,152 +59,78 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 46px;
+  padding: 0 34px;
 
   background:
     linear-gradient(
       180deg,
-      rgba(8,10,18,.90),
-      rgba(4,6,12,.82)
+      rgba(6,8,14,.84),
+      rgba(4,6,10,.72)
     );
 
-  border: 1px solid rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.05);
 
-  border-radius: 24px;
+  border-radius: 20px;
 
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
 
   box-shadow:
-    0 24px 90px rgba(0,0,0,.55),
-    inset 0 1px rgba(255,255,255,.04);
+    0 12px 45px rgba(0,0,0,.42);
 }
 
 .brand {
   display: flex;
   align-items: center;
 
-  gap: 18px;
+  gap: 14px;
 
   text-decoration: none;
 }
 
 .logo-mark {
-  width: 60px;
-  height: 60px;
+  width: 46px;
+  height: 46px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 14px;
 
-  border-radius: 18px;
+  font-size: 18px;
 
   background:
     linear-gradient(
       180deg,
-      rgba(15,22,48,.96),
-      rgba(6,9,18,.96)
+      rgba(14,22,50,.95),
+      rgba(5,8,16,.95)
     );
 
-  border: 1px solid rgba(130,170,255,.28);
-
-  color: #9fc2ff;
-
-  font-size: 24px;
-  font-weight: 900;
-
-  letter-spacing: -.08em;
+  border: 1px solid rgba(130,170,255,.22);
 
   box-shadow:
-    0 0 36px rgba(65,120,255,.18);
-}
-
-.brand-name {
-  display: flex;
-  align-items: center;
+    0 0 20px rgba(60,120,255,.12);
 }
 
 .brand-name strong {
-  color: #ffffff;
+  font-size: 22px;
 
-  font-size: 34px;
+  font-weight: 850;
 
-  font-weight: 900;
-
-  line-height: 1;
-
-  letter-spacing: -.06em;
-
-  text-shadow:
-    0 0 18px rgba(100,140,255,.08);
+  letter-spacing: -.05em;
 }
 
 .nav-links {
-  display: flex;
-
-  align-items: center;
-
-  gap: 42px;
+  gap: 32px;
 }
 
 .nav-links a {
-  position: relative;
+  font-size: 12px;
 
-  color: rgba(255,255,255,.60);
+  letter-spacing: .14em;
 
-  text-decoration: none;
-
-  font-size: 13px;
-
-  font-weight: 800;
-
-  letter-spacing: .18em;
-
-  text-transform: uppercase;
-
-  transition:
-    color .25s ease,
-    transform .25s ease;
-}
-
-.nav-links a:hover {
-  color: #ffffff;
-
-  transform: translateY(-1px);
-}
-
-.nav-links a::after {
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-  bottom: -10px;
-
-  width: 0;
-
-  height: 2px;
-
-  background:
-    linear-gradient(
-      90deg,
-      #7aaeff,
-      #2d7dff
-    );
-
-  transition: .25s ease;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
+  color: rgba(255,255,255,.58);
 }
 
 .hero-content {
-  position: relative;
-
-  z-index: 2;
-
-  padding: 185px 0 0 72px;
+  padding: 150px 0 0 72px;
 }
 
 .left {
