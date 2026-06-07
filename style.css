@@ -564,11 +564,40 @@ box-shadow:
     margin-bottom: 20px;
 }
 
-.campaign-card {
-  width: 1200px;
-  max-width: 95%;
-  height: auto;
-  display: block;
+.campaign-card{
+
+width:1200px;
+
+max-width:95%;
+
+height:auto;
+
+display:block;
+
+}
+
+/* DODAJ OD RAZU POD TYM */
+
+.campaign-wrapper{
+
+position:relative;
+
+width:fit-content;
+
+margin:auto;
+
+}
+
+.campaign-wrapper .campaign-card{
+
+width:1200px;
+
+max-width:95%;
+
+height:auto;
+
+display:block;
+
 }
 
 .proof-title {
