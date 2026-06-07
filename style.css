@@ -44,8 +44,8 @@ body {
 .nav {
   position: fixed;
 
-  top: 28px;
-  left: 38px;
+  top: 36px;
+  left: 42px;
 
   z-index: 999;
 
@@ -61,11 +61,11 @@ body {
 
   gap: 18px;
 
-  padding: 14px 22px 14px 14px;
+  padding: 10px 18px 10px 10px;
 
   text-decoration: none;
 
-  border-radius: 22px;
+  border-radius: 18px;
 
   background:
     linear-gradient(
@@ -122,7 +122,7 @@ body {
 .brand-name strong {
   color: #ffffff;
 
-  font-size: 44px;
+  font-size: 38px;
 
   font-weight: 900;
 
