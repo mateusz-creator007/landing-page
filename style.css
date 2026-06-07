@@ -535,14 +535,10 @@ background:rgba(255,0,0,.25);
 }
 
 .proof-link.temu{
-
-left:16.5%;
-
-top:39%;
-
-width:13%;
-
-height:13%;
+  left: 15.2%;
+  top: 40.2%;
+  width: 14.1%;
+  height: 11.2%;
 }
 
 .proof-link:hover{
