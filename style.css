@@ -505,6 +505,55 @@ h1 span {
   border-radius: 28px;
 }
 
+.proof-wrapper{
+position:relative;
+
+width:fit-content;
+
+margin:auto;
+}
+
+.proof-wrapper img{
+display:block;
+
+width:100%;
+}
+
+.proof-link{
+position:absolute;
+
+display:block;
+
+z-index:20;
+
+cursor:pointer;
+
+border-radius:18px;
+
+/* TEST */
+background:rgba(255,0,0,.25);
+}
+
+.proof-link.temu{
+
+left:16.5%;
+
+top:39%;
+
+width:13%;
+
+height:13%;
+}
+
+.proof-link:hover{
+
+background:
+rgba(0,120,255,.10);
+
+box-shadow:
+0 0 40px rgba(0,120,255,.55);
+}
+
 .campaign-showcase {
     display: flex;
     justify-content: center;
