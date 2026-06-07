@@ -564,6 +564,13 @@ box-shadow:
     margin-bottom: 20px;
 }
 
+.campaign-card {
+  width: 1200px;
+  max-width: 95%;
+  height: auto;
+  display: block;
+}
+
 .campaign-wrapper{
   position:relative;
   width:fit-content;
@@ -603,13 +610,6 @@ box-shadow:
 .campaign-link:hover{
   background:rgba(0,120,255,.10);
   box-shadow:0 0 24px rgba(0,120,255,.28);
-}
-
-.campaign-card {
-  width: 1200px;
-  max-width: 95%;
-  height: auto;
-  display: block;
 }
 
 .proof-title {
