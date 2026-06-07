@@ -421,14 +421,13 @@ h1 span {
 .proof-title p {
   margin-top: 26px;
 
+  margin-bottom: 18px;
+
   font-size: clamp(24px, 1.6vw, 32px);
   font-weight: 700;
-  line-height: 1.35;
 
   color: rgba(255,255,255,.8);
-  letter-spacing: .01em;
 }
-
 .how-it-works-image{
   background:#050509;
   padding:60px 20px;
