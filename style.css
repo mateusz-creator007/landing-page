@@ -367,7 +367,7 @@ h1 span {
 .proof-title h2 {
   margin: 0;
 
-  font-size: clamp(44px, 5vw, 72px);
+  font-size: clamp(38px, 4.4vw, 62px);
   font-weight: 900;
   line-height: .95;
   letter-spacing: -0.045em;
