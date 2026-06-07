@@ -600,6 +600,16 @@ display:block;
 
 }
 
+.campaign-link{
+  position:absolute;
+  display:block;
+  z-index:20;
+  cursor:pointer;
+  border-radius:18px;
+
+  background:rgba(255,0,0,.25);
+}
+
 .proof-title {
   background: #050505;
 
