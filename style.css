@@ -43,8 +43,9 @@ body {
 
 .nav {
   position: fixed;
-  top: 24px;
-  left: 34px;
+
+  top: 28px;
+  left: 38px;
 
   z-index: 999;
 
@@ -52,57 +53,85 @@ body {
   align-items: center;
 
   background: transparent;
-  border: none;
-  box-shadow: none;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+
+  gap: 18px;
+
+  padding: 14px 22px 14px 14px;
 
   text-decoration: none;
 
-  padding: 10px 16px 10px 10px;
+  border-radius: 22px;
 
-  border-radius: 18px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10,12,20,.72),
+      rgba(6,8,14,.58)
+    );
 
-  background: rgba(5,5,5,.38);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 
   border: 1px solid rgba(255,255,255,.08);
+
+  box-shadow:
+    0 18px 60px rgba(0,0,0,.42);
 }
 
 .logo-mark {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 14px;
+  border-radius: 20px;
 
-  background: rgba(12,18,38,.72);
-  border: 1px solid rgba(130,170,255,.28);
+  background:
+    linear-gradient(
+      180deg,
+      #14234f 0%,
+      #091325 100%
+    );
 
-  color: #9fc2ff;
+  border: 1px solid rgba(125,170,255,.45);
 
-  font-size: 19px;
+  color: #ffffff;
+
+  font-size: 26px;
   font-weight: 900;
+
   letter-spacing: -.08em;
 
-  box-shadow: 0 0 24px rgba(70,120,255,.16);
+  box-shadow:
+    0 0 45px rgba(70,120,255,.24),
+    inset 0 1px rgba(255,255,255,.12);
+}
+
+.brand-name {
+  display: flex;
+  align-items: center;
 }
 
 .brand-name strong {
   color: #ffffff;
 
-  font-size: 24px;
+  font-size: 44px;
+
   font-weight: 900;
-  letter-spacing: -.055em;
+
   line-height: 1;
+
+  letter-spacing: -.08em;
+
+  text-shadow:
+    0 0 18px rgba(90,140,255,.10);
 }
 
 .nav-links {
@@ -111,13 +140,16 @@ body {
 
 .hero-content {
   position: relative;
+
   z-index: 2;
+
   padding: 150px 0 0 72px;
 }
 
 .left {
   max-width: 690px;
 }
+
 .eyebrow {
   width: fit-content;
   padding: 8px 15px;
