@@ -876,11 +876,11 @@ border-radius:28px;
 
 position:absolute;
 
-left:6%;
+left:5.5%;
 
-top:7%;
+top:8%;
 
-width:min(620px,42vw);
+width:min(820px,52vw);
 
 color:#fff;
 
@@ -888,27 +888,11 @@ z-index:5;
 
 }
 
-.about-label{
-
-display:block;
-
-margin-bottom:18px;
-
-font-size:18px;
-
-font-weight:700;
-
-letter-spacing:.22em;
-
-color:#6d9cff;
-
-}
-
 .about-content h2{
 
 margin:0 0 24px;
 
-font-size:clamp(56px,5vw,86px);
+font-size:clamp(64px,5vw,92px);
 
 line-height:.92;
 
@@ -916,19 +900,7 @@ font-weight:900;
 
 letter-spacing:-.05em;
 
-}
-
-.about-content h2 span{
-
-background:linear-gradient(
-180deg,
-#a9c7ff,
-#6e9eff
-);
-
--webkit-background-clip:text;
-
--webkit-text-fill-color:transparent;
+max-width:700px;
 
 }
 
@@ -936,9 +908,11 @@ background:linear-gradient(
 
 margin:0 0 18px;
 
-font-size:clamp(19px,1.15vw,25px);
+font-size:clamp(18px,1.02vw,22px);
 
-line-height:1.62;
+line-height:1.65;
+
+max-width:720px;
 
 color:rgba(255,255,255,.90);
 
@@ -952,13 +926,15 @@ flex-direction:column;
 
 gap:10px;
 
-margin:34px 0;
+margin:28px 0;
+
+max-width:760px;
 
 }
 
 .about-points strong{
 
-font-size:clamp(26px,1.45vw,34px);
+font-size:clamp(22px,1.35vw,30px);
 
 line-height:1.2;
 
@@ -970,9 +946,11 @@ display:flex;
 
 flex-direction:column;
 
-gap:10px;
+gap:8px;
 
-margin-top:34px;
+margin-top:24px;
+
+max-width:760px;
 
 color:#78a3ff;
 
@@ -980,7 +958,7 @@ color:#78a3ff;
 
 .about-ending strong{
 
-font-size:clamp(28px,1.6vw,36px);
+font-size:clamp(24px,1.4vw,34px);
 
 line-height:1.15;
 
