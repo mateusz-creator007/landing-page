@@ -746,7 +746,7 @@ box-shadow:
 
 .more-creators{
 
-margin-top:48px;
+width:100%;
 
 display:flex;
 
@@ -754,16 +754,22 @@ justify-content:center;
 
 align-items:center;
 
+margin-top:52px;
+
+margin-bottom:20px;
+
+clear:both;
+
 font-size:clamp(24px,2vw,34px);
 
 font-weight:800;
 
 letter-spacing:-.03em;
 
-color:rgba(255,255,255,.88);
+color:rgba(255,255,255,.92);
 
 text-shadow:
-0 0 28px rgba(70,120,255,.28);
+0 0 28px rgba(70,120,255,.22);
 
 }
 
@@ -771,11 +777,11 @@ text-shadow:
 
 content:"";
 
-width:120px;
+width:140px;
 
 height:1px;
 
-margin-right:20px;
+margin-right:22px;
 
 background:
 linear-gradient(
@@ -790,11 +796,11 @@ rgba(90,140,255,.55)
 
 content:"";
 
-width:120px;
+width:140px;
 
 height:1px;
 
-margin-left:20px;
+margin-left:22px;
 
 background:
 linear-gradient(
