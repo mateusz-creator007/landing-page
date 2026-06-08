@@ -736,87 +736,92 @@ box-shadow:
 /* --- Creator Showcase (mniejsza i bliżej) --- */
 
 .creator-showcase-image{
+
   background:#050505;
+
   padding:0 20px 60px;
+
   margin-top:-40px;
 
   display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
   justify-content:center;
 }
 
+/* + 2,000 More */
+
 .more-creators{
 
-width:100%;
+  width:100%;
 
-display:flex;
+  display:flex;
 
-justify-content:center;
+  justify-content:center;
 
-align-items:center;
+  align-items:center;
 
-margin-top:52px;
+  margin-top:42px;
 
-margin-bottom:20px;
+  margin-bottom:20px;
 
-clear:both;
+  font-size:clamp(24px,2vw,34px);
 
-font-size:clamp(24px,2vw,34px);
+  font-weight:800;
 
-font-weight:800;
+  letter-spacing:-.03em;
 
-letter-spacing:-.03em;
+  color:rgba(255,255,255,.92);
 
-color:rgba(255,255,255,.92);
-
-text-shadow:
-0 0 28px rgba(70,120,255,.22);
-
+  text-shadow:
+    0 0 28px rgba(70,120,255,.22);
 }
 
 .more-creators::before{
 
-content:"";
+  content:"";
 
-width:140px;
+  width:140px;
 
-height:1px;
+  height:1px;
 
-margin-right:22px;
+  margin-right:22px;
 
-background:
-linear-gradient(
-90deg,
-transparent,
-rgba(90,140,255,.55)
-);
-
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(90,140,255,.55)
+    );
 }
 
 .more-creators::after{
 
-content:"";
+  content:"";
 
-width:140px;
+  width:140px;
 
-height:1px;
+  height:1px;
 
-margin-left:22px;
+  margin-left:22px;
 
-background:
-linear-gradient(
-90deg,
-rgba(90,140,255,.55),
-transparent
-);
-
+  background:
+    linear-gradient(
+      90deg,
+      rgba(90,140,255,.55),
+      transparent
+    );
 }
 
 .creator-showcase-image img{
 
   width:82%;
-  
-max-width:1240px;
-  
+
+  max-width:1240px;
+
   height:auto;
 
   display:block;
