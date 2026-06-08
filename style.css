@@ -855,11 +855,19 @@ box-shadow:
 }
 
 .about-image-section img{
-  width:min(1700px,98%);
-  display:block;
-  height:auto;
-  object-fit:cover;
-  border-radius:28px;
+
+width:min(1700px,98%);
+
+display:block;
+
+height:auto;
+
+object-fit:cover;
+
+border-radius:28px;
+
+transform:translateX(-70px);
+
 }
 
 .about-content{
