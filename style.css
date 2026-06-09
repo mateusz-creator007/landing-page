@@ -1050,3 +1050,28 @@ linear-gradient(
   font-size:clamp(24px,1.4vw,34px);
   line-height:1.05;
 }
+
+/* HOW IT WORKS IMAGE */
+
+.how-image-section{
+  width:100%;
+  background:#050505;
+  padding:120px 0 140px;
+}
+
+.how-image{
+  display:block;
+
+  width:min(1400px,92vw);
+
+  height:auto;
+
+  margin:0 auto;
+
+  object-fit:contain;
+
+  user-select:none;
+
+  filter:
+    drop-shadow(0 0 40px rgba(35,120,255,.08));
+}
