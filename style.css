@@ -1055,15 +1055,20 @@ linear-gradient(
 
 .how-image-section{
 
-background:#050505;
+background:transparent;
 
-/* było np. 120px 0 140px */
-padding:40px 0 80px;
+/* usuń szerokość kontenera */
+max-width:none;
+
+padding:0;
 
 margin-top:-80px;
 
-/* usuwa dużą pustkę */
 overflow:hidden;
+
+display:flex;
+
+justify-content:center;
 
 }
 
@@ -1071,19 +1076,32 @@ overflow:hidden;
 
 display:block;
 
-width:min(1400px,92vw);
+width:min(1500px,100vw);
 
 height:auto;
 
-margin:0 auto;
+margin:0;
 
-/* podciąga obraz wyżej */
-transform:translateY(-40px);
+background:transparent;
 
-filter:
-drop-shadow(
-0 0 40px
-rgba(35,120,255,.08)
+/* usuwa widoczną krawędź */
+mix-blend-mode:screen;
+
+/* delikatnie wygasza brzegi */
+mask-image:
+linear-gradient(
+to bottom,
+black 0%,
+black 94%,
+transparent 100%
+);
+
+-webkit-mask-image:
+linear-gradient(
+to bottom,
+black 0%,
+black 94%,
+transparent 100%
 );
 
 }
