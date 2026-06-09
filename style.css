@@ -1051,27 +1051,39 @@ linear-gradient(
   line-height:1.05;
 }
 
-/* HOW IT WORKS IMAGE */
+/* HOW IT WORKS */
 
 .how-image-section{
-  width:100%;
-  background:#050505;
-  padding:120px 0 140px;
+
+background:#050505;
+
+/* było np. 120px 0 140px */
+padding:40px 0 80px;
+
+margin-top:-80px;
+
+/* usuwa dużą pustkę */
+overflow:hidden;
+
 }
 
 .how-image{
-  display:block;
 
-  width:min(1400px,92vw);
+display:block;
 
-  height:auto;
+width:min(1400px,92vw);
 
-  margin:0 auto;
+height:auto;
 
-  object-fit:contain;
+margin:0 auto;
 
-  user-select:none;
+/* podciąga obraz wyżej */
+transform:translateY(-40px);
 
-  filter:
-    drop-shadow(0 0 40px rgba(35,120,255,.08));
+filter:
+drop-shadow(
+0 0 40px
+rgba(35,120,255,.08)
+);
+
 }
