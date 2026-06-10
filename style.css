@@ -1109,18 +1109,20 @@ linear-gradient(
 }
 
 .contact-section{
-  background:#050505;
 
-  padding:
-  60px
-  6%
-  160px;
+background:#050505;
 
-  color:#fff;
+padding:
+0
+6%
+140px;
 
-  position:relative;
+color:#fff;
 
-  margin-top:-40px;
+position:relative;
+
+margin-top:-140px;
+
 }
 
 .contact-left{
@@ -1142,7 +1144,7 @@ justify-content:center;
 
 gap:18px;
 
-margin-bottom:26px;
+margin-bottom:18px;
 
 font-size:14px;
 
