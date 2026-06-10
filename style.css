@@ -1125,7 +1125,7 @@ linear-gradient(
 
 .contact-left{
   width:min(860px,100%);
-  margin:0 auto;
+  margin:0 0 32px;
   display:flex;
   flex-direction:column;
   align-items:center;
