@@ -1110,9 +1110,17 @@ linear-gradient(
 
 .contact-section{
   background:#050505;
-  padding:180px 6% 160px;
+
+  padding:
+  60px
+  6%
+  160px;
+
   color:#fff;
+
   position:relative;
+
+  margin-top:-40px;
 }
 
 .contact-left{
