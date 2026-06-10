@@ -1306,3 +1306,178 @@ transparent
     grid-template-columns:1fr;
   }
 }
+
+.how-section{
+  background:#050505;
+  padding:90px 6% 40px;
+  color:#fff;
+}
+
+.how-inner{
+  width:min(920px,100%);
+  margin:0 auto;
+  text-align:center;
+}
+
+.section-label{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  margin-bottom:22px;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#0b84ff;
+}
+
+.section-label::before,
+.section-label::after{
+  content:"";
+  width:90px;
+  height:1px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(11,132,255,.55),
+    transparent
+  );
+}
+
+.how-title{
+  margin:0 0 58px;
+  font-size:clamp(54px,5.8vw,92px);
+  line-height:.92;
+  font-weight:900;
+  letter-spacing:-.055em;
+  color:#fff;
+}
+
+.how-title span{
+  color:#0b84ff;
+}
+
+.how-timeline{
+  width:min(820px,100%);
+  margin:0 auto;
+  position:relative;
+}
+
+.how-timeline::before{
+  content:"";
+  position:absolute;
+  left:150px;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:linear-gradient(
+    180deg,
+    transparent,
+    rgba(11,132,255,.22),
+    transparent
+  );
+}
+
+.how-step{
+  display:grid;
+  grid-template-columns:105px 26px 74px 1fr;
+  align-items:center;
+  gap:18px;
+  padding:25px 0;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  text-align:left;
+}
+
+.how-step:last-child{
+  border-bottom:0;
+}
+
+.how-number{
+  font-size:58px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-.06em;
+  color:rgba(45,82,150,.42);
+}
+
+.how-dot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:#0b84ff;
+  box-shadow:0 0 22px rgba(11,132,255,.65);
+  z-index:2;
+}
+
+.how-icon{
+  font-size:42px;
+  line-height:1;
+  color:#0b84ff;
+  text-align:center;
+  text-shadow:0 0 24px rgba(11,132,255,.35);
+}
+
+.how-copy h3{
+  margin:0 0 8px;
+  font-size:28px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-.03em;
+  color:#fff;
+}
+
+.how-copy p{
+  margin:0;
+  max-width:620px;
+  font-size:18px;
+  line-height:1.35;
+  color:rgba(255,255,255,.78);
+}
+
+.contact-section{
+  background:#050505;
+  padding:35px 6% 160px;
+  color:#fff;
+  position:relative;
+  margin-top:0;
+}
+
+@media(max-width:760px){
+
+  .how-section{
+    padding:80px 22px 30px;
+  }
+
+  .how-title{
+    font-size:clamp(48px,13vw,72px);
+    margin-bottom:46px;
+  }
+
+  .how-timeline::before{
+    left:77px;
+  }
+
+  .how-step{
+    grid-template-columns:62px 18px 52px 1fr;
+    gap:12px;
+    padding:22px 0;
+  }
+
+  .how-number{
+    font-size:40px;
+  }
+
+  .how-icon{
+    font-size:30px;
+  }
+
+  .how-copy h3{
+    font-size:22px;
+  }
+
+  .how-copy p{
+    font-size:15px;
+  }
+
+}
