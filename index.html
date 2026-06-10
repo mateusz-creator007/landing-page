@@ -272,7 +272,95 @@ My role is simple: create opportunities, open doors, and build relationships tha
 
 </section>
   
-<section id="contact"></section>
+<section class="contact-section" id="contact">
+
+  <div class="contact-left">
+
+    <span class="contact-label">
+      CREATOR APPLICATION
+    </span>
+
+    <h2>
+      LET'S TALK
+    </h2>
+
+    <p class="contact-text">
+      Tell us about your content and choose the platforms you want to submit.
+      If your profile matches a brand opportunity, we'll connect you directly by email.
+    </p>
+
+    <form class="contact-form">
+
+      <div class="contact-field">
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="contact-field">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required />
+      </div>
+
+      <div id="platform-container">
+
+        <div class="platform-row">
+
+          <div class="contact-field">
+            <label>Your Platform</label>
+
+            <select required>
+              <option value="">Select platform</option>
+              <option value="YouTube">YouTube</option>
+              <option value="TikTok">TikTok</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Twitch">Twitch</option>
+              <option value="Kick">Kick</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Snapchat">Snapchat</option>
+            </select>
+
+          </div>
+
+          <div class="contact-field">
+            <label>Profile Link</label>
+            <input type="url" placeholder="Paste your profile link" required />
+          </div>
+
+        </div>
+
+      </div>
+
+      <button type="button" class="add-platform" onclick="addPlatform()">
+        + Add another platform
+      </button>
+
+      <div class="contact-field">
+        <label>Message</label>
+        <textarea placeholder="Tell us anything about your content, audience or collaborations..."></textarea>
+      </div>
+
+      <button type="submit" class="contact-submit">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<script>
+function addPlatform() {
+  const container = document.getElementById("platform-container");
+  const firstRow = container.querySelector(".platform-row");
+  const newRow = firstRow.cloneNode(true);
+
+  newRow.querySelector("select").selectedIndex = 0;
+  newRow.querySelectorAll("input").forEach(input => input.value = "");
+
+  container.appendChild(newRow);
+}
+</script>
 
 </body>
 </html>
