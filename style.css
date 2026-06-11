@@ -961,11 +961,19 @@ transform .35s ease;
 
 .about-content h2 span{
 
-  background:linear-gradient(180deg,#b8ceff,#5d8dff);
+background:
+linear-gradient(
+180deg,
+#8fb3ff 0%,
+#5e94ff 55%,
+#2f78ff 100%
+);
 
-  -webkit-background-clip:text;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 
-  -webkit-text-fill-color:transparent;
+text-shadow:
+0 0 18px rgba(40,120,255,.08);
 
 }
 
