@@ -24,12 +24,64 @@ body {
   margin-bottom: 90px;
 }
 
-.proof-title {
-  background: #050505;
-  text-align: center;
+.proof-title{
 
-  /* mniej góry, bo odstęp daje hero */
-  padding: 55px 20px 42px;
+position:relative;
+
+background:
+linear-gradient(
+180deg,
+rgba(6,10,18,.55) 0%,
+#050505 18%,
+#050505 100%
+);
+
+text-align:center;
+
+padding:120px 20px 42px;
+
+margin-top:-90px;
+
+overflow:hidden;
+
+}
+
+.proof-title::before{
+
+content:"";
+
+position:absolute;
+
+top:-260px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:1400px;
+
+height:500px;
+
+background:
+
+radial-gradient(
+circle,
+rgba(70,120,255,.08),
+transparent 72%
+);
+
+pointer-events:none;
+
+z-index:0;
+
+}
+
+.proof-title > *{
+
+position:relative;
+
+z-index:2;
+
 }
 
 .overlay {
