@@ -849,73 +849,40 @@ box-shadow:
 /* ========================= */
 
 .about-image-section{
-
-background:#050505;
-
-display:grid;
-
-grid-template-columns:
-minmax(520px,620px)
-minmax(520px,640px);
-
-align-items:center;
-
-justify-content:center;
-
-gap:60px;
-
-padding:
-100px
-6%
-120px;
-
-max-width:1380px;
-
-margin:0 auto;
-
-overflow:hidden;
-
+  background:#050505;
+  display:grid;
+  grid-template-columns:minmax(560px,660px) minmax(560px,700px);
+  align-items:center;
+  justify-content:center;
+  gap:70px;
+  padding:150px 6% 180px;
+  max-width:1500px;
+  margin:0 auto;
+  overflow:hidden;
 }
 
 /* LEFT */
 
 .about-content{
-
-order:1;
-
-position:relative;
-
-width:100%;
-
-max-width:620px;
-
-color:#fff;
-
-text-align:left;
-
+  order:1;
+  position:relative;
+  width:100%;
+  max-width:660px;
+  color:#fff;
+  text-align:left;
 }
 
 /* RIGHT */
 
 .about-image-section img{
-
-order:2;
-
-width:100%;
-
-max-width:640px;
-
-display:block;
-
-justify-self:end;
-
-border-radius:28px;
-
-object-fit:cover;
-
-box-shadow:
-0 0 60px rgba(0,110,255,.10);
-
+  order:2;
+  width:100%;
+  max-width:700px;
+  display:block;
+  justify-self:end;
+  border-radius:30px;
+  object-fit:cover;
+  box-shadow:0 0 70px rgba(0,110,255,.12);
 }
 
 /* LABEL */
