@@ -907,8 +907,21 @@ transform:
 translateX(-45px)
 translateY(30px);
 
+border:1px solid rgba(70,130,255,.18);
+
 box-shadow:
-0 40px 110px rgba(0,0,0,.58);
+
+0 0 0 1px rgba(70,130,255,.08),
+
+0 0 45px rgba(0,110,255,.12),
+
+0 0 90px rgba(0,110,255,.08),
+
+0 50px 120px rgba(0,0,0,.55);
+
+transition:
+box-shadow .35s ease,
+transform .35s ease;
 
 }
 
