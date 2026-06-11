@@ -1044,17 +1044,17 @@ color:rgba(255,255,255,.86);
 
 .about-icon strong{
   display:block;
-  margin-top:18px;
   font-size:18px;
-  line-height:1.35;
-  font-weight:800;
+  line-height:1.1;
+  font-weight:900;
   color:#fff;
 }
 
 .about-icon > span{
-  display:none;
+  display:block;
   margin-top:5px;
-  font-size:15px;
+  font-size:14px;
+  line-height:1.25;
   color:rgba(255,255,255,.72);
 }
 
