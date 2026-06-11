@@ -952,15 +952,15 @@ transform .35s ease;
 
 .about-content h2{
 
-margin:0 0 30px;
+margin:0 0 34px;
 
-font-size:clamp(58px,5vw,88px);
+font-size:clamp(58px,4.8vw,88px);
 
 line-height:.92;
 
 font-weight:900;
 
-letter-spacing:-.06em;
+letter-spacing:-.05em;
 
 color:#fff;
 
@@ -986,11 +986,16 @@ text-shadow:
 
 /* TEXT */
 
-.about-content > p{
-  margin:0 0 26px;
-  font-size:20px;
-  line-height:1.65;
-  color:rgba(255,255,255,.78);
+.about-content p{
+
+margin:0 0 30px;
+
+font-size:18px;
+
+line-height:1.72;
+
+color:rgba(255,255,255,.78);
+
 }
 
 /* ICONS */
