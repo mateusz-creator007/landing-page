@@ -1608,17 +1608,21 @@ transparent
 }
 
 .proof-title{
-  position:relative;
-  background:#050505;
-  text-align:center;
-  padding:90px 20px 48px;
-  margin-top:0;
-  overflow:hidden;
-  box-shadow:none;
-  border:0;
-}
 
-.proof-title::before,
-.proof-title::after{
-  display:none;
+position:relative;
+
+background:#050505;
+
+text-align:center;
+
+padding:60px 20px 42px;
+
+margin-top:-35px;
+
+overflow:hidden;
+
+box-shadow:none;
+
+border:0;
+
 }
