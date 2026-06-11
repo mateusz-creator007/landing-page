@@ -844,229 +844,192 @@ box-shadow:
   text-decoration:none !important;
 }
 
+/* ========================= */
 /* ABOUT */
+/* ========================= */
 
 .about-image-section{
-background:#050505;
-
-display:grid;
-
-grid-template-columns:
-minmax(460px,560px)
-minmax(700px,860px);
-
-align-items:center;
-
-justify-content:center;
-
-column-gap:90px;
-
-padding:110px 7% 100px;
-
-max-width:1500px;
-
-margin:0 auto;
-
-overflow:visible;
+  background:#050505;
+  display:grid;
+  grid-template-columns:minmax(460px,560px) minmax(700px,860px);
+  align-items:center;
+  justify-content:center;
+  gap:80px;
+  padding:120px 7% 90px;
+  max-width:1500px;
+  margin:0 auto;
+  overflow:visible;
 }
 
-/* LEFT */
+/* LEFT TEXT */
 
 .about-content{
-
-max-width:560px;
-
-color:#fff;
-
-position:relative;
-
-z-index:3;
-
+  order:1;
+  max-width:560px;
+  color:#fff;
+  text-align:left;
+  position:relative;
+  z-index:3;
 }
 
-/* IMAGE */
+/* RIGHT IMAGE */
 
-.about-image-section img{
-
-width:100%;
-
-max-width:860px;
-
-display:block;
-
-justify-self:end;
-
-border-radius:28px;
-
-/* zamiast mocnego neonu */
-
-box-shadow:
-0 40px 120px rgba(0,0,0,.45);
-
+.about-image-section > img{
+  order:2;
+  width:100%;
+  max-width:860px;
+  display:block;
+  justify-self:end;
+  border-radius:30px;
+  object-fit:cover;
+  box-shadow:0 40px 120px rgba(0,0,0,.55);
 }
 
 /* LABEL */
 
 .about-label{
-
-display:flex;
-
-align-items:center;
-
-gap:14px;
-
-margin-bottom:20px;
-
-font-size:14px;
-
-font-weight:800;
-
-letter-spacing:.18em;
-
-text-transform:uppercase;
-
-color:#0b84ff;
-
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:14px;
+  margin-bottom:22px;
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#0b84ff;
 }
 
 .about-label::before,
 .about-label::after{
-
-content:"";
-
-width:54px;
-
-height:1px;
-
-background:rgba(20,110,255,.45);
-
+  content:"";
+  width:54px;
+  height:1px;
+  background:rgba(20,110,255,.55);
 }
 
 /* TITLE */
 
 .about-content h2{
-
-margin:0 0 28px;
-
-font-size:clamp(74px,6vw,108px);
-
-line-height:.86;
-
-font-weight:900;
-
-letter-spacing:-.06em;
-
+  margin:0 0 30px;
+  font-size:clamp(76px,6vw,112px);
+  line-height:.86;
+  font-weight:900;
+  letter-spacing:-.06em;
+  color:#fff;
 }
 
 .about-content h2 span{
-
-background:
-linear-gradient(
-180deg,
-#b8ceff,
-#5d8dff
-);
-
--webkit-background-clip:text;
-
--webkit-text-fill-color:transparent;
-
+  background:linear-gradient(180deg,#b8ceff,#5d8dff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 
 /* TEXT */
 
-.about-content p{
-
-font-size:21px;
-
-line-height:1.65;
-
-color:rgba(255,255,255,.78);
-
-margin-bottom:26px;
-
+.about-content > p{
+  margin:0 0 26px;
+  font-size:20px;
+  line-height:1.65;
+  color:rgba(255,255,255,.78);
 }
 
 /* ICONS */
 
-.about-points{
-
-display:grid;
-
-grid-template-columns:
-repeat(3,1fr);
-
-margin-top:54px;
-
-padding-top:34px;
-
-border-top:
-1px solid rgba(255,255,255,.08);
-
-gap:30px;
-
+.about-icons{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  margin-top:46px;
+  padding-top:36px;
+  border-top:1px solid rgba(255,255,255,.10);
 }
 
-.about-points strong{
-
-display:block;
-
-font-size:18px;
-
-line-height:1.25;
-
+.about-icon{
+  text-align:center;
+  padding:0 22px;
+  border-right:1px solid rgba(255,255,255,.10);
 }
 
-.about-points span{
+.about-icon:last-child{
+  border-right:0;
+}
 
-display:block;
+.icon-circle{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:78px;
+  height:78px;
+  margin:0 auto 16px;
+  border:2px solid #0b84ff;
+  border-radius:50%;
+  color:#0b84ff;
+  font-size:32px;
+  font-weight:900;
+  box-shadow:0 0 28px rgba(11,132,255,.22);
+}
 
-font-size:15px;
+.about-icon strong{
+  display:block;
+  font-size:18px;
+  line-height:1.1;
+  font-weight:900;
+  color:#fff;
+}
 
-color:rgba(255,255,255,.62);
+.about-icon > span{
+  display:block;
+  margin-top:5px;
+  font-size:15px;
+  color:rgba(255,255,255,.72);
+}
 
+/* OLD BLOCKS OFF */
+
+.about-points,
+.about-ending{
+  display:none;
 }
 
 /* MOBILE */
 
 @media(max-width:1100px){
+  .about-image-section{
+    grid-template-columns:1fr;
+    gap:48px;
+    padding:80px 24px 90px;
+  }
 
-.about-image-section{
+  .about-content{
+    order:1;
+    max-width:700px;
+    margin:0 auto;
+    text-align:center;
+  }
 
-grid-template-columns:1fr;
+  .about-label{
+    justify-content:center;
+  }
 
-row-gap:48px;
+  .about-image-section > img{
+    order:2;
+    max-width:720px;
+    justify-self:center;
+  }
 
-padding:80px 28px;
+  .about-icons{
+    grid-template-columns:1fr;
+    gap:26px;
+  }
 
-}
+  .about-icon{
+    border-right:0;
+    padding:0;
+  }
 
-.about-content{
-
-order:1;
-
-max-width:700px;
-
-margin:0 auto;
-
-}
-
-.about-image-section img{
-
-order:2;
-
-justify-self:center;
-
-max-width:720px;
-
-}
-
-.about-points{
-
-grid-template-columns:1fr;
-
-}
-
+  .about-content h2{
+    font-size:clamp(58px,15vw,92px);
+  }
 }
 /* HOW IT WORKS */
 
