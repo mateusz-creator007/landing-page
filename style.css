@@ -951,12 +951,19 @@ transform .35s ease;
 /* TITLE */
 
 .about-content h2{
-  margin:0 0 30px;
-  font-size:clamp(76px,6vw,112px);
-  line-height:.86;
-  font-weight:900;
-  letter-spacing:-.06em;
-  color:#fff;
+
+margin:0 0 30px;
+
+font-size:clamp(58px,5vw,88px);
+
+line-height:.92;
+
+font-weight:900;
+
+letter-spacing:-.06em;
+
+color:#fff;
+
 }
 
 .about-content h2 span{
@@ -991,7 +998,7 @@ text-shadow:
 .about-icons{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  margin-top:46px;
+  margin-top:28px;
   padding-top:36px;
   border-top:1px solid rgba(255,255,255,.10);
 }
