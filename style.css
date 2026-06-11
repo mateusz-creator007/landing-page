@@ -877,12 +877,21 @@ overflow:visible;
 /* LEFT TEXT */
 
 .about-content{
-  order:1;
-  max-width:560px;
-  color:#fff;
-  text-align:left;
-  position:relative;
-  z-index:3;
+
+order:1;
+
+max-width:520px;
+
+padding-right:20px;
+
+color:#fff;
+
+text-align:left;
+
+position:relative;
+
+z-index:3;
+
 }
 
 /* RIGHT IMAGE */
