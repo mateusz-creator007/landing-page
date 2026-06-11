@@ -855,22 +855,22 @@ background:#050505;
 display:grid;
 
 grid-template-columns:
-minmax(560px,620px)
-minmax(720px,900px);
-
-align-items:center;
+520px
+680px;
 
 justify-content:center;
 
-gap:45px;
+align-items:center;
 
-padding:90px 6% 120px;
+column-gap:28px;
 
-max-width:1500px;
+padding:70px 7% 90px;
+
+max-width:1320px;
 
 margin:0 auto;
 
-overflow:visible;
+overflow:hidden;
 
 }
 
@@ -893,26 +893,22 @@ order:2;
 
 width:100%;
 
-max-width:900px;
+max-width:680px;
 
 display:block;
 
 justify-self:start;
 
-object-fit:cover;
-
 border-radius:34px;
 
+object-fit:cover;
+
 transform:
-translateX(-20px)
-translateY(-35px);
+translateX(-45px)
+translateY(30px);
 
 box-shadow:
-0 45px 120px rgba(0,0,0,.55);
-
-filter:
-contrast(1.03)
-brightness(.98);
+0 40px 110px rgba(0,0,0,.58);
 
 }
 
