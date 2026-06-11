@@ -851,13 +851,14 @@ box-shadow:
 .about-image-section{
   background:#050505;
   display:grid;
-  grid-template-columns:minmax(460px,560px) minmax(700px,860px);
+  grid-template-columns:minmax(520px,620px) minmax(620px,780px);
   align-items:center;
   justify-content:center;
-  gap:80px;
-  padding:120px 7% 90px;
-  max-width:1500px;
+  gap:72px;
+  padding:120px 6% 130px;
+  max-width:1420px;
   margin:0 auto;
+  min-height:760px;
   overflow:visible;
 }
 
@@ -875,14 +876,35 @@ box-shadow:
 /* RIGHT IMAGE */
 
 .about-image-section > img{
-  order:2;
-  width:100%;
-  max-width:860px;
-  display:block;
-  justify-self:end;
-  border-radius:30px;
-  object-fit:cover;
-  box-shadow:0 40px 120px rgba(0,0,0,.55);
+
+order:2;
+
+width:100%;
+
+max-width:860px;
+
+height:auto;
+
+display:block;
+
+justify-self:start;
+
+align-self:center;
+
+object-fit:cover;
+
+border-radius:30px;
+
+/* delikatniejsze i bardziej premium */
+
+box-shadow:
+0 30px 90px rgba(0,0,0,.42);
+
+/* przesunięcie bliżej tekstu */
+
+transform:
+translateX(-40px);
+
 }
 
 /* LABEL */
