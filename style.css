@@ -2214,16 +2214,16 @@ border:0;
 }
 
 /* ========================= */
-/* REAL SMOKE BETWEEN SECTIONS */
+/* REAL SMOKE UNDER TITLE */
 /* ========================= */
 
 .proof-title{
   position:relative;
   overflow:hidden;
-  background:#050505 !important;
+  background:#050505;
 }
 
-/* DUŻY DYM */
+/* DYM 1 */
 
 .proof-title::before{
   content:"";
@@ -2231,89 +2231,69 @@ border:0;
   position:absolute;
 
   left:50%;
-  top:-80px;
+  top:-20px;
 
-  transform:translateX(-50%);
+  transform:
+  translateX(-50%);
 
-  width:2200px;
-  height:680px;
-
-  pointer-events:none;
+  width:1800px;
+  height:500px;
 
   background:
 
-  radial-gradient(
-    ellipse at 20% 45%,
-    rgba(120,135,170,.10),
-    transparent 42%
-  ),
+  url("smoke.png")
+  center center /
+  contain
+  no-repeat;
 
-  radial-gradient(
-    ellipse at 50% 40%,
-    rgba(170,180,210,.12),
-    transparent 40%
-  ),
-
-  radial-gradient(
-    ellipse at 80% 50%,
-    rgba(100,115,150,.10),
-    transparent 38%
-  ),
-
-  radial-gradient(
-    ellipse at center,
-    rgba(80,100,130,.08),
-    transparent 60%
-  );
+  opacity:.22;
 
   filter:
-  blur(90px)
-  contrast(115%);
+  blur(18px)
+  brightness(.9);
 
-  opacity:.95;
+  mix-blend-mode:screen;
 
-  z-index:0;
+  pointer-events:none;
+
+  z-index:1;
 }
 
-/* DRUGA WARSTWA DYMU */
+/* DYM 2 */
 
 .proof-title::after{
   content:"";
 
   position:absolute;
 
-  inset:0;
+  left:50%;
+  top:10px;
 
-  pointer-events:none;
+  transform:
+  translateX(-50%)
+  scaleX(-1);
+
+  width:1600px;
+  height:420px;
 
   background:
 
-  radial-gradient(
-    ellipse at 30% 20%,
-    rgba(255,255,255,.018),
-    transparent 32%
-  ),
+  url("smoke.png")
+  center center /
+  contain
+  no-repeat;
 
-  radial-gradient(
-    ellipse at 70% 35%,
-    rgba(255,255,255,.022),
-    transparent 34%
-  ),
+  opacity:.12;
 
-  radial-gradient(
-    ellipse at center,
-    rgba(130,150,180,.03),
-    transparent 55%
-  );
+  filter:
+  blur(34px);
 
-  filter:blur(120px);
-
-  opacity:.8;
+  pointer-events:none;
 
   z-index:1;
 }
 
 .proof-title > *{
   position:relative;
-  z-index:2;
+  z-index:5;
 }
