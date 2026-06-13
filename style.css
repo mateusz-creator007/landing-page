@@ -925,9 +925,9 @@ box-shadow:
   grid-template-columns:minmax(520px,620px) minmax(720px,860px);
   align-items:center;
   justify-content:center;
-  column-gap:90px;
+  column-gap:35px;
   padding:130px 6% 150px;
-  max-width:1600px;
+  max-width:1380px;
   margin:0 auto;
   overflow:visible;
 }
@@ -954,7 +954,9 @@ box-shadow:
   justify-self:start;
   border-radius:34px;
   object-fit:cover;
-  transform:translateX(-20px) translateY(24px);
+  transform:
+translateX(-90px)
+translateY(24px);
   border:1px solid rgba(70,130,255,.18);
   box-shadow:
     0 0 0 1px rgba(70,130,255,.10),
