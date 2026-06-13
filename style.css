@@ -589,7 +589,7 @@ h1 span {
   justify-content: center;
   padding: 35px 32px 0;
   overflow: hidden;
-  border-top: 1px solid rgba(255,255,255,.06);
+  border-top: 1px solid rgba(255,255,255,.025);
 }
 
 .proof-image-section img {
