@@ -2036,32 +2036,39 @@ border:0;
 /* ARROW */
 
 .email-arrow{
-  height:240px;
+  height:260px;
   position:relative;
 }
 
 .email-arrow::before{
   content:"";
   position:absolute;
-  left:14px;
-  top:28px;
-  width:90px;
-  height:160px;
-  border-right:3px dotted #0b84ff;
-  border-top:3px dotted #0b84ff;
-  border-radius:0 90px 0 0;
-  transform:rotate(24deg);
-  filter:drop-shadow(0 0 8px rgba(11,132,255,.8));
+  left:-6px;
+  top:42px;
+  width:120px;
+  height:210px;
+
+  background:
+    url("data:image/svg+xml,%3Csvg width='130' height='230' viewBox='0 0 130 230' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M112 22C35 42 92 135 18 190' stroke='%230B84FF' stroke-width='4' stroke-linecap='round' stroke-dasharray='4 10'/%3E%3Cpath d='M18 190L37 184' stroke='%230B84FF' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M18 190L28 170' stroke='%230B84FF' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+
+  filter:
+    drop-shadow(0 0 8px rgba(11,132,255,.9))
+    drop-shadow(0 0 18px rgba(11,132,255,.45));
 }
 
 .email-arrow::after{
-  content:"➜";
+  content:"";
   position:absolute;
-  left:-8px;
-  bottom:28px;
-  color:#0b84ff;
-  font-size:32px;
-  text-shadow:0 0 14px rgba(11,132,255,.9);
+  left:2px;
+  top:220px;
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background:#0b84ff;
+  box-shadow:
+    0 0 16px rgba(11,132,255,.95),
+    0 0 34px rgba(11,132,255,.55);
 }
 
 /* RIGHT PANEL */
