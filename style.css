@@ -728,13 +728,17 @@ box-shadow:
 }
 
 .proof-title {
-  background: #050505;
+  background:#050505;
 
-  text-align: center;
+  text-align:center;
 
-  padding: 48px 20px 0;
+  /* było 48px 20px 0 */
+  padding:140px 20px 26px;
 
-  position: relative;
+  position:relative;
+
+  /* dodaj */
+  margin-top:-60px;
 }
 
 .proof-title::after{
@@ -789,14 +793,13 @@ box-shadow:
 }
 
 .proof-title p {
-  margin-top: 26px;
+  margin-top:18px;
+  margin-bottom:8px;
 
-  margin-bottom: 18px;
+  font-size:clamp(24px,1.6vw,32px);
+  font-weight:700;
 
-  font-size: clamp(24px, 1.6vw, 32px);
-  font-weight: 700;
-
-  color: rgba(255,255,255,.8);
+  color:rgba(255,255,255,.8);
 }
 .how-it-works-image{
   background:#050509;
