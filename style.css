@@ -922,12 +922,12 @@ box-shadow:
 .about-image-section{
   background:#050505;
   display:grid;
-  grid-template-columns:minmax(520px,620px) minmax(720px,860px);
+  grid-template-columns:minmax(540px,620px) minmax(680px,760px);
   align-items:center;
   justify-content:center;
-  column-gap:35px;
+  column-gap:70px;
   padding:130px 6% 150px;
-  max-width:1380px;
+  max-width:1480px;
   margin:0 auto;
   overflow:visible;
 }
@@ -949,14 +949,12 @@ box-shadow:
 .about-image-section > img{
   order:2;
   width:100%;
-  max-width:840px;
+  max-width:760px;
   display:block;
   justify-self:start;
   border-radius:34px;
   object-fit:cover;
-  transform:
-translateX(-90px)
-translateY(24px);
+  transform:translateX(0) translateY(24px);
   border:1px solid rgba(70,130,255,.18);
   box-shadow:
     0 0 0 1px rgba(70,130,255,.10),
