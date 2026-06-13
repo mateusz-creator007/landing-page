@@ -2225,42 +2225,29 @@ border:0;
 }
 
 .proof-title::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:68%;
 
-content:"";
+  transform:translate(-50%,-50%);
 
-position:absolute;
+  width:2300px;
+  height:620px;
 
-left:50%;
+  background:url("./smoke.png") center center / contain no-repeat;
 
-top:56%;
+  opacity:.32;
 
-transform:
-translate(-50%,-50%);
+  filter:
+    brightness(.72)
+    contrast(1.35)
+    blur(3px);
 
-width:2100px;
+  mix-blend-mode:screen;
 
-height:700px;
-
-background:
-url("./smoke.png")
-center center
-no-repeat;
-
-background-size:contain;
-
-opacity:.46;
-
-filter:
-brightness(.85)
-contrast(1.22)
-blur(6px);
-
-mix-blend-mode:screen;
-
-pointer-events:none;
-
-z-index:1;
-
+  pointer-events:none;
+  z-index:1;
 }
 
 .proof-title>*{
