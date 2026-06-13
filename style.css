@@ -1435,7 +1435,7 @@ transparent
 }
 
 .how-title{
-  margin:0 0 58px;
+  margin:0 0 44px;
   font-size:clamp(54px,5.8vw,92px);
   line-height:.92;
   font-weight:900;
@@ -1447,7 +1447,7 @@ transparent
 
 max-width:760px;
 
-margin:24px auto 70px;
+margin:18px auto 56px;
 
 font-size:22px;
 
