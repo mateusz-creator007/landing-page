@@ -2214,120 +2214,43 @@ border:0;
 }
 
 /* ========================= */
-/* STRONG REAL SMOKE EFFECT */
+/* REAL SMOKE UNDER PROOF TITLE */
 /* ========================= */
 
 .proof-title{
-
-position:relative !important;
-
-overflow:hidden !important;
-
-background:#050505 !important;
-
-padding:180px 20px 52px;
-
+  position:relative !important;
+  overflow:hidden !important;
+  background:#050505 !important;
 }
-
-/* GŁÓWNY DYM */
 
 .proof-title::before{
+  content:"" !important;
+  position:absolute !important;
 
-content:"";
+  left:50% !important;
+  top:54% !important;
 
-position:absolute;
+  transform:translate(-50%,-50%) !important;
 
-left:50%;
+  width:1500px !important;
+  height:420px !important;
 
-top:-120px;
+  background:url("/images/smoke.png") center / contain no-repeat !important;
 
-transform:translateX(-50%);
+  opacity:.72 !important;
 
-width:2200px;
+  filter:
+    brightness(1.28)
+    contrast(1.18)
+    saturate(.85) !important;
 
-height:760px;
+  mix-blend-mode:screen !important;
 
-background:
-url("/images/smoke.png")
-center center /
-contain
-no-repeat;
-
-opacity:.72;
-
-filter:
-blur(6px)
-brightness(1.55)
-contrast(1.4);
-
-mix-blend-mode:screen;
-
-pointer-events:none;
-
-z-index:0;
-
+  pointer-events:none !important;
+  z-index:1 !important;
 }
-
-/* DRUGA CHMURA */
-
-.proof-title::after{
-
-content:"";
-
-position:absolute;
-
-left:50%;
-
-top:-40px;
-
-transform:
-translateX(-50%)
-scaleX(-1);
-
-width:2000px;
-
-height:620px;
-
-background:
-url("/images/smoke.png")
-center center /
-contain
-no-repeat;
-
-opacity:.42;
-
-filter:
-blur(26px)
-brightness(1.35);
-
-mix-blend-mode:screen;
-
-pointer-events:none;
-
-z-index:1;
-
-}
-
-/* TEKST NAD DYMEM */
 
 .proof-title > *{
-
-position:relative;
-
-z-index:5;
-
-}
-
-/* LEKKIE PRZYCIEMNIENIE DOŁU */
-
-.proof-title{
-
-background:
-linear-gradient(
-180deg,
-rgba(5,5,5,0) 0%,
-rgba(5,5,5,.25) 30%,
-#050505 100%
-);
-
+  position:relative !important;
+  z-index:2 !important;
 }
