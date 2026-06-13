@@ -2214,86 +2214,120 @@ border:0;
 }
 
 /* ========================= */
-/* REAL SMOKE UNDER TITLE */
+/* STRONG REAL SMOKE EFFECT */
 /* ========================= */
 
 .proof-title{
-  position:relative;
-  overflow:hidden;
-  background:#050505;
+
+position:relative !important;
+
+overflow:hidden !important;
+
+background:#050505 !important;
+
+padding:180px 20px 52px;
+
 }
 
-/* DYM 1 */
+/* GŁÓWNY DYM */
 
 .proof-title::before{
-  content:"";
 
-  position:absolute;
+content:"";
 
-  left:50%;
-  top:-20px;
+position:absolute;
 
-  transform:
-  translateX(-50%);
+left:50%;
 
-  width:1800px;
-  height:500px;
+top:-120px;
 
-  background:
+transform:translateX(-50%);
 
-  url("smoke.png")
-  center center /
-  contain
-  no-repeat;
+width:2200px;
 
-  opacity:.22;
+height:760px;
 
-  filter:
-  blur(18px)
-  brightness(.9);
+background:
+url("/images/smoke.png")
+center center /
+contain
+no-repeat;
 
-  mix-blend-mode:screen;
+opacity:.72;
 
-  pointer-events:none;
+filter:
+blur(6px)
+brightness(1.55)
+contrast(1.4);
 
-  z-index:1;
+mix-blend-mode:screen;
+
+pointer-events:none;
+
+z-index:0;
+
 }
 
-/* DYM 2 */
+/* DRUGA CHMURA */
 
 .proof-title::after{
-  content:"";
 
-  position:absolute;
+content:"";
 
-  left:50%;
-  top:10px;
+position:absolute;
 
-  transform:
-  translateX(-50%)
-  scaleX(-1);
+left:50%;
 
-  width:1600px;
-  height:420px;
+top:-40px;
 
-  background:
+transform:
+translateX(-50%)
+scaleX(-1);
 
-  url("smoke.png")
-  center center /
-  contain
-  no-repeat;
+width:2000px;
 
-  opacity:.12;
+height:620px;
 
-  filter:
-  blur(34px);
+background:
+url("/images/smoke.png")
+center center /
+contain
+no-repeat;
 
-  pointer-events:none;
+opacity:.42;
 
-  z-index:1;
+filter:
+blur(26px)
+brightness(1.35);
+
+mix-blend-mode:screen;
+
+pointer-events:none;
+
+z-index:1;
+
 }
 
+/* TEKST NAD DYMEM */
+
 .proof-title > *{
-  position:relative;
-  z-index:5;
+
+position:relative;
+
+z-index:5;
+
+}
+
+/* LEKKIE PRZYCIEMNIENIE DOŁU */
+
+.proof-title{
+
+background:
+linear-gradient(
+180deg,
+rgba(5,5,5,0) 0%,
+rgba(5,5,5,.25) 30%,
+#050505 100%
+);
+
 }
