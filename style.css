@@ -54,15 +54,21 @@ z-index:5;
 }
 
 .proof-title{
-  position:relative;
-  background:#050505;
-  text-align:center;
-  padding:90px 20px 48px;
-  margin-top:0;
-  overflow:hidden;
 
-  box-shadow:
-0 -60px 120px rgba(5,5,5,.25);
+position:relative;
+
+background:#050505;
+
+text-align:center;
+
+/* BYŁO np. 90 / 120 / 145 */
+padding:180px 20px 52px;
+
+/* było -90 albo 0 */
+margin-top:-20px;
+
+overflow:hidden;
+
 }
 
 .proof-title::before{
