@@ -2228,15 +2228,15 @@ border:0;
   content:"" !important;
   position:absolute !important;
 
-  left:50% !important;
-  top:42% !important;
+ left:50% !important;
+top:46% !important;
 
-  transform:translate(-50%,-50%) !important;
+transform:translate(-50%,-50%) !important;
 
-  width:100vw !important;
-  height:300px !important;
+width:100vw !important;
+height:380px !important;
 
-  background:url("./smoke.png") center center / 115% auto no-repeat !important;
+background:url("./smoke.png") center center / 125% auto no-repeat !important;
 
   opacity:.58 !important;
 
