@@ -2213,85 +2213,48 @@ border:0;
   }
 }
 
-/* ===================================== */
-/* PROOF TITLE — FULL WIDTH SOFT SMOKE */
-/* WKLEJ NA SAM KONIEC CSS */
-/* ===================================== */
+/* FINAL — SOFT SMOKE BACKGROUND BETWEEN HERO AND PROOF */
 
 .proof-title{
-
-position:relative !important;
-
-overflow:hidden !important;
-
-background:#050505 !important;
-
+  position:relative !important;
+  overflow:hidden !important;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(105,130,170,.26) 0%,
+      rgba(55,75,105,.20) 28%,
+      rgba(18,25,38,.72) 58%,
+      #050505 100%
+    ) !important;
 }
-
-/* DYM */
 
 .proof-title::before{
+  content:"" !important;
+  position:absolute !important;
+  left:50% !important;
+  top:52% !important;
+  transform:translate(-50%,-50%) !important;
 
-content:"" !important;
+  width:2200px !important;
+  height:520px !important;
 
-position:absolute !important;
+  pointer-events:none !important;
+  z-index:1 !important;
 
-left:50% !important;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(150,170,210,.20) 0%,
+      rgba(95,115,155,.16) 32%,
+      rgba(40,55,85,.10) 55%,
+      transparent 78%
+    );
 
-top:56% !important;
-
-transform:translate(-50%,-50%) !important;
-
-width:1800px !important;
-
-height:420px !important;
-
-pointer-events:none !important;
-
-z-index:1 !important;
-
-background:
-
-radial-gradient(
-ellipse at center,
-rgba(90,140,255,.12) 0%,
-rgba(80,130,255,.10) 18%,
-rgba(60,110,255,.08) 34%,
-rgba(255,255,255,.04) 50%,
-transparent 72%
-),
-
-radial-gradient(
-ellipse at 25% 55%,
-rgba(120,170,255,.08),
-transparent 44%
-),
-
-radial-gradient(
-ellipse at 75% 55%,
-rgba(120,170,255,.08),
-transparent 44%
-),
-
-radial-gradient(
-ellipse at center,
-rgba(255,255,255,.05),
-transparent 60%
-);
-
-filter:
-blur(74px) !important;
-
-opacity:.95 !important;
-
+  filter:blur(70px) !important;
+  opacity:.9 !important;
 }
 
-/* TREŚĆ NAD DYMEM */
-
 .proof-title > *{
-
-position:relative !important;
-
-z-index:2 !important;
-
+  position:relative !important;
+  z-index:2 !important;
 }
