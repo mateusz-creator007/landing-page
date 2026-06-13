@@ -2218,39 +2218,59 @@ border:0;
 /* ========================= */
 
 .proof-title{
-  position:relative !important;
-  overflow:hidden !important;
-  background:#050505 !important;
+
+position:relative !important;
+
+overflow:hidden !important;
+
+background:#050505 !important;
+
 }
 
 .proof-title::before{
-  content:"" !important;
-  position:absolute !important;
 
-  left:50% !important;
-  top:54% !important;
+content:"";
 
-  transform:translate(-50%,-50%) !important;
+position:absolute;
 
-  width:1500px !important;
-  height:420px !important;
+left:50%;
 
-  background:url("/images/smoke.png") center / contain no-repeat !important;
+top:50%;
 
-  opacity:.72 !important;
+transform:
+translate(-50%,-50%);
 
-  filter:
-    brightness(1.28)
-    contrast(1.18)
-    saturate(.85) !important;
+width:1800px;
 
-  mix-blend-mode:screen !important;
+height:620px;
 
-  pointer-events:none !important;
-  z-index:1 !important;
+/* ← TO JEST NAJWAŻNIEJSZA ZMIANA */
+background:
+url("./smoke.png")
+center center
+no-repeat;
+
+background-size:contain;
+
+opacity:.92;
+
+filter:
+blur(18px)
+brightness(1.35)
+contrast(1.15);
+
+mix-blend-mode:screen;
+
+pointer-events:none;
+
+z-index:1;
+
 }
 
-.proof-title > *{
-  position:relative !important;
-  z-index:2 !important;
+.proof-title>*{
+
+position:relative;
+
+z-index:2;
+
 }
