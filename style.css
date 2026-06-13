@@ -2214,143 +2214,73 @@ border:0;
 }
 
 /* ========================= */
-/* CINEMATIC SMOKE TRANSITION */
+/* CINEMATIC SMOKE LIKE SCREEN */
 /* ========================= */
 
 .proof-title{
-
-position:relative;
-
-overflow:hidden;
-
-background:#050505;
-
+  position:relative !important;
+  overflow:visible !important;
+  background:#050505 !important;
+  z-index:5 !important;
 }
 
-/* główny dym */
-
+/* główny szeroki dym */
 .proof-title::before{
+  content:"" !important;
+  position:absolute !important;
 
-content:"";
+  left:50% !important;
+  top:42% !important;
 
-position:absolute;
+  transform:translate(-50%,-50%) !important;
 
-left:-10%;
+  width:2600px !important;
+  height:720px !important;
 
-bottom:-140px;
+  background:url("./smoke.png") center center / contain no-repeat !important;
 
-width:120%;
+  opacity:.70 !important;
 
-height:520px;
+  filter:
+    brightness(.95)
+    contrast(1.28)
+    blur(1px) !important;
 
-pointer-events:none;
+  mix-blend-mode:screen !important;
 
-z-index:1;
-
-background:
-
-radial-gradient(
-ellipse at 20% 55%,
-rgba(255,255,255,.07),
-transparent 32%
-),
-
-radial-gradient(
-ellipse at 50% 45%,
-rgba(255,255,255,.10),
-transparent 30%
-),
-
-radial-gradient(
-ellipse at 80% 55%,
-rgba(255,255,255,.08),
-transparent 35%
-),
-
-radial-gradient(
-ellipse at 35% 70%,
-rgba(255,255,255,.05),
-transparent 32%
-),
-
-radial-gradient(
-ellipse at 65% 75%,
-rgba(255,255,255,.06),
-transparent 34%
-);
-
-filter:
-blur(70px);
-
-opacity:.95;
-
-transform:
-scaleX(1.3);
-
+  pointer-events:none !important;
+  z-index:1 !important;
 }
 
-/* cienka warstwa nad dymem */
-
+/* dodatkowa niższa warstwa, żeby dym schodził pod napis */
 .proof-title::after{
+  content:"" !important;
+  position:absolute !important;
 
-content:"";
+  left:50% !important;
+  top:68% !important;
 
-position:absolute;
+  transform:translate(-50%,-50%) scaleX(-1) !important;
 
-left:-5%;
+  width:2300px !important;
+  height:520px !important;
 
-bottom:-80px;
+  background:url("./smoke.png") center center / contain no-repeat !important;
 
-width:110%;
+  opacity:.28 !important;
 
-height:280px;
+  filter:
+    brightness(.75)
+    contrast(1.2)
+    blur(8px) !important;
 
-pointer-events:none;
+  mix-blend-mode:screen !important;
 
-z-index:2;
-
-background:
-
-linear-gradient(
-180deg,
-transparent 0%,
-rgba(255,255,255,.03) 45%,
-rgba(255,255,255,.05) 65%,
-transparent 100%
-);
-
-filter:
-blur(50px);
-
+  pointer-events:none !important;
+  z-index:1 !important;
 }
 
-/* tekst zawsze nad dymem */
-
-.proof-title>*{
-
-position:relative;
-
-z-index:10;
-
-}
-
-/* miękkie wejście kolejnej sekcji */
-
-.proof-image-section{
-
-position:relative;
-
-margin-top:-90px;
-
-padding-top:120px;
-
-z-index:5;
-
-background:
-linear-gradient(
-180deg,
-transparent 0%,
-#050505 28%
-);
-
+.proof-title > *{
+  position:relative !important;
+  z-index:5 !important;
 }
