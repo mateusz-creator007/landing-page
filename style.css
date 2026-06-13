@@ -2213,48 +2213,107 @@ border:0;
   }
 }
 
-/* FINAL — SOFT SMOKE BACKGROUND BETWEEN HERO AND PROOF */
+/* ========================= */
+/* REAL SMOKE BETWEEN SECTIONS */
+/* ========================= */
 
 .proof-title{
-  position:relative !important;
-  overflow:hidden !important;
-  background:
-    radial-gradient(
-      ellipse at center,
-      rgba(105,130,170,.26) 0%,
-      rgba(55,75,105,.20) 28%,
-      rgba(18,25,38,.72) 58%,
-      #050505 100%
-    ) !important;
+  position:relative;
+  overflow:hidden;
+  background:#050505 !important;
 }
 
+/* DUŻY DYM */
+
 .proof-title::before{
-  content:"" !important;
-  position:absolute !important;
-  left:50% !important;
-  top:52% !important;
-  transform:translate(-50%,-50%) !important;
+  content:"";
 
-  width:2200px !important;
-  height:520px !important;
+  position:absolute;
 
-  pointer-events:none !important;
-  z-index:1 !important;
+  left:50%;
+  top:-80px;
+
+  transform:translateX(-50%);
+
+  width:2200px;
+  height:680px;
+
+  pointer-events:none;
 
   background:
-    radial-gradient(
-      ellipse at center,
-      rgba(150,170,210,.20) 0%,
-      rgba(95,115,155,.16) 32%,
-      rgba(40,55,85,.10) 55%,
-      transparent 78%
-    );
 
-  filter:blur(70px) !important;
-  opacity:.9 !important;
+  radial-gradient(
+    ellipse at 20% 45%,
+    rgba(120,135,170,.10),
+    transparent 42%
+  ),
+
+  radial-gradient(
+    ellipse at 50% 40%,
+    rgba(170,180,210,.12),
+    transparent 40%
+  ),
+
+  radial-gradient(
+    ellipse at 80% 50%,
+    rgba(100,115,150,.10),
+    transparent 38%
+  ),
+
+  radial-gradient(
+    ellipse at center,
+    rgba(80,100,130,.08),
+    transparent 60%
+  );
+
+  filter:
+  blur(90px)
+  contrast(115%);
+
+  opacity:.95;
+
+  z-index:0;
+}
+
+/* DRUGA WARSTWA DYMU */
+
+.proof-title::after{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  pointer-events:none;
+
+  background:
+
+  radial-gradient(
+    ellipse at 30% 20%,
+    rgba(255,255,255,.018),
+    transparent 32%
+  ),
+
+  radial-gradient(
+    ellipse at 70% 35%,
+    rgba(255,255,255,.022),
+    transparent 34%
+  ),
+
+  radial-gradient(
+    ellipse at center,
+    rgba(130,150,180,.03),
+    transparent 55%
+  );
+
+  filter:blur(120px);
+
+  opacity:.8;
+
+  z-index:1;
 }
 
 .proof-title > *{
-  position:relative !important;
-  z-index:2 !important;
+  position:relative;
+  z-index:2;
 }
