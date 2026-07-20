@@ -1885,49 +1885,51 @@ border:0;
   margin-bottom:8px !important;
 }
 
-/* ========================= */
-/* EMAIL PROOF SECTION */
-/* ========================= */
+/* ===================================== */
+/* EMAIL PROOF — GMAIL STYLE */
+/* ===================================== */
 
 .email-proof-box{
-  width:min(1180px, 100%);
-  margin:64px auto 0;
+  width:min(1160px, 100%);
+  margin:60px auto 0;
+
   display:grid;
-  grid-template-columns:minmax(0, 650px) 80px 290px;
+  grid-template-columns:minmax(0, 630px) 90px 280px;
   align-items:center;
   justify-content:center;
   gap:18px;
 }
 
 
-/* ========================= */
-/* LEFT EMAIL CARD */
-/* ========================= */
+/* ===================================== */
+/* LEFT: INCOMING EMAIL CARD */
+/* ===================================== */
 
 .email-message-card{
   position:relative;
   width:100%;
-  padding:22px 26px 26px;
+  padding:22px 26px 28px;
   overflow:hidden;
-  border:1px solid rgba(11,132,255,.46);
-  border-radius:24px;
+
+  border:1px solid rgba(11,132,255,.42);
+  border-radius:22px;
 
   background:
     radial-gradient(
-      circle at 25% 0%,
-      rgba(11,132,255,.15),
+      circle at 20% 0%,
+      rgba(11,132,255,.12),
       transparent 38%
     ),
     linear-gradient(
       180deg,
-      rgba(5,15,30,.98),
-      rgba(2,8,17,.99)
+      rgba(5,15,29,.98),
+      rgba(2,8,16,.99)
     );
 
   box-shadow:
     0 24px 70px rgba(0,0,0,.42),
-    0 0 36px rgba(11,132,255,.12),
-    inset 0 1px 0 rgba(255,255,255,.03);
+    0 0 34px rgba(11,132,255,.11),
+    inset 0 1px 0 rgba(255,255,255,.025);
 
   text-align:left;
 }
@@ -1937,31 +1939,37 @@ border:0;
   position:absolute;
   inset:0;
   pointer-events:none;
+
   background:
     linear-gradient(
       110deg,
-      rgba(255,255,255,.025),
-      transparent 35%
+      rgba(255,255,255,.018),
+      transparent 34%
     );
 }
 
 
+/* ===================================== */
 /* EMAIL TOP BAR */
+/* ===================================== */
 
 .email-head{
   position:relative;
   z-index:1;
+
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:20px;
-  padding-bottom:18px;
+
+  margin-bottom:24px;
 }
 
 .email-inbox{
   display:flex;
   align-items:center;
   gap:7px;
+
   color:#168bff;
   font-size:13px;
   line-height:1;
@@ -1969,524 +1977,425 @@ border:0;
 }
 
 .email-inbox-icon{
-  font-size:14px;
+  font-size:13px;
 }
 
 .email-icons{
   display:flex;
   align-items:center;
   gap:9px;
-  color:rgba(255,255,255,.48);
+
+  color:rgba(255,255,255,.43);
   font-size:11px;
+  line-height:1;
   white-space:nowrap;
 }
 
 
-/* SENDER */
+/* ===================================== */
+/* EMAIL SUBJECT */
+/* ===================================== */
+
+.gmail-subject-row{
+  position:relative;
+  z-index:1;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+
+  margin-bottom:22px;
+  padding:0 2px;
+}
+
+.gmail-subject-row h3{
+  margin:0;
+  padding:0;
+  border:0;
+
+  color:#fff;
+  font-size:22px;
+  line-height:1.25;
+  font-weight:700;
+  letter-spacing:-.3px;
+  text-align:left;
+}
+
+.gmail-subject-actions{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  color:rgba(255,255,255,.38);
+  font-size:13px;
+  line-height:1;
+}
+
+
+/* ===================================== */
+/* EMAIL SENDER */
+/* ===================================== */
 
 .email-brand{
   position:relative;
   z-index:1;
+
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   gap:12px;
-  margin-bottom:21px;
+
+  margin-bottom:25px;
 }
 
 .brand-avatar{
-  width:46px;
-  height:46px;
-  flex:0 0 46px;
+  width:42px;
+  height:42px;
+  flex:0 0 42px;
+
   display:flex;
   align-items:center;
   justify-content:center;
-  border:1px solid rgba(255,255,255,.28);
+
+  border:1px solid rgba(255,255,255,.27);
   border-radius:50%;
+
   background:
     linear-gradient(
       145deg,
-      rgba(23,61,103,.95),
-      rgba(5,15,30,.95)
+      rgba(27,61,105,.95),
+      rgba(7,18,34,.96)
     );
+
   color:#fff;
-  font-size:17px;
+  font-size:15px;
   font-weight:900;
+
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.08),
-    0 8px 24px rgba(0,0,0,.22);
+    inset 0 1px 0 rgba(255,255,255,.06),
+    0 8px 22px rgba(0,0,0,.23);
 }
 
-.email-sender-details{
+.email-sender{
   min-width:0;
+  flex:1;
 }
 
-.email-sender-line{
+.email-sender-top{
   display:flex;
   align-items:center;
   flex-wrap:wrap;
   gap:7px;
 }
 
-.email-brand strong{
+.email-sender-top strong{
   color:#fff;
-  font-size:15px;
-  line-height:1.2;
-  font-weight:850;
+  font-size:14px;
+  line-height:1.3;
+  font-weight:800;
 }
 
-.email-brand span{
-  color:rgba(255,255,255,.56);
-  font-size:12px;
-}
-
-.email-brand small{
-  display:block;
-  margin-top:4px;
-  color:rgba(255,255,255,.48);
+.email-sender-top span{
+  color:rgba(255,255,255,.49);
   font-size:11px;
+  line-height:1.3;
+}
+
+.email-sender small{
+  display:block;
+  margin-top:3px;
+
+  color:rgba(255,255,255,.45);
+  font-size:11px;
+  line-height:1.3;
+}
+
+.sender-arrow{
+  margin-left:3px;
+}
+
+.email-sender-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  padding-top:2px;
+
+  color:rgba(255,255,255,.4);
+  font-size:13px;
+  line-height:1;
 }
 
 
-/* MAIN EMAIL CONTENT */
+/* ===================================== */
+/* EMAIL BODY */
+/* ===================================== */
 
-.email-content{
+.gmail-email-body{
   position:relative;
   z-index:1;
+
+  padding-left:54px;
+  padding-right:8px;
 }
 
-.email-title-row{
-  display:flex;
-  align-items:center;
-  gap:9px;
-  margin-bottom:18px;
-  padding-bottom:17px;
-  border-bottom:1px solid rgba(255,255,255,.12);
-}
+.gmail-email-body p{
+  margin:0 0 18px;
 
-.email-title-icon{
-  width:28px;
-  height:28px;
-  flex:0 0 28px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border:1px solid rgba(11,132,255,.3);
-  border-radius:8px;
-  background:rgba(11,132,255,.1);
-  color:#168bff;
+  color:rgba(255,255,255,.8);
   font-size:13px;
-}
-
-.email-title-row h3{
-  margin:0;
-  padding:0;
-  border:0;
-  color:#fff;
-  font-size:21px;
-  line-height:1.2;
-  font-weight:900;
-  letter-spacing:-.25px;
-}
-
-.email-message-card p{
+  line-height:1.67;
   text-align:left;
 }
 
-.email-greeting{
-  margin:0 0 14px;
-  color:rgba(255,255,255,.88);
-  font-size:14px;
-  line-height:1.55;
-}
-
-.email-intro{
-  margin:0 0 10px;
-  color:rgba(255,255,255,.84);
-  font-size:14px;
-  line-height:1.6;
-}
-
-.email-intro strong{
+.gmail-email-body strong{
   color:#fff;
-  font-weight:800;
-}
-
-.email-instruction{
-  margin:0 0 19px;
-  color:rgba(255,255,255,.64);
-  font-size:13px;
-  line-height:1.55;
-}
-
-
-/* INFORMATION BLOCKS */
-
-.email-information-block{
-  margin-top:13px;
-  padding:15px;
-  border:1px solid rgba(255,255,255,.09);
-  border-radius:15px;
-  background:rgba(255,255,255,.025);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.025);
-}
-
-.email-block-label{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  margin-bottom:11px;
-  color:rgba(255,255,255,.58);
-  font-size:11px;
-  line-height:1;
-  font-weight:800;
-  letter-spacing:.7px;
-  text-transform:uppercase;
-}
-
-.email-block-label span{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#168bff;
-  font-size:12px;
-}
-
-
-/* SUBJECT PREVIEW */
-
-.email-subject-preview{
-  padding:12px 14px;
-  border:1px solid rgba(11,132,255,.22);
-  border-radius:10px;
-  background:rgba(11,132,255,.075);
-  color:#fff;
-  font-size:13px;
-  line-height:1.45;
   font-weight:750;
 }
 
 
-/* CHECKLIST */
+/* ===================================== */
+/* EMAIL INFORMATION BOX */
+/* ===================================== */
 
-.email-checklist{
-  display:grid;
-  grid-template-columns:repeat(2, minmax(0, 1fr));
-  gap:9px;
+.gmail-details-box{
+  max-width:470px;
+  margin:23px 0 24px;
+  overflow:hidden;
+
+  border:1px solid rgba(255,255,255,.105);
+  border-radius:12px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.028),
+      rgba(255,255,255,.018)
+    );
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.02);
 }
 
-.email-checklist-item{
-  min-width:0;
-  display:flex;
-  align-items:flex-start;
-  gap:10px;
-  padding:11px;
-  border:1px solid rgba(255,255,255,.065);
-  border-radius:11px;
-  background:rgba(0,0,0,.12);
+.gmail-detail-section{
+  padding:16px 18px;
 }
 
-.check-icon{
-  width:20px;
-  height:20px;
-  flex:0 0 20px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-top:1px;
-  border:1px solid rgba(77,255,150,.28);
-  border-radius:6px;
-  background:rgba(20,180,90,.12);
-  color:#4dff96;
-  font-size:11px;
-  font-weight:900;
-}
-
-.email-checklist-item strong{
+.gmail-detail-label{
   display:block;
-  margin-bottom:3px;
-  color:#fff;
-  font-size:12px;
-  line-height:1.35;
+  margin-bottom:10px;
+
+  color:rgba(255,255,255,.45);
+  font-size:10px;
+  line-height:1;
   font-weight:800;
+  letter-spacing:.75px;
+  text-transform:uppercase;
 }
 
-.email-checklist-item p{
+.gmail-subject-example{
+  display:block;
+
+  color:#fff;
+  font-size:13px;
+  line-height:1.5;
+  font-weight:700;
+}
+
+.gmail-detail-divider{
+  height:1px;
+  background:rgba(255,255,255,.08);
+}
+
+
+/* ===================================== */
+/* EMAIL REQUIREMENTS LIST */
+/* ===================================== */
+
+.gmail-requirements{
   margin:0;
-  color:rgba(255,255,255,.5);
+  padding-left:18px;
+}
+
+.gmail-requirements li{
+  margin:0 0 10px;
+  padding-left:3px;
+
+  color:rgba(255,255,255,.76);
+  font-size:12px;
+  line-height:1.52;
+}
+
+.gmail-requirements li:last-child{
+  margin-bottom:0;
+}
+
+.gmail-requirements li::marker{
+  color:#168bff;
+}
+
+.gmail-requirements li span{
+  display:block;
+  margin-top:2px;
+
+  color:rgba(255,255,255,.43);
   font-size:11px;
   line-height:1.4;
 }
 
 
-/* RECIPIENT BLOCK */
+/* ===================================== */
+/* INLINE BRAND EMAIL */
+/* ===================================== */
 
-.email-recipient-block{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:16px;
-  margin-top:14px;
-  padding:14px 15px;
-  border:1px solid rgba(11,132,255,.31);
-  border-radius:14px;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(11,132,255,.105),
-      rgba(11,132,255,.035)
-    );
-}
-
-.email-recipient-content{
-  min-width:0;
-  display:flex;
-  flex-direction:column;
-  gap:3px;
-}
-
-.recipient-label{
-  color:rgba(255,255,255,.48);
-  font-size:10px;
-  line-height:1.2;
+.gmail-inline-mail{
+  color:#2998ff;
   font-weight:800;
-  letter-spacing:.65px;
-  text-transform:uppercase;
-}
-
-.recipient-email{
-  overflow-wrap:anywhere;
-  color:#2196ff;
-  font-size:15px;
-  line-height:1.3;
-  font-weight:900;
   text-decoration:none;
 }
 
-.recipient-action{
-  flex:0 0 auto;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:7px;
-  min-height:38px;
-  padding:0 13px;
-  border:1px solid rgba(11,132,255,.44);
-  border-radius:10px;
-  background:#0b84ff;
-  color:#fff;
-  font-size:12px;
-  font-weight:850;
-  text-decoration:none;
-  transition:
-    transform .2s ease,
-    background .2s ease,
-    box-shadow .2s ease;
-}
-
-.recipient-action:hover{
-  transform:translateY(-1px);
-  background:#2196ff;
-  box-shadow:0 8px 22px rgba(11,132,255,.22);
+.gmail-inline-mail:hover{
+  text-decoration:underline;
 }
 
 
-/* FINAL MESSAGE */
+/* ===================================== */
+/* EMAIL SIGNATURE */
+/* ===================================== */
 
-.email-final-note{
-  margin:15px 0 0;
-  color:rgba(255,255,255,.66);
-  font-size:12px;
-  line-height:1.5;
-}
-
-.email-signature{
-  margin-top:16px;
-}
-
-.email-signature p{
-  margin:0;
-  color:rgba(255,255,255,.7);
-  font-size:12px;
-  line-height:1.5;
-}
-
-.email-signature strong{
-  color:#fff;
+.gmail-signature{
+  margin-top:26px !important;
+  margin-bottom:0 !important;
 }
 
 
-/* EMAIL BUTTONS */
+/* ===================================== */
+/* REPLY / FORWARD BUTTONS */
+/* ===================================== */
 
 .email-buttons{
   position:relative;
   z-index:1;
+
   display:flex;
   align-items:center;
   flex-wrap:wrap;
-  gap:9px;
-  margin-top:20px;
-  padding-top:18px;
-  border-top:1px solid rgba(255,255,255,.09);
+  gap:10px;
+
+  margin-top:27px;
+  padding-left:54px;
 }
 
-.email-primary-button,
-.email-secondary-button{
-  min-height:41px;
+.gmail-reply-button,
+.gmail-forward-button{
+  min-height:40px;
+
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  gap:7px;
-  padding:0 15px;
-  border-radius:11px;
-  color:#fff;
+  gap:8px;
+
+  padding:0 19px;
+
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:20px;
+
+  background:transparent;
+  color:rgba(255,255,255,.82);
+
   font-family:inherit;
   font-size:12px;
   line-height:1;
-  font-weight:850;
+  font-weight:700;
+
   text-decoration:none;
   cursor:pointer;
+
   transition:
     transform .2s ease,
-    border-color .2s ease,
     background .2s ease,
-    box-shadow .2s ease;
+    border-color .2s ease,
+    color .2s ease;
 }
 
-.email-primary-button{
-  border:1px solid transparent;
-  background:linear-gradient(90deg, #0878ff, #2698ff);
-  box-shadow:0 8px 22px rgba(11,132,255,.2);
-}
-
-.email-secondary-button{
-  border:1px solid rgba(255,255,255,.15);
-  background:rgba(255,255,255,.025);
-}
-
-button.email-secondary-button{
+button.gmail-forward-button{
   appearance:none;
 }
 
-.email-primary-button:hover,
-.email-secondary-button:hover{
+.gmail-reply-button:hover,
+.gmail-forward-button:hover{
   transform:translateY(-1px);
-}
-
-.email-primary-button:hover{
-  box-shadow:0 11px 28px rgba(11,132,255,.3);
-}
-
-.email-secondary-button:hover{
-  border-color:rgba(11,132,255,.42);
-  background:rgba(11,132,255,.08);
+  border-color:rgba(255,255,255,.27);
+  background:rgba(255,255,255,.055);
+  color:#fff;
 }
 
 
-/* SUCCESS MESSAGE */
-
-.connection-success{
-  position:relative;
-  z-index:1;
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  margin-top:13px;
-  padding:10px 13px;
-  border:1px solid rgba(77,255,150,.2);
-  border-radius:11px;
-  background:rgba(20,180,90,.105);
-}
-
-.success-icon{
-  width:24px;
-  height:24px;
-  flex:0 0 24px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:50%;
-  background:rgba(77,255,150,.13);
-  color:#4dff96;
-  font-size:13px;
-  font-weight:900;
-}
-
-.connection-success div{
-  display:flex;
-  flex-direction:column;
-  gap:2px;
-}
-
-.connection-success strong{
-  color:#4dff96;
-  font-size:12px;
-  line-height:1.25;
-  font-weight:850;
-}
-
-.connection-success small{
-  color:rgba(255,255,255,.44);
-  font-size:9px;
-  line-height:1.25;
-}
-
-
-/* ========================= */
+/* ===================================== */
 /* CONNECTING ARROW */
-/* ========================= */
+/* ===================================== */
 
 .email-arrow{
   position:relative;
-  width:80px;
+  width:90px;
   height:330px;
 }
 
 .email-arrow::before{
   content:"";
   position:absolute;
-  top:52px;
-  left:-11px;
-  width:122px;
-  height:230px;
+
+  top:45px;
+  left:-9px;
+
+  width:125px;
+  height:235px;
 
   background:
     url("data:image/svg+xml,%3Csvg width='130' height='230' viewBox='0 0 130 230' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M112 22C35 42 92 135 18 190' stroke='%230B84FF' stroke-width='4' stroke-linecap='round' stroke-dasharray='4 10'/%3E%3Cpath d='M18 190L37 184' stroke='%230B84FF' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M18 190L28 170' stroke='%230B84FF' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E")
     center / contain no-repeat;
 
   filter:
-    drop-shadow(0 0 8px rgba(11,132,255,.9))
-    drop-shadow(0 0 18px rgba(11,132,255,.42));
+    drop-shadow(0 0 8px rgba(11,132,255,.85))
+    drop-shadow(0 0 18px rgba(11,132,255,.4));
 }
 
 .email-arrow-dot{
   position:absolute;
-  left:-7px;
-  bottom:47px;
+
+  left:-4px;
+  bottom:41px;
+
   width:14px;
   height:14px;
+
   border-radius:50%;
   background:#0b84ff;
+
   box-shadow:
     0 0 16px rgba(11,132,255,.95),
-    0 0 34px rgba(11,132,255,.55);
+    0 0 34px rgba(11,132,255,.52);
 }
 
 
-/* ========================= */
+/* ===================================== */
 /* RIGHT PANEL */
-/* ========================= */
+/* ===================================== */
 
 .email-side-panel{
   width:100%;
+
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
+
   text-align:center;
 }
 
 .side-step{
   width:100%;
+
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -2495,21 +2404,27 @@ button.email-secondary-button{
 .side-icon{
   width:58px;
   height:58px;
+
   display:flex;
   align-items:center;
   justify-content:center;
+
   border:2px solid #0b84ff;
   border-radius:50%;
+
   background:rgba(11,132,255,.035);
   color:#0b84ff;
+
   font-size:23px;
+
   box-shadow:
     0 0 25px rgba(11,132,255,.18),
-    inset 0 0 18px rgba(11,132,255,.045);
+    inset 0 0 18px rgba(11,132,255,.04);
 }
 
 .side-step-number{
   margin-top:12px;
+
   color:#0b84ff;
   font-size:9px;
   line-height:1;
@@ -2520,6 +2435,7 @@ button.email-secondary-button{
 
 .email-side-panel h3{
   margin:8px 0 7px;
+
   color:#fff;
   font-size:18px;
   line-height:1.2;
@@ -2530,30 +2446,36 @@ button.email-secondary-button{
 .email-side-panel p{
   max-width:235px;
   margin:0;
-  color:rgba(255,255,255,.62);
+
+  color:rgba(255,255,255,.6);
   font-size:12px;
   line-height:1.5;
 }
 
 
+/* ===================================== */
 /* OR DIVIDER */
+/* ===================================== */
 
 .or-line{
   width:190px;
+
   display:flex;
   align-items:center;
   gap:12px;
+
   margin:20px 0;
 }
 
 .or-line span{
   flex:1;
   height:1px;
+
   background:
     linear-gradient(
       90deg,
       transparent,
-      rgba(11,132,255,.45)
+      rgba(11,132,255,.42)
     );
 }
 
@@ -2561,7 +2483,7 @@ button.email-secondary-button{
   background:
     linear-gradient(
       90deg,
-      rgba(11,132,255,.45),
+      rgba(11,132,255,.42),
       transparent
     );
 }
@@ -2575,48 +2497,63 @@ button.email-secondary-button{
 }
 
 
+/* ===================================== */
 /* BRAND EMAIL CARD */
+/* ===================================== */
 
 .brand-mail{
   width:100%;
   max-width:260px;
+
   display:flex;
   align-items:center;
   gap:10px;
+
   margin-top:13px;
   padding:11px 12px;
+
   border:1px solid rgba(11,132,255,.38);
   border-radius:13px;
+
   background:
     linear-gradient(
       90deg,
-      rgba(11,132,255,.1),
-      rgba(11,132,255,.035)
+      rgba(11,132,255,.095),
+      rgba(11,132,255,.03)
     );
+
   color:#fff;
   text-align:left;
   text-decoration:none;
+
   transition:
     transform .2s ease,
     border-color .2s ease,
-    box-shadow .2s ease;
+    box-shadow .2s ease,
+    background .2s ease;
 }
 
 .brand-mail:hover{
   transform:translateY(-2px);
   border-color:rgba(11,132,255,.7);
-  box-shadow:0 12px 28px rgba(11,132,255,.14);
+  background:rgba(11,132,255,.09);
+
+  box-shadow:
+    0 12px 28px rgba(11,132,255,.14);
 }
 
 .brand-mail-icon{
   width:32px;
   height:32px;
   flex:0 0 32px;
+
   display:flex;
   align-items:center;
   justify-content:center;
+
   border-radius:9px;
-  background:rgba(11,132,255,.12);
+  background:rgba(11,132,255,.11);
+
   color:#168bff;
   font-size:14px;
 }
@@ -2624,14 +2561,16 @@ button.email-secondary-button{
 .brand-mail-content{
   min-width:0;
   flex:1;
+
   display:flex;
   flex-direction:column;
   gap:2px;
 }
 
 .brand-mail-content small{
-  color:rgba(255,255,255,.44);
+  color:rgba(255,255,255,.42);
   font-size:9px;
+  line-height:1.2;
   font-weight:700;
   letter-spacing:.5px;
   text-transform:uppercase;
@@ -2639,6 +2578,7 @@ button.email-secondary-button{
 
 .brand-mail-content strong{
   overflow-wrap:anywhere;
+
   color:#168bff;
   font-size:13px;
   line-height:1.3;
@@ -2651,18 +2591,24 @@ button.email-secondary-button{
 }
 
 
+/* ===================================== */
 /* PRIVACY BOX */
+/* ===================================== */
 
 .privacy-box{
   width:100%;
+
   display:flex;
   align-items:flex-start;
   gap:11px;
+
   margin-top:22px;
   padding:15px;
-  border:1px solid rgba(255,255,255,.085);
+
+  border:1px solid rgba(255,255,255,.08);
   border-radius:15px;
-  background:rgba(255,255,255,.027);
+
+  background:rgba(255,255,255,.025);
   text-align:left;
 }
 
@@ -2670,11 +2616,14 @@ button.email-secondary-button{
   width:25px;
   height:25px;
   flex:0 0 25px;
+
   display:flex;
   align-items:center;
   justify-content:center;
+
   border-radius:8px;
   background:rgba(20,180,90,.11);
+
   color:#4dff96;
   font-size:12px;
   font-weight:900;
@@ -2683,6 +2632,7 @@ button.email-secondary-button{
 .privacy-box strong{
   display:block;
   margin-bottom:5px;
+
   color:#fff;
   font-size:13px;
   line-height:1.3;
@@ -2691,15 +2641,16 @@ button.email-secondary-button{
 
 .privacy-box p{
   margin:0;
-  color:rgba(255,255,255,.52);
+
+  color:rgba(255,255,255,.5);
   font-size:11px;
   line-height:1.45;
 }
 
 
-/* ========================= */
-/* RESPONSIVE */
-/* ========================= */
+/* ===================================== */
+/* TABLET */
+/* ===================================== */
 
 @media(max-width:1150px){
 
@@ -2715,9 +2666,11 @@ button.email-secondary-button{
 
   .email-side-panel{
     margin-top:38px;
-    padding:28px;
+    padding:30px 28px;
+
     border:1px solid rgba(255,255,255,.07);
     border-radius:20px;
+
     background:rgba(255,255,255,.02);
   }
 
@@ -2727,6 +2680,10 @@ button.email-secondary-button{
 }
 
 
+/* ===================================== */
+/* MOBILE */
+/* ===================================== */
+
 @media(max-width:700px){
 
   .email-proof-box{
@@ -2734,12 +2691,13 @@ button.email-secondary-button{
   }
 
   .email-message-card{
-    padding:18px 16px 20px;
-    border-radius:19px;
+    padding:18px 16px 22px;
+    border-radius:18px;
   }
 
   .email-head{
     align-items:flex-start;
+    margin-bottom:21px;
   }
 
   .email-icons{
@@ -2750,48 +2708,51 @@ button.email-secondary-button{
     display:none;
   }
 
-  .email-sender-line{
+  .gmail-subject-row{
+    align-items:flex-start;
+    margin-bottom:20px;
+  }
+
+  .gmail-subject-row h3{
+    font-size:19px;
+  }
+
+  .email-brand{
+    margin-bottom:22px;
+  }
+
+  .email-sender-top{
     align-items:flex-start;
     flex-direction:column;
-    gap:3px;
+    gap:2px;
   }
 
-  .email-title-row h3{
-    font-size:18px;
+  .email-sender-actions{
+    display:none;
   }
 
-  .email-checklist{
-    grid-template-columns:1fr;
+  .gmail-email-body{
+    padding-left:0;
+    padding-right:0;
   }
 
-  .email-recipient-block{
-    align-items:flex-start;
-    flex-direction:column;
-  }
-
-  .recipient-action{
-    width:100%;
+  .gmail-details-box{
+    max-width:none;
   }
 
   .email-buttons{
-    display:grid;
-    grid-template-columns:1fr;
-  }
-
-  .email-primary-button,
-  .email-secondary-button{
-    width:100%;
-  }
-
-  .connection-success{
-    width:100%;
+    padding-left:0;
   }
 
   .email-side-panel{
-    padding:25px 17px;
+    padding:26px 17px;
   }
 }
 
+
+/* ===================================== */
+/* SMALL MOBILE */
+/* ===================================== */
 
 @media(max-width:420px){
 
@@ -2800,23 +2761,32 @@ button.email-secondary-button{
     padding-right:13px;
   }
 
-  .email-brand{
-    align-items:flex-start;
-  }
-
   .brand-avatar{
-    width:40px;
-    height:40px;
-    flex-basis:40px;
+    width:39px;
+    height:39px;
+    flex-basis:39px;
     font-size:14px;
   }
 
-  .email-information-block{
-    padding:12px;
+  .gmail-subject-row h3{
+    font-size:18px;
   }
 
-  .email-checklist-item{
-    padding:10px;
+  .gmail-detail-section{
+    padding:14px;
+  }
+
+  .gmail-reply-button,
+  .gmail-forward-button{
+    padding:0 15px;
+  }
+
+  .email-buttons{
+    gap:8px;
+  }
+
+  .brand-mail{
+    max-width:100%;
   }
 }
 /* ========================= */
