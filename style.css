@@ -2184,23 +2184,22 @@ border:0;
 
 .gmail-detail-label{
   display:block;
-  margin-bottom:10px;
+  margin-bottom:12px;
 
-  color:rgba(255,255,255,.45);
-  font-size:10px;
+  color:rgba(255,255,255,.48);
+  font-size:12px;
   line-height:1;
   font-weight:800;
-  letter-spacing:.75px;
+  letter-spacing:.8px;
   text-transform:uppercase;
 }
-
 .gmail-subject-example{
   display:block;
 
   color:#fff;
-  font-size:13px;
+  font-size:16px;
   line-height:1.5;
-  font-weight:700;
+  font-weight:750;
 }
 
 .gmail-detail-divider{
@@ -2219,12 +2218,12 @@ border:0;
 }
 
 .gmail-requirements li{
-  margin:0 0 10px;
-  padding-left:3px;
+  margin:0 0 14px;
+  padding-left:5px;
 
-  color:rgba(255,255,255,.76);
-  font-size:12px;
-  line-height:1.52;
+  color:rgba(255,255,255,.8);
+  font-size:15px;
+  line-height:1.6;
 }
 
 .gmail-requirements li:last-child{
@@ -2237,11 +2236,11 @@ border:0;
 
 .gmail-requirements li span{
   display:block;
-  margin-top:2px;
+  margin-top:3px;
 
-  color:rgba(255,255,255,.43);
-  font-size:11px;
-  line-height:1.4;
+  color:rgba(255,255,255,.48);
+  font-size:13px;
+  line-height:1.45;
 }
 
 
