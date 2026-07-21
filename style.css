@@ -3083,11 +3083,14 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 /* TRANSPARENCY NOTE */
 
 .contract-transparency-note{
+  grid-column:2 / 3;
+
   display:flex;
   align-items:flex-start;
   gap:12px;
 
-  margin-top:25px;
+  width:100%;
+  margin-top:8px;
   padding:17px 18px;
 
   border:1px solid rgba(76,255,151,.16);
