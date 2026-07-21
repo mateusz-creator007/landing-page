@@ -2920,6 +2920,7 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 .proof-title > *{
   position:relative !important;
   z-index:5 !important;
+  transform:translateY(-55px);
 }
 
 /* FINAL SPACING FIX */
