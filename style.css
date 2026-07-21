@@ -2397,13 +2397,11 @@ button.gmail-forward-button{
 /* MAIN TITLE */
 
 .email-side-title{
-  margin:0 0 32px;
+  margin:0 0 30px;
 
-  color:#ffffff;
+  color:#0b84ff;
 
   font-size:15px;
-
-  line-height:1;
 
   font-weight:900;
 
@@ -2411,7 +2409,7 @@ button.gmail-forward-button{
 
   text-transform:uppercase;
 
-  opacity:.92;
+  text-shadow:0 0 14px rgba(11,132,255,.25);
 }
 
 /* CONNECTION CARD */
