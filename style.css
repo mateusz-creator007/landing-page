@@ -3192,12 +3192,41 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
   }
 
   .contract-alternative-card{
-    margin-top:30px;
-    padding:24px 18px;
+  position:relative;
 
-    grid-template-columns:1fr;
-    gap:18px;
-  }
+  width:min(900px, 100%);
+  margin:42px auto 0;
+  padding:34px 38px;
+
+  display:grid;
+  grid-template-columns:74px minmax(0, 1fr);
+  align-items:start;
+  column-gap:26px;
+
+  overflow:hidden;
+
+  border:1px solid rgba(11,132,255,.34);
+  border-radius:22px;
+
+  background:
+    radial-gradient(
+      circle at 8% 10%,
+      rgba(11,132,255,.13),
+      transparent 34%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(5,15,29,.96),
+      rgba(2,8,16,.98)
+    );
+
+  box-shadow:
+    0 24px 70px rgba(0,0,0,.3),
+    0 0 35px rgba(11,132,255,.08);
+
+  text-align:left;
+  transform:none;
+}
 
   .contract-alternative-icon{
     width:54px;
@@ -3220,4 +3249,20 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
   .contract-transparency-note p{
     font-size:13px;
   }
+}
+
+@media(min-width:801px){
+
+  .contract-alternative{
+    width:min(1040px, 100%);
+  }
+
+  .contract-alternative-card{
+    width:min(900px, 100%) !important;
+    grid-template-columns:74px minmax(0, 1fr) !important;
+    gap:26px !important;
+    padding:34px 38px !important;
+    transform:none !important;
+  }
+
 }
