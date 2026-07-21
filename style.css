@@ -2377,7 +2377,7 @@ button.gmail-forward-button{
 
 
 /* ===================================== */
-/* RIGHT PANEL — IMPROVED */
+/* RIGHT PANEL — HOW BRANDS CONNECT */
 /* ===================================== */
 
 .email-side-panel{
@@ -2389,74 +2389,115 @@ button.gmail-forward-button{
   align-items:center;
   justify-content:center;
 
-  padding:14px 0;
+  padding:10px 0;
   text-align:center;
 }
 
+
+/* MAIN TITLE */
+
+.email-side-title{
+  margin:0 0 24px;
+
+  color:rgba(255,255,255,.58);
+  font-size:11px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:1.8px;
+  text-transform:uppercase;
+}
+
+
+/* CONNECTION CARD */
+
 .side-step{
   width:100%;
+  max-width:290px;
 
   display:flex;
   flex-direction:column;
   align-items:center;
+
+  padding:23px 20px 21px;
+
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:18px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(11,132,255,.09),
+      transparent 48%
+    ),
+    rgba(255,255,255,.022);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.025),
+    0 16px 40px rgba(0,0,0,.18);
+}
+
+
+/* SECOND CARD — CONNECTED TO EXAMPLE EMAIL */
+
+.side-step.creator-starts{
+  border-color:rgba(11,132,255,.34);
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(11,132,255,.15),
+      transparent 52%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(11,132,255,.055),
+      rgba(255,255,255,.018)
+    );
+
+  box-shadow:
+    0 0 30px rgba(11,132,255,.08),
+    inset 0 1px 0 rgba(255,255,255,.03);
 }
 
 
 /* ICON */
 
 .side-icon{
-  width:68px;
-  height:68px;
-  flex:0 0 68px;
+  width:58px;
+  height:58px;
+  flex:0 0 58px;
 
   display:flex;
   align-items:center;
   justify-content:center;
 
-  border:2px solid #0b84ff;
-  border-radius:50%;
+  margin-bottom:15px;
 
-  background:
-    radial-gradient(
-      circle,
-      rgba(11,132,255,.11),
-      rgba(11,132,255,.025) 68%
-    );
+  border:1px solid rgba(11,132,255,.52);
+  border-radius:16px;
 
-  color:#0b84ff;
-  font-size:27px;
+  background:rgba(11,132,255,.09);
+
+  color:#168bff;
+  font-size:23px;
   line-height:1;
 
   box-shadow:
-    0 0 26px rgba(11,132,255,.21),
-    inset 0 0 20px rgba(11,132,255,.05);
-}
-
-
-/* OPTION LABEL */
-
-.side-step-number{
-  margin-top:13px;
-
-  color:#0b84ff;
-  font-size:10px;
-  line-height:1;
-  font-weight:900;
-  letter-spacing:1.2px;
-  text-transform:uppercase;
+    0 0 24px rgba(11,132,255,.14),
+    inset 0 1px 0 rgba(255,255,255,.025);
 }
 
 
 /* HEADINGS */
 
 .email-side-panel h3{
-  margin:10px 0 8px;
+  margin:0 0 9px;
 
   color:#fff;
-  font-size:22px;
-  line-height:1.2;
+  font-size:21px;
+  line-height:1.18;
   font-weight:900;
-  letter-spacing:-.3px;
+  letter-spacing:-.35px;
 }
 
 
@@ -2464,11 +2505,11 @@ button.gmail-forward-button{
 
 .email-side-panel p{
   width:100%;
-  max-width:285px;
+  max-width:245px;
   margin:0;
 
-  color:rgba(255,255,255,.65);
-  font-size:14px;
+  color:rgba(255,255,255,.62);
+  font-size:13px;
   line-height:1.55;
 }
 
@@ -2483,9 +2524,9 @@ button.gmail-forward-button{
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:14px;
+  gap:13px;
 
-  margin:24px 0;
+  margin:18px 0;
 }
 
 .or-line span{
@@ -2496,7 +2537,7 @@ button.gmail-forward-button{
     linear-gradient(
       90deg,
       transparent,
-      rgba(11,132,255,.5)
+      rgba(11,132,255,.4)
     );
 }
 
@@ -2504,19 +2545,18 @@ button.gmail-forward-button{
   background:
     linear-gradient(
       90deg,
-      rgba(11,132,255,.5),
+      rgba(11,132,255,.4),
       transparent
     );
 }
 
 .or-line strong{
-  color:#0b84ff;
-  font-size:11px;
+  color:rgba(255,255,255,.42);
+  font-size:10px;
   line-height:1;
   font-weight:900;
-  letter-spacing:1px;
+  letter-spacing:1.2px;
 }
-
 
 /* ===================================== */
 /* BRAND EMAIL CARD */
