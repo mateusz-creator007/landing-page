@@ -1871,7 +1871,7 @@ border:0;
 .proof-title{
   padding-top:190px !important;
   padding-bottom:52px !important;
-  margin-top:-60px !important;
+  margin-top:0 !important;
   background:#050505 !important;
   text-align:center !important;
   position:relative !important;
