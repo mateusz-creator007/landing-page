@@ -2932,9 +2932,14 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 /* ===================================== */
 
 .contract-alternative{
-  width:min(1040px, 100%);
+  width:100%;
+  max-width:1040px;
+
   margin:90px auto 0;
+  padding:0 20px;
+
   text-align:center;
+  box-sizing:border-box;
 }
 
 
@@ -2970,21 +2975,26 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 }
 
 
+/* ===================================== */
 /* MAIN CARD */
+/* ===================================== */
 
 .contract-alternative-card{
   position:relative;
 
-  width:min(900px, 100%);
+  width:100%;
+  max-width:900px;
+
   margin:42px auto 0;
   padding:34px 38px;
 
   display:grid;
   grid-template-columns:74px minmax(0, 1fr);
-  align-items:flex-start;
-  gap:26px;
+  align-items:start;
+  column-gap:26px;
 
   overflow:hidden;
+  box-sizing:border-box;
 
   border:1px solid rgba(11,132,255,.34);
   border-radius:22px;
@@ -3008,8 +3018,12 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
   text-align:left;
 }
 
+
+/* TOP GLOWING LINE */
+
 .contract-alternative-card::before{
   content:"";
+
   position:absolute;
   top:0;
   left:0;
@@ -3027,7 +3041,9 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 }
 
 
+/* ===================================== */
 /* SHIELD ICON */
+/* ===================================== */
 
 .contract-alternative-icon{
   width:70px;
@@ -3054,7 +3070,9 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 }
 
 
-/* TEXT */
+/* ===================================== */
+/* TEXT CONTENT */
+/* ===================================== */
 
 .contract-alternative-content{
   min-width:0;
@@ -3080,18 +3098,23 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 }
 
 
+/* ===================================== */
 /* TRANSPARENCY NOTE */
+/* ===================================== */
 
 .contract-transparency-note{
   grid-column:2 / 3;
+
+  width:100%;
 
   display:flex;
   align-items:flex-start;
   gap:12px;
 
-  width:100%;
-  margin-top:8px;
+  margin-top:25px;
   padding:17px 18px;
+
+  box-sizing:border-box;
 
   border:1px solid rgba(76,255,151,.16);
   border-radius:14px;
@@ -3118,6 +3141,7 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 
 .contract-transparency-note p{
   margin:0;
+
   color:rgba(255,255,255,.68);
   font-size:14px;
   line-height:1.55;
@@ -3125,7 +3149,7 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 }
 
 .contract-transparency-note p strong{
-  color:#ffffff;
+  color:#fff;
   font-size:15px;
   font-weight:900;
 }
@@ -3137,7 +3161,7 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 
 
 /* ===================================== */
-/* RESPONSIVE */
+/* TABLET */
 /* ===================================== */
 
 @media(max-width:800px){
@@ -3154,7 +3178,7 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
     padding:27px 24px;
 
     grid-template-columns:58px minmax(0, 1fr);
-    gap:18px;
+    column-gap:18px;
   }
 
   .contract-alternative-icon{
@@ -3175,13 +3199,22 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
   .contract-alternative-content > p{
     font-size:15px;
   }
+
+  .contract-transparency-note{
+    grid-column:2 / 3;
+  }
 }
 
+
+/* ===================================== */
+/* MOBILE */
+/* ===================================== */
 
 @media(max-width:560px){
 
   .contract-alternative{
     margin-top:58px;
+    padding:0 14px;
   }
 
   .contract-eyebrow{
@@ -3195,41 +3228,12 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
   }
 
   .contract-alternative-card{
-  position:relative;
+    margin-top:30px;
+    padding:24px 18px;
 
-  width:min(900px, 100%);
-  margin:42px auto 0;
-  padding:34px 38px;
-
-  display:grid;
-  grid-template-columns:74px minmax(0, 1fr);
-  align-items:start;
-  column-gap:26px;
-
-  overflow:hidden;
-
-  border:1px solid rgba(11,132,255,.34);
-  border-radius:22px;
-
-  background:
-    radial-gradient(
-      circle at 8% 10%,
-      rgba(11,132,255,.13),
-      transparent 34%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(5,15,29,.96),
-      rgba(2,8,16,.98)
-    );
-
-  box-shadow:
-    0 24px 70px rgba(0,0,0,.3),
-    0 0 35px rgba(11,132,255,.08);
-
-  text-align:left;
-  transform:none;
-}
+    grid-template-columns:1fr;
+    row-gap:18px;
+  }
 
   .contract-alternative-icon{
     width:54px;
@@ -3246,26 +3250,13 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
   }
 
   .contract-transparency-note{
+    grid-column:1 / -1;
+
+    margin-top:2px;
     padding:15px;
   }
 
   .contract-transparency-note p{
     font-size:13px;
   }
-}
-
-@media(min-width:801px){
-
-  .contract-alternative{
-    width:min(1040px, 100%);
-  }
-
-  .contract-alternative-card{
-    width:min(900px, 100%) !important;
-    grid-template-columns:74px minmax(0, 1fr) !important;
-    gap:26px !important;
-    padding:34px 38px !important;
-    transform:none !important;
-  }
-
 }
