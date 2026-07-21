@@ -16,7 +16,7 @@ body {
     overflow:hidden;
 
     background-image:url("obyteraz.png");
-    background-size:74% auto;
+    background-size:auto 100%;
     background-position:right top;
     background-repeat:no-repeat;
 
