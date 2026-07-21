@@ -2343,14 +2343,14 @@ button.gmail-forward-button{
   content:"";
   position:absolute;
 
-  top:45px;
+  top:168px;
   left:-9px;
 
   width:125px;
-  height:235px;
+  height:125px;
 
   background:
-    url("data:image/svg+xml,%3Csvg width='130' height='230' viewBox='0 0 130 230' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M112 22C35 42 92 135 18 190' stroke='%230B84FF' stroke-width='4' stroke-linecap='round' stroke-dasharray='4 10'/%3E%3Cpath d='M18 190L37 184' stroke='%230B84FF' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M18 190L28 170' stroke='%230B84FF' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E")
+    url("data:image/svg+xml,%3Csvg width='130' height='130' viewBox='0 0 130 130' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 105C54 105 47 55 72 40C88 30 101 30 115 30' stroke='%230B84FF' stroke-width='4' stroke-linecap='round' stroke-dasharray='4 10'/%3E%3Cpath d='M115 30L98 20' stroke='%230B84FF' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M115 30L99 41' stroke='%230B84FF' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E")
     center / contain no-repeat;
 
   filter:
@@ -2362,7 +2362,7 @@ button.gmail-forward-button{
   position:absolute;
 
   left:-4px;
-  bottom:41px;
+  top:266px;
 
   width:14px;
   height:14px;
