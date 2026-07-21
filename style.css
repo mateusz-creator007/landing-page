@@ -11,16 +11,18 @@ body {
 }
 
 .hero{
-  position:relative;
+    position:relative;
+    min-height:100vh;
+    overflow:hidden;
 
-  width:100%;
-  min-height:920px;
+    background-image:url("obyteraz.png");
+    background-size:74% auto;
+    background-position:right top;
+    background-repeat:no-repeat;
 
-  background-size:100% auto;
-  background-position:center top;
-  background-repeat:no-repeat;
+    background-color:#050505;
 
-  overflow:hidden;
+    margin-bottom:0;
 }
 
 /* DELIKATNE PRZEJŚCIE HERO DO KOLEJNEJ SEKCJI */
