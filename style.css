@@ -29,7 +29,6 @@ body {
 
 .hero::after{
   content:"";
- display:none;
   
   position:absolute;
   left:0;
