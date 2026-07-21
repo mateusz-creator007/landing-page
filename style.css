@@ -3123,11 +3123,21 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 
 .contract-transparency-note p{
   margin:0;
-
-  color:rgba(255,255,255,.82);
+  color:rgba(255,255,255,.68);
   font-size:14px;
   line-height:1.55;
-  font-weight:650;
+  font-weight:500;
+}
+
+.contract-transparency-note p strong{
+  color:#ffffff;
+  font-size:15px;
+  font-weight:900;
+}
+
+.contract-transparency-note p span{
+  color:rgba(255,255,255,.68);
+  font-weight:500;
 }
 
 
