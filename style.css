@@ -2934,3 +2934,288 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 .transparency-section{
   padding:130px 6% 150px !important;
 }
+
+/* ===================================== */
+/* ALTERNATIVE CONTRACT PROCESS */
+/* ===================================== */
+
+.contract-alternative{
+  width:min(1040px, 100%);
+  margin:90px auto 0;
+  text-align:center;
+}
+
+
+/* SMALL LABEL */
+
+.contract-eyebrow{
+  display:inline-block;
+  margin-bottom:18px;
+
+  color:#0b84ff;
+  font-size:12px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+}
+
+
+/* LARGE HEADING */
+
+.contract-alternative-heading h3{
+  margin:0;
+
+  color:#fff;
+  font-size:clamp(38px, 5vw, 64px);
+  line-height:1.02;
+  font-weight:900;
+  letter-spacing:-2px;
+}
+
+.contract-alternative-heading h3 span{
+  color:#0b84ff;
+}
+
+
+/* MAIN CARD */
+
+.contract-alternative-card{
+  position:relative;
+
+  width:min(900px, 100%);
+  margin:42px auto 0;
+  padding:34px 38px;
+
+  display:grid;
+  grid-template-columns:74px minmax(0, 1fr);
+  align-items:flex-start;
+  gap:26px;
+
+  overflow:hidden;
+
+  border:1px solid rgba(11,132,255,.34);
+  border-radius:22px;
+
+  background:
+    radial-gradient(
+      circle at 8% 10%,
+      rgba(11,132,255,.13),
+      transparent 34%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(5,15,29,.96),
+      rgba(2,8,16,.98)
+    );
+
+  box-shadow:
+    0 24px 70px rgba(0,0,0,.3),
+    0 0 35px rgba(11,132,255,.08);
+
+  text-align:left;
+}
+
+.contract-alternative-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+
+  width:100%;
+  height:1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(11,132,255,.75),
+      transparent
+    );
+}
+
+
+/* SHIELD ICON */
+
+.contract-alternative-icon{
+  width:70px;
+  height:70px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid rgba(11,132,255,.45);
+  border-radius:20px;
+
+  background:rgba(11,132,255,.09);
+  color:#168bff;
+
+  box-shadow:
+    0 0 25px rgba(11,132,255,.15),
+    inset 0 1px 0 rgba(255,255,255,.03);
+}
+
+.contract-alternative-icon svg{
+  width:34px;
+  height:34px;
+}
+
+
+/* TEXT */
+
+.contract-alternative-content{
+  min-width:0;
+}
+
+.contract-alternative-content > p{
+  margin:0 0 16px;
+
+  color:rgba(255,255,255,.7);
+  font-size:16px;
+  line-height:1.7;
+}
+
+.contract-alternative-content > p:last-of-type{
+  margin-bottom:0;
+}
+
+.contract-alternative-content .contract-alternative-intro{
+  color:#fff;
+  font-size:20px;
+  line-height:1.5;
+  font-weight:800;
+}
+
+
+/* TRANSPARENCY NOTE */
+
+.contract-transparency-note{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+
+  margin-top:25px;
+  padding:17px 18px;
+
+  border:1px solid rgba(76,255,151,.16);
+  border-radius:14px;
+
+  background:rgba(24,180,90,.075);
+}
+
+.contract-note-icon{
+  width:27px;
+  height:27px;
+  flex:0 0 27px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:8px;
+  background:rgba(76,255,151,.12);
+
+  color:#4dff97;
+  font-size:13px;
+  font-weight:900;
+}
+
+.contract-transparency-note p{
+  margin:0;
+
+  color:rgba(255,255,255,.82);
+  font-size:14px;
+  line-height:1.55;
+  font-weight:650;
+}
+
+
+/* ===================================== */
+/* RESPONSIVE */
+/* ===================================== */
+
+@media(max-width:800px){
+
+  .contract-alternative{
+    margin-top:70px;
+  }
+
+  .contract-alternative-heading h3{
+    letter-spacing:-1.2px;
+  }
+
+  .contract-alternative-card{
+    padding:27px 24px;
+
+    grid-template-columns:58px minmax(0, 1fr);
+    gap:18px;
+  }
+
+  .contract-alternative-icon{
+    width:58px;
+    height:58px;
+    border-radius:16px;
+  }
+
+  .contract-alternative-icon svg{
+    width:29px;
+    height:29px;
+  }
+
+  .contract-alternative-content .contract-alternative-intro{
+    font-size:18px;
+  }
+
+  .contract-alternative-content > p{
+    font-size:15px;
+  }
+}
+
+
+@media(max-width:560px){
+
+  .contract-alternative{
+    margin-top:58px;
+  }
+
+  .contract-eyebrow{
+    margin-bottom:14px;
+    font-size:10px;
+  }
+
+  .contract-alternative-heading h3{
+    font-size:36px;
+    letter-spacing:-1px;
+  }
+
+  .contract-alternative-card{
+    margin-top:30px;
+    padding:24px 18px;
+
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .contract-alternative-icon{
+    width:54px;
+    height:54px;
+  }
+
+  .contract-alternative-content .contract-alternative-intro{
+    font-size:17px;
+  }
+
+  .contract-alternative-content > p{
+    font-size:14px;
+    line-height:1.65;
+  }
+
+  .contract-transparency-note{
+    padding:15px;
+  }
+
+  .contract-transparency-note p{
+    font-size:13px;
+  }
+}
