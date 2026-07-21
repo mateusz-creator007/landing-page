@@ -2398,15 +2398,12 @@ button.gmail-forward-button{
 
 .email-side-title{
   margin:0 0 32px !important;
-
-  color:#0b84ff !important;
-  font-size:22px !important;
+  color:#ff0000 !important;
+  font-size:30px !important;
   line-height:1 !important;
   font-weight:900 !important;
   letter-spacing:3px !important;
   text-transform:uppercase !important;
-
-  text-shadow:0 0 18px rgba(11,132,255,.55) !important;
 }
 
 /* CONNECTION CARD */
