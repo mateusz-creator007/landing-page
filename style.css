@@ -2933,7 +2933,7 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 
 .contract-alternative{
   width:100%;
-  max-width:1040px;
+  max-width:1180px;
 
   margin:90px auto 0;
   padding:0 20px;
@@ -2941,7 +2941,6 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
   text-align:center;
   box-sizing:border-box;
 }
-
 
 /* SMALL LABEL */
 
@@ -2983,15 +2982,15 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
   position:relative;
 
   width:100%;
-  max-width:900px;
+  max-width:1100px;
 
   margin:42px auto 0;
   padding:34px 38px;
 
   display:grid;
-  grid-template-columns:74px minmax(0, 1fr);
+  grid-template-columns:72px minmax(0, 1fr);
   align-items:start;
-  column-gap:26px;
+  column-gap:28px;
 
   overflow:hidden;
   box-sizing:border-box;
