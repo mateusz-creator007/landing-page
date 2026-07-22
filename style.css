@@ -2871,8 +2871,8 @@ button.gmail-forward-button{
   content:"" !important;
   position:absolute !important;
 
- left:50% !important;
-  top:25% !important;
+  left:50% !important;
+  top:15% !important;
 
   transform:translate(-50%,-50%) !important;
 width:100vw !important;
