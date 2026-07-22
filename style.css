@@ -2872,10 +2872,9 @@ button.gmail-forward-button{
   position:absolute !important;
 
  left:50% !important;
-top:25% !important;
+  top:25% !important;
 
-transform:translate(-50%,-50%) !important;
-
+  transform:translate(-50%,-50%) !important;
 width:100vw !important;
 height:380px !important;
 
