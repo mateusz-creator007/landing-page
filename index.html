@@ -4,9 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>MBojar</title>
+<title>MBojar — Direct Brand Collaborations for Creators</title>
+<meta name="description" content="MBojar helps creators connect directly with trusted global brands while remaining fully independent.">
 
-<link rel="stylesheet" href="style.css?v=20260721-1">
+<link rel="stylesheet" href="style.css?v=20260722-2">
 </head>
 
 <body>
@@ -36,7 +37,7 @@
 
 <div class="hero-mug">
 
-<img src="/kubek.png" alt="Founder mug" />
+<img src="kubek.png" alt="Founder mug" />
 
 <div class="mug-text">
 
@@ -149,6 +150,8 @@ See real creator-brand collaborations below.
 
 <img
 src="brandcreator.png"
+loading="lazy"
+decoding="async"
 alt="Verified collaborations proof"
 />
 
@@ -172,6 +175,8 @@ aria-label="Open collaboration"
 
     <img
       src="war-thunder-proof.png"
+      loading="lazy"
+      decoding="async"
       alt="War Thunder TheWhat Show verified collaboration proof"
       class="campaign-card"
     />
@@ -200,7 +205,7 @@ aria-label="Open collaboration"
 
 <section class="creator-showcase-image">
 
-  <img src="morem.png" alt="Creator collaboration cards" />
+  <img src="morem.png" loading="lazy" decoding="async" alt="Creator collaboration cards" />
 
   <div class="more-creators">
     + 2,000 More
@@ -255,6 +260,8 @@ My role is simple: create opportunities, open doors, and build relationships tha
 
   <img
     src="omnie.png"
+    loading="lazy"
+    decoding="async"
     alt="Mateusz founder"
   />
 
@@ -827,7 +834,7 @@ We sign a short NDA and partnership agreement. You remain fully independent and 
         Send Message
       </button>
 
-      <div id="contact-form-status" class="contact-form-status"></div>
+      <div id="contact-form-status" class="contact-form-status" role="status" aria-live="polite"></div>
 
     </form>
 
@@ -884,9 +891,11 @@ creatorForm.reset();
 document.querySelectorAll("#platform-container .platform-row").forEach((r,i)=>{if(i>0)r.remove();});
 status.textContent="Your application has been sent successfully.";
 status.classList.add("is-success");
+status.scrollIntoView({behavior:"smooth",block:"center"});
 }catch(err){
 status.textContent="Something went wrong. Please try again.";
 status.classList.add("is-error");
+status.scrollIntoView({behavior:"smooth",block:"center"});
 }finally{
 submitButton.disabled=false;
 submitButton.textContent=old;
