@@ -3493,3 +3493,28 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
   z-index:5 !important;
   transform:translateY(-55px);
 }
+
+/* ===================================== */
+/* ALTERNATIVE SECTION SPACING */
+/* ===================================== */
+
+.contract-alternative-section{
+    padding-top:165px !important;
+}
+
+/* ===================================== */
+/* ALTERNATIVE LABEL */
+/* ===================================== */
+
+.contract-eyebrow{
+    display:inline-block;
+    margin-bottom:22px !important;
+
+    font-size:15px !important;
+    font-weight:900;
+
+    letter-spacing:.18em !important;
+    text-transform:uppercase;
+
+    color:#0b84ff;
+}
