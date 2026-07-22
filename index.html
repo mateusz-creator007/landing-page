@@ -713,7 +713,13 @@ We sign a short NDA and partnership agreement. You remain fully independent and 
     </p>
 
 
-    <form class="contact-form">
+    <form class="contact-form"
+      id="creator-application-form"
+      action="https://formspree.io/f/xlgqwnpa"
+      method="POST">
+
+      <input type="hidden" name="_subject" value="New Creator Application - MBojar">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
 
       <div class="contact-field">
 
@@ -817,9 +823,11 @@ We sign a short NDA and partnership agreement. You remain fully independent and 
       </div>
 
 
-      <button type="submit" class="contact-submit">
+      <button type="submit" class="contact-submit" id="contact-submit-button">
         Send Message
       </button>
+
+      <div id="contact-form-status" class="contact-form-status"></div>
 
     </form>
 
@@ -850,6 +858,41 @@ We sign a short NDA and partnership agreement. You remain fully independent and 
 
     container.appendChild(newRow);
   }
+</script>
+
+
+<script>
+const creatorForm=document.getElementById("creator-application-form");
+if(creatorForm){
+const submitButton=document.getElementById("contact-submit-button");
+const status=document.getElementById("contact-form-status");
+creatorForm.addEventListener("submit",async(e)=>{
+e.preventDefault();
+submitButton.disabled=true;
+const old=submitButton.textContent;
+submitButton.textContent="Sending...";
+status.textContent="";
+status.className="contact-form-status";
+try{
+const res=await fetch(creatorForm.action,{
+method:"POST",
+body:new FormData(creatorForm),
+headers:{Accept:"application/json"}
+});
+if(!res.ok) throw new Error();
+creatorForm.reset();
+document.querySelectorAll("#platform-container .platform-row").forEach((r,i)=>{if(i>0)r.remove();});
+status.textContent="Your application has been sent successfully.";
+status.classList.add("is-success");
+}catch(err){
+status.textContent="Something went wrong. Please try again.";
+status.classList.add("is-error");
+}finally{
+submitButton.disabled=false;
+submitButton.textContent=old;
+}
+});
+}
 </script>
 
 </body>
