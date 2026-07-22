@@ -3309,15 +3309,15 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
   margin-top:0 !important;
 }
 
-/* ===================================== */
-/* HOW BRANDS CONNECT - FINAL VERSION */
-/* ===================================== */
+/* ===================================================== */
+/* HOW BRANDS CONNECT - FINAL */
+/* ===================================================== */
 
 /* RIGHT COLUMN */
 
 .email-side-panel{
 
-  width:390px !important;
+  width:370px !important;
 
 }
 
@@ -3328,21 +3328,37 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 
   position:relative;
 
-  margin:0 0 34px;
+  margin:0 0 30px;
 
   text-align:center;
 
-  font-size:40px;
+  font-size:34px;
 
   font-weight:900;
 
-  line-height:.92;
+  line-height:.95;
 
-  letter-spacing:-.04em;
+  letter-spacing:-.03em;
 
   color:#fff;
 
-  text-transform:none;
+}
+
+.email-side-title span{
+
+  display:block;
+
+  margin-bottom:10px;
+
+  font-size:15px;
+
+  font-weight:800;
+
+  letter-spacing:.22em;
+
+  text-transform:uppercase;
+
+  color:#0b84ff;
 
 }
 
@@ -3357,28 +3373,28 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 
   transform:translateX(-50%);
 
-  width:110px;
+  width:90px;
 
   height:1px;
 
   background:linear-gradient(
-    90deg,
-    transparent,
-    rgba(11,132,255,.75),
-    transparent
+      90deg,
+      transparent,
+      rgba(11,132,255,.7),
+      transparent
   );
 
 }
 
 .email-side-title::before{
 
-  top:-18px;
+  top:-16px;
 
 }
 
 .email-side-title::after{
 
-  bottom:-18px;
+  bottom:-16px;
 
 }
 
@@ -3387,7 +3403,7 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 
 .side-step{
 
-  padding:30px 24px !important;
+  padding:24px 22px !important;
 
   border-radius:22px;
 
@@ -3395,30 +3411,34 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 
 .side-icon{
 
-  width:66px !important;
-  height:66px !important;
+  width:60px !important;
+  height:60px !important;
 
-  margin:0 auto 22px;
+  margin:0 auto 18px;
 
 }
 
 .side-icon span{
 
-  font-size:26px !important;
+  font-size:24px !important;
 
 }
 
 .side-step h3{
 
-  font-size:20px !important;
+  margin:0 0 10px;
 
-  margin-bottom:10px;
+  font-size:18px !important;
+
+  font-weight:800;
 
 }
 
 .side-step p{
 
-  font-size:15px !important;
+  margin:0;
+
+  font-size:14px !important;
 
   line-height:1.55;
 
@@ -3429,19 +3449,36 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 
 .or-line{
 
-  margin:24px 0 !important;
+  margin:22px 0 !important;
 
 }
 
 .or-line strong{
 
-  font-size:18px !important;
+  font-size:22px !important;
 
   font-weight:900;
 
-  letter-spacing:.16em;
+  letter-spacing:.18em;
 
   color:#fff;
+
+}
+
+.or-line span{
+
+  flex:1;
+
+  max-width:95px;
+
+  height:1px;
+
+  background:linear-gradient(
+      90deg,
+      transparent,
+      rgba(11,132,255,.45),
+      transparent
+  );
 
 }
 
@@ -3450,19 +3487,21 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 
 .privacy-box{
 
-  padding:22px 22px !important;
+  padding:18px 20px !important;
 
 }
 
 .privacy-box strong{
 
-  font-size:18px !important;
+  font-size:17px !important;
 
 }
 
 .privacy-box p{
 
-  font-size:14px !important;
+  margin-top:6px;
+
+  font-size:13px !important;
 
   line-height:1.5;
 
