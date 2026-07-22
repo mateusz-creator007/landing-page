@@ -3310,89 +3310,160 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 }
 
 /* ===================================== */
-/* RIGHT PANEL SCALE */
+/* HOW BRANDS CONNECT - FINAL VERSION */
 /* ===================================== */
+
+/* RIGHT COLUMN */
 
 .email-side-panel{
 
-  width:430px !important;
+  width:390px !important;
 
 }
 
+
+/* TITLE */
+
 .email-side-title{
 
-  font-size:42px !important;
-  line-height:.95;
-  font-weight:900;
-  letter-spacing:-.04em;
-  color:#fff;
+  position:relative;
 
-  margin-bottom:42px;
+  margin:0 0 34px;
+
+  text-align:center;
+
+  font-size:40px;
+
+  font-weight:900;
+
+  line-height:.92;
+
+  letter-spacing:-.04em;
+
+  color:#fff;
 
   text-transform:none;
 
 }
 
+.email-side-title::before,
+.email-side-title::after{
+
+  content:"";
+
+  position:absolute;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:110px;
+
+  height:1px;
+
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(11,132,255,.75),
+    transparent
+  );
+
+}
+
+.email-side-title::before{
+
+  top:-18px;
+
+}
+
+.email-side-title::after{
+
+  bottom:-18px;
+
+}
+
+
+/* CARDS */
+
 .side-step{
 
-  padding:34px 28px !important;
-  border-radius:24px;
+  padding:30px 24px !important;
+
+  border-radius:22px;
 
 }
 
 .side-icon{
 
-  width:72px !important;
-  height:72px !important;
+  width:66px !important;
+  height:66px !important;
 
-  margin:0 auto 26px;
+  margin:0 auto 22px;
 
 }
 
 .side-icon span{
 
-  font-size:30px !important;
+  font-size:26px !important;
 
 }
 
 .side-step h3{
 
-  font-size:22px !important;
+  font-size:20px !important;
 
-  margin-bottom:12px;
+  margin-bottom:10px;
 
 }
 
 .side-step p{
 
-  font-size:16px !important;
+  font-size:15px !important;
 
   line-height:1.55;
 
 }
 
+
+/* OR */
+
+.or-line{
+
+  margin:24px 0 !important;
+
+}
+
+.or-line strong{
+
+  font-size:18px !important;
+
+  font-weight:900;
+
+  letter-spacing:.16em;
+
+  color:#fff;
+
+}
+
+
+/* PRIVACY */
+
 .privacy-box{
 
-  padding:24px 26px !important;
+  padding:22px 22px !important;
 
 }
 
 .privacy-box strong{
 
-  font-size:20px !important;
+  font-size:18px !important;
 
 }
 
 .privacy-box p{
 
-  font-size:15px !important;
+  font-size:14px !important;
 
   line-height:1.5;
-
-}
-
-.or-line{
-
-  margin:26px 0 !important;
 
 }
