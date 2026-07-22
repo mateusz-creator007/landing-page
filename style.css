@@ -3308,3 +3308,91 @@ background:url("./smoke.png") center center / 120% auto no-repeat !important;
 .contract-alternative-heading{
   margin-top:0 !important;
 }
+
+/* ===================================== */
+/* RIGHT PANEL SCALE */
+/* ===================================== */
+
+.email-side-panel{
+
+  width:430px !important;
+
+}
+
+.email-side-title{
+
+  font-size:42px !important;
+  line-height:.95;
+  font-weight:900;
+  letter-spacing:-.04em;
+  color:#fff;
+
+  margin-bottom:42px;
+
+  text-transform:none;
+
+}
+
+.side-step{
+
+  padding:34px 28px !important;
+  border-radius:24px;
+
+}
+
+.side-icon{
+
+  width:72px !important;
+  height:72px !important;
+
+  margin:0 auto 26px;
+
+}
+
+.side-icon span{
+
+  font-size:30px !important;
+
+}
+
+.side-step h3{
+
+  font-size:22px !important;
+
+  margin-bottom:12px;
+
+}
+
+.side-step p{
+
+  font-size:16px !important;
+
+  line-height:1.55;
+
+}
+
+.privacy-box{
+
+  padding:24px 26px !important;
+
+}
+
+.privacy-box strong{
+
+  font-size:20px !important;
+
+}
+
+.privacy-box p{
+
+  font-size:15px !important;
+
+  line-height:1.5;
+
+}
+
+.or-line{
+
+  margin:26px 0 !important;
+
+}
