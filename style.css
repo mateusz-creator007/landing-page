@@ -947,7 +947,7 @@ box-shadow:
 .about-image-section{
   background:#050505;
   display:grid;
-  grid-template-columns:minmax(540px,620px) minmax(680px,760px);
+  grid-template-columns:minmax(580px,660px) minmax(650px,730px);
   align-items:center;
   justify-content:center;
   column-gap:70px;
